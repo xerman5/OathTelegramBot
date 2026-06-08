@@ -9,9 +9,10 @@ Uso:
 
 Variables de entorno requeridas (GitHub Secrets):
     TELEGRAM_BOT_TOKEN   — token del bot (BotFather)
-    TELEGRAM_CHAT_ID     — canal/grupo destino (ej: "@mi_canal" o "-1001234567890")
+    TELEGRAM_CHAT_ID     — canal/grupo destino (ej: "@oathespana" o "-1001234567890")
 
-Variable opcional:
+Variables opcionales:
+    TELEGRAM_THREAD_ID   — ID del topic en grupos con temas (ej: 143 para General)
     CARDS_FILE           — ruta al JSON (por defecto: oath_cards.json)
 """
 
@@ -38,6 +39,7 @@ log = logging.getLogger(__name__)
 
 TOKEN      = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 CHAT_ID    = os.environ.get("TELEGRAM_CHAT_ID", "")
+THREAD_ID  = os.environ.get("TELEGRAM_THREAD_ID", "")   # topic General = 143
 CARDS_FILE = Path(os.environ.get("CARDS_FILE", "oath_cards.json"))
 
 # ── Cargar cartas ─────────────────────────────────────────────────────────────
@@ -167,26 +169,31 @@ def download_image(url: str) -> bytes:
         return resp.read()
 
 
-def send_card(token: str, chat_id: str, card: dict) -> bool:
+def send_card(token: str, chat_id: str, card: dict, thread_id: str = "") -> bool:
     """
     Envía la carta como foto a Telegram.
     Estrategia:
       1. Intentar con la URL directa (rápido, funciona para jpeg/png públicos).
       2. Si falla (ej: webp, redirección, CDN hostil), descargar y enviar bytes.
+    thread_id: si se especifica, publica en ese topic del grupo.
     Returns True si el envío fue exitoso.
     """
     caption = format_caption(card)
     image_url = card["image"]
 
+    # Parámetros base — añadir thread_id solo si viene informado
+    base_params = {
+        "chat_id":    chat_id,
+        "caption":    caption,
+        "parse_mode": "HTML",
+    }
+    if thread_id:
+        base_params["message_thread_id"] = thread_id
+
     # — Intento 1: URL directa —
     try:
         log.info("Intentando enviar por URL directa...")
-        result = _api_call(token, "sendPhoto", {
-            "chat_id":    chat_id,
-            "photo":      image_url,
-            "caption":    caption,
-            "parse_mode": "HTML",
-        })
+        result = _api_call(token, "sendPhoto", {**base_params, "photo": image_url})
         if result.get("ok"):
             log.info("Enviado correctamente por URL.")
             return True
@@ -198,13 +205,13 @@ def send_card(token: str, chat_id: str, card: dict) -> bool:
     try:
         log.info("Descargando imagen para subir como fichero...")
         image_bytes = download_image(image_url)
-        filename    = image_url.split("/")[-1]          # ej: "Wrestlers.webp"
+        filename    = image_url.split("/")[-1]
         content_type = "image/webp" if filename.endswith(".webp") else "image/jpeg"
 
         result = _api_call(
             token,
             "sendPhoto",
-            {"chat_id": chat_id, "caption": caption, "parse_mode": "HTML"},
+            base_params,
             files={"photo": (filename, image_bytes, content_type)},
         )
         if result.get("ok"):
@@ -233,7 +240,7 @@ def main() -> None:
 
     cards = load_cards(CARDS_FILE)
     card  = pick_card(cards)
-    ok    = send_card(TOKEN, CHAT_ID, card)
+    ok    = send_card(TOKEN, CHAT_ID, card, THREAD_ID)
 
     if not ok:
         log.error("No se pudo enviar la carta.")
