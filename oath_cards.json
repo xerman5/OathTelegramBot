@@ -1,0 +1,1924 @@
+[
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wrestlers.webp",
+    "name": "Wrestlers",
+    "id": "OATH-001",
+    "description": "+ `symbol:diceb` if you sacrifice one warband in your force.",
+    "tags": [
+      "Standard Deck",
+      "Order",
+      "Battle Plan"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Battle%20Honors.webp",
+    "name": "Battle Honors",
+    "id": "OATH-002",
+    "description": "If you're victorious, gain `symbol:favor` `symbol:favor` from the `symbol:suit-order` bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bear%20Traps.webp",
+    "name": "Bear Traps",
+    "id": "OATH-003",
+    "description": "- `symbol:dicer` Kill one warband on the attacker's board.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Longbows.webp",
+    "name": "Longbows",
+    "id": "OATH-004",
+    "description": "± `symbol:dicer`",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Keep.webp",
+    "name": "Keep",
+    "id": "OATH-005",
+    "description": "+2 `symbol:diceb` if this site is targeted.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Pressgangs.webp",
+    "name": "Pressgangs",
+    "id": "OATH-006",
+    "description": "You can muster on cards that have `symbol:favor` or `symbol:secret` on them.",
+    "tags": [
+      "Muster",
+      "Power"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Garrison.webp",
+    "name": "Garrison",
+    "id": "OATH-007",
+    "description": "**When Played**, gain one warband per site you rule, and put one warband from your board on each site you rule.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Scouts.webp",
+    "name": "Scouts",
+    "id": "OATH-008",
+    "description": "Gain 1 Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Alchemist.webp",
+    "name": "Alchemist",
+    "id": "OATH-009",
+    "description": "**Action**: Gain `symbol:favor` `symbol:favor` `symbol:favor` `symbol:favor` from any favor bank or banks.",
+    "tags": [
+      "Arcane"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Martial%20Culture.webp",
+    "name": "Martial Culture",
+    "id": "OATH-010",
+    "description": "If you're an Exile and defeat another Exile, you may become a Citizen- take no relic, end your Act Phase, and refresh supply to full _(leftmost)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Errand%20Boy.webp",
+    "name": "Errand Boy",
+    "id": "OATH-011",
+    "description": "You may draw from a discard pile in a different region instead of yours.",
+    "tags": [
+      "Beast",
+      "Search"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Mercenaries.webp",
+    "name": "Mercenaries",
+    "id": "OATH-012",
+    "description": "±3 `symbol:dicer` If you're defeated while using this power, discard Mercenaries.",
+    "tags": [
+      "Discord"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tinker's%20Fair.webp",
+    "name": "Tinker's Fair",
+    "id": "OATH-013",
+    "description": "**Action**: Negotiate a binding exchange of `symbol:favor`, `symbol:secret`, and relics with any player.",
+    "tags": [
+      "Hearth"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Rain%20Boots.webp",
+    "name": "Rain Boots",
+    "id": "OATH-014",
+    "description": "Ignore all your enemy's rolls of single shields `symbol:shield`. At end, discard Rain Boots.",
+    "tags": [
+      "Nomad"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/A%20Small%20Favor.webp",
+    "name": "A Small Favor",
+    "id": "OATH-015",
+    "description": "**When Played**, Gain four warbands.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Second%20Wind.webp",
+    "name": "Second Wind",
+    "id": "OATH-016",
+    "description": "After you're victorious, you may travel and then may campaign, spending no Supply for either.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Sleight%20of%20Hand.webp",
+    "name": "Sleight of Hand",
+    "id": "OATH-017",
+    "description": "**Action**: Take `symbol:secret` from a player whose pawn is at your site. You cannot take their last `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Key%20to%20the%20City.webp",
+    "name": "Key to the City",
+    "id": "OATH-018",
+    "description": "**When Played**, if the ruler's pawn is not at this site, kill any warbands at this site, then gain a warband and place it here.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Scryer.webp",
+    "name": "Scryer",
+    "id": "OATH-019",
+    "description": "**Action**: Peek at any one discard pile.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Disgraced%20Captain.webp",
+    "name": "Disgraced Captain",
+    "id": "OATH-020",
+    "description": "+4 `symbol:dicer` if targeting a site that has an `symbol:suit-order` card.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Naysayers.webp",
+    "name": "Naysayers",
+    "id": "OATH-021",
+    "description": "**Rest**: If any Exile is the Oathkeeper or Usurper, take `symbol:favor` from the Chancellor.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Book%20Burning.webp",
+    "name": "Book Burning",
+    "id": "OATH-022",
+    "description": "If you're victorious and targeted the defender's pawn, they also burn all of the `symbol:secret` on their board except their last.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ancient%20Binding.webp",
+    "name": "Ancient Binding",
+    "id": "OATH-023",
+    "description": "**Action**: Each player burns all their `symbol:secret` except their last. _(The only `symbol:secret` you keep is the one here.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Horse%20Archers.webp",
+    "name": "Horse Archers",
+    "id": "OATH-024",
+    "description": "±3 `symbol:dicer` At end, discard Horse Archers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Warning%20Signals.webp",
+    "name": "Warning Signals",
+    "id": "OATH-025",
+    "description": "Move any warbands to and from your board and any sites you rule _(except the last warband from a site)_. At end, discard Warning Signals.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Elders.webp",
+    "name": "Elders",
+    "id": "OATH-026",
+    "description": "**Action**: Gain `symbol:favor`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/The%20Gathering.webp",
+    "name": "The Gathering",
+    "id": "OATH-027",
+    "description": "**When Played**, any players in turn order may put their pawn on this site. Then, players with pawns here may negotiate binding exchanges of `symbol:favor`, `symbol:secret`, relics, and advisers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Faithful%20Friend.webp",
+    "name": "Faithful Friend",
+    "id": "OATH-028",
+    "description": "**When Played**, gain 4 Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tents.webp",
+    "name": "Tents",
+    "id": "OATH-029",
+    "description": "Spend no Supply if you're traveling to a site in your region.",
+    "tags": [
+      "Travel"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Great%20Herd.webp",
+    "name": "Great Herd",
+    "id": "OATH-030",
+    "description": "**When Played**, you may swap Great Herd with a `symbol:suit-nomad` card at any site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Fire%20Talkers.webp",
+    "name": "Fire Talkers",
+    "id": "OATH-031",
+    "description": "±3 `symbol:dicer` if you hold the Darkest Secret.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Magician's%20Code.webp",
+    "name": "Magician's Code",
+    "id": "OATH-032",
+    "description": "If recovering the Darkest Secret, gain `symbol:secret` `symbol:secret` and add them to any other `symbol:secret` you're paying to recover it _(even none)_.",
+    "tags": [
+      "Recover"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Spirit%20Snare.webp",
+    "name": "Spirit Snare",
+    "id": "OATH-033",
+    "description": "**Action**: Take `symbol:favor` from any one favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wizard%20School.webp",
+    "name": "Wizard School",
+    "id": "OATH-034",
+    "description": "**Action**: Gain `symbol:secret`, then end your Act Phase.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Dazzle.webp",
+    "name": "Dazzle",
+    "id": "OATH-035",
+    "description": "**When Played**, discard all `symbol:suit-hearth` and `symbol:suit-order` cards at sites in your region.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Acting%20Troupe.webp",
+    "name": "Acting Troupe",
+    "id": "OATH-036",
+    "description": "Act as if the Acting Troupe is a `symbol:suit-beast` or `symbol:suit-order` card instead.",
+    "tags": [
+      "Trade"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Taming%20Charm.webp",
+    "name": "Taming Charm",
+    "id": "OATH-037",
+    "description": "**Action**: Discard a `symbol:suit-beast` or `symbol:suit-nomad` card at your site to gain `symbol:favor` `symbol:favor` from the matching favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Inquisitor.webp",
+    "name": "Inquisitor",
+    "id": "OATH-038",
+    "description": "**Action**: Peek at an adviser of a player whose pawn is at your site. If it is the Conspiracy, you play it or discard it. If it is not, give them the `symbol:favor` here.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wolves.webp",
+    "name": "Wolves",
+    "id": "OATH-039",
+    "description": "**Action**: Kill one warband _(even yours)_ on any one board.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Animal%20Playmates.webp",
+    "name": "Animal Playmates",
+    "id": "OATH-040",
+    "description": "Spend no Supply if you're mustering on a `symbol:suit-beast` card.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/True%20Names.webp",
+    "name": "True Names",
+    "id": "OATH-041",
+    "description": "Your enemy **cannot** use battle plans that match any of your advisers against you.",
+    "tags": [
+      "Campaign"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/The%20Old%20Oak.webp",
+    "name": "The Old Oak",
+    "id": "OATH-042",
+    "description": "If trading with The Old Oak for `symbol:secret`, gain one more `symbol:secret` if you have any `symbol:suit-beast` advisers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Forest%20Paths.webp",
+    "name": "Forest Paths",
+    "id": "OATH-043",
+    "description": "Spend no Supply and ignore the powers of sites if you're traveling to a site with a `symbol:suit-beast` card.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Long-Lost%20Heir.webp",
+    "name": "Long-Lost Heir",
+    "id": "OATH-044",
+    "description": "**When Played**, if you're an Exile, you may become a Citizen- take no relic, end your Act Phase, and refresh Supply to full _(leftmost)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Rangers.webp",
+    "name": "Rangers",
+    "id": "OATH-045",
+    "description": "Ignore all skulls `symbol:skull` you roll. +2 `symbol:dicer` if the defense pool has 4+ `symbol:diceb`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Roving%20Terror.webp",
+    "name": "Roving Terror",
+    "id": "OATH-046",
+    "description": "**Action**: Discard a denizen card at any other site and move this card there.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wayside%20Inn.webp",
+    "name": "Wayside Inn",
+    "id": "OATH-047",
+    "description": "**Action**: Gain 2 Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Extra%20Provisions.webp",
+    "name": "Extra Provisions",
+    "id": "OATH-048",
+    "description": "+2 `symbol:diceb`",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Memory%20of%20Home.webp",
+    "name": "Memory of Home",
+    "id": "OATH-049",
+    "description": "**Action**: Move all `symbol:favor` from any one favor bank to the `symbol:suit-hearth` bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Welcoming%20Party.webp",
+    "name": "Welcoming Party",
+    "id": "OATH-050",
+    "description": "If you play a denizen card that was not a facedown adviser, gain `symbol:favor` from the `symbol:suit-hearth` bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Traveling%20Doctor.webp",
+    "name": "Traveling Doctor",
+    "id": "OATH-051",
+    "description": "If you're defeated, kill no warbands in your force and discard Traveling Doctor. **Ignore** powers that kill all of your force.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Storyteller.webp",
+    "name": "Storyteller",
+    "id": "OATH-052",
+    "description": "**Action**: Place `symbol:secret` from the shared bank on the Darkest Secret.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Armed%20Mob.webp",
+    "name": "Armed Mob",
+    "id": "OATH-053",
+    "description": "**Action**: Discard a faceup adviser from a player who holds the Darkest Secret but not the People's Favor.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tavern%20Songs.webp",
+    "name": "Tavern Songs",
+    "id": "OATH-054",
+    "description": "**Action**: Peek at the top three cards of your region's discard pile.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Secret%20Signal.webp",
+    "name": "Secret Signal",
+    "id": "OATH-055",
+    "description": "If you gain only one `symbol:favor`, gain one more `symbol:favor`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Augury.webp",
+    "name": "Augury",
+    "id": "OATH-056",
+    "description": "Draw one more card. _(Stop after a Vision as normal.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Rusting%20Ray.webp",
+    "name": "Rusting Ray",
+    "id": "OATH-057",
+    "description": "If you hold the Darkest Secret, **ignore** all your enemy's rolls of hollow swords `symbol:swordh`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Portal.webp",
+    "name": "Portal",
+    "id": "OATH-058",
+    "description": "Spend no Supply and **ignore** the powers of sites if you're traveling to or from this site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Billowing%20Fog.webp",
+    "name": "Billowing Fog",
+    "id": "OATH-059",
+    "description": "If you're defeated, kill no warbands in your force. **Ignore** powers that kill all of your force.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Kindred%20Warriors.webp",
+    "name": "Kindred Warriors",
+    "id": "OATH-060",
+    "description": "Ignore all skulls `symbol:skull` you roll. ±X `symbol:dicer` up to the number of other suits you rule.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Terror%20Spells.webp",
+    "name": "Terror Spells",
+    "id": "OATH-061",
+    "description": "**Action**: Kill any two warbands in your region _(at sites or on boards, even yours)_ if you hold the Darkest Secret.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Blood%20Pact.webp",
+    "name": "Blood Pact",
+    "id": "OATH-062",
+    "description": "**Action**: Sacrifice an even number of warbands on your board. For every two you sacrifice, gain `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Revelation.webp",
+    "name": "Revelation",
+    "id": "OATH-063",
+    "description": "**When Played**, each player, following turn order, may burn any number of `symbol:favor` to gain an equal number of `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Observatory.webp",
+    "name": "Observatory",
+    "id": "OATH-064",
+    "description": "While your pawn is here, you may draw from any one discard pile.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Plague%20Engines.webp",
+    "name": "Plague Engines",
+    "id": "OATH-065",
+    "description": "**Action**: Each player _(even you)_ places one `symbol:favor` per site they rule into the `symbol:suit-arcane` bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Gleaming%20Armor.webp",
+    "name": "Gleaming Armor",
+    "id": "OATH-066",
+    "description": "Your enemy's battle plans have an added cost of `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bewitch.webp",
+    "name": "Bewitch",
+    "id": "OATH-067",
+    "description": "**When Played**, if you're an Exile and have more `symbol:secret` _(even on cards)_ than the Chancellor, you may become a Citizen- take no relic, end your Act Phase, and refresh Supply to full.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Jinx.webp",
+    "name": "Jinx",
+    "id": "OATH-068",
+    "description": "If you rule Jinx, after you roll `symbol:dicer` or `symbol:diceb` for any reason, you may use this power to reroll all those dice once. _(This is not a battle plan!)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tutor.webp",
+    "name": "Tutor",
+    "id": "OATH-069",
+    "description": "**Action**: Gain `symbol:secret`",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Dream%20Thief.webp",
+    "name": "Dream Thief",
+    "id": "OATH-070",
+    "description": "**Action**: Swap any two facedown advisers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Cracking%20Ground.webp",
+    "name": "Cracking Ground",
+    "id": "OATH-071",
+    "description": "± `symbol:dicer` per site targeted.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Sealing%20Ward.webp",
+    "name": "Sealing Ward",
+    "id": "OATH-072",
+    "description": "Your relics add one more `symbol:diceb` when targeted.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Initiation%20Rite.webp",
+    "name": "Initiation Rite",
+    "id": "OATH-073",
+    "description": "To muster, you **must** place `symbol:secret` instead of `symbol:favor`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Silence.webp",
+    "name": "Vow of Silence",
+    "id": "OATH-074",
+    "description": "You **cannot** recover the Darkest Secret or give anyone `symbol:secret`. Whenever a player recovers it, you gain X `symbol:secret` equal to the number of `symbol:secret` they placed.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Forgotten%20Vault.webp",
+    "name": "Forgotten Vault",
+    "id": "OATH-075",
+    "description": "**Action**: Place `symbol:secret` from the shared bank on the Darkest Secret, or burn `symbol:secret` from the Darkest Secret _(not last `symbol:secret`)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Map%20Library.webp",
+    "name": "Map Library",
+    "id": "OATH-076",
+    "description": "While your pawn is at this site, you may trade with a card at any site in your region.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Witch's%20Bargain.webp",
+    "name": "Witch's Bargain",
+    "id": "OATH-077",
+    "description": "**Action**: Give `symbol:secret` to a player whose pawn is at your site to take `symbol:favor` `symbol:favor` from them, or give `symbol:favor` `symbol:favor` for `symbol:secret`, any number of times.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Master%20of%20Disguise.webp",
+    "name": "Master of Disguise",
+    "id": "OATH-078",
+    "description": "Act as if you had another player's advisers instead. _(You can't use your other advisers.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Charlatan.webp",
+    "name": "Charlatan",
+    "id": "OATH-079",
+    "description": "**When Played**, burn all `symbol:secret` but one from the Darkest Secret.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Assassin.webp",
+    "name": "Assassin",
+    "id": "OATH-080",
+    "description": "You can only have two advisers. **Action**: Discard a faceup adviser of a player whose pawn is at your site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Downtrodden.webp",
+    "name": "Downtrodden",
+    "id": "OATH-081",
+    "description": "Gain two more warbands if mustering on a card whose favor bank has the least `symbol:favor` _(not tied)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Blackmail.webp",
+    "name": "Blackmail",
+    "id": "OATH-082",
+    "description": "**When Played**, choose a relic held by a player whose pawn is at your site. You take the relic unless they give you `symbol:favor` `symbol:favor` `symbol:favor`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Cracked%20Sage.webp",
+    "name": "Cracked Sage",
+    "id": "OATH-083",
+    "description": "±4 `symbol:dicer` if your enemy has an `symbol:suit-arcane` adviser.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Dissent.webp",
+    "name": "Dissent",
+    "id": "OATH-084",
+    "description": "**When Played**, each player, except the holder of the People's Favor, places one `symbol:favor` on this card for each suit of card they rule.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/False%20Prophet.webp",
+    "name": "False Prophet",
+    "id": "OATH-085",
+    "description": "**When Played**, if you're an Exile, gain one warband and put it on any revealed Vision. You now also have it revealed. If it is ever discarded, kill the warband and play or discard the Vision as if you had searched.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Renewal.webp",
+    "name": "Vow of Renewal",
+    "id": "OATH-086",
+    "description": "You **cannot** recover the People's Favor. Whenever any player burns `symbol:favor`, you take the `symbol:favor` instead.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Zealots.webp",
+    "name": "Zealots",
+    "id": "OATH-087",
+    "description": "If the defending force is larger than your force, each warband you sacrifice will add three _(not one)_ to your attack.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Royal%20Ambitions.webp",
+    "name": "Royal Ambitions",
+    "id": "OATH-088",
+    "description": "**When Played**, if you're an Exile and rule more sites than the Chancellor, you may become a Citizen- take any one Reliquary relic without peeking, end your Act Phase, and refresh Supply to full.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Salt%20the%20Earth.webp",
+    "name": "Salt the Earth",
+    "id": "OATH-089",
+    "description": "You **cannot** play Salt the Earth to a site with any locked cards. **When Played**, ignore this site's capacity. Discard all other denizens at this site. This site's capacity is now 1.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Beast%20Tamer.webp",
+    "name": "Beast Tamer",
+    "id": "OATH-090",
+    "description": "Enemies cannot use `symbol:suit-beast` or `symbol:suit-nomad` battle plans against you.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Riots.webp",
+    "name": "Riots",
+    "id": "OATH-091",
+    "description": "**When Played**, if the People's Favor is on the Mob side, discard all other cards of the most common suit on the map. If there is a tie, you choose among the tied suits.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Silver%20Tongue.webp",
+    "name": "Silver Tongue",
+    "id": "OATH-092",
+    "description": "You can only have two advisers. **Rest**: Take `symbol:favor` from a favor bank matching a card at your site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Gambling%20Hall.webp",
+    "name": "Gambling Hall",
+    "id": "OATH-093",
+    "description": "**Action**: Roll 4 `symbol:diceb` and take X `symbol:favor` equal to the total `symbol:shield` result from any one favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Boiling%20Lake.webp",
+    "name": "Boiling Lake",
+    "id": "OATH-094",
+    "description": "If you travel to this site and do not rule this card, you **must** kill two warbands on your board if able.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Relic%20Thief.webp",
+    "name": "Relic Thief",
+    "id": "OATH-095",
+    "description": "After a player takes any relics and their pawn is in your region, you may use this power to roll one `symbol:diceb` per relic taken. If you roll no `symbol:shield` / `symbol:shield` `symbol:shield`, take the relics.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Enchantress.webp",
+    "name": "Enchantress",
+    "id": "OATH-096",
+    "description": "**Action**: Swap this card with any faceup adviser.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Insomnia.webp",
+    "name": "Insomnia",
+    "id": "OATH-097",
+    "description": "You can only have two advisers. **Rest**: Gain `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Sneak%20Attack.webp",
+    "name": "Sneak Attack",
+    "id": "OATH-098",
+    "description": "After another player's campaign, you may campaign, spending no Supply, if you declare them as the defender.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Gossip.webp",
+    "name": "Gossip",
+    "id": "OATH-099",
+    "description": "Enemies of Gossip's ruler **cannot** play cards as facedown advisers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bandit%20Chief.webp",
+    "name": "Bandit Chief",
+    "id": "OATH-100",
+    "description": "**When Played**, kill one warband at each site. While Bandit Chief is faceup, each site has two more bandits.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Chaos%20Cult.webp",
+    "name": "Chaos Cult",
+    "id": "OATH-101",
+    "description": "After another player takes the Oathkeeper title, you take `symbol:favor` from them.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Slander.webp",
+    "name": "Slander",
+    "id": "OATH-102",
+    "description": "If you're victorious and targeted the defender's pawn, they burn all of the `symbol:favor` on their board _(not half)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Code%20of%20Honor.webp",
+    "name": "Code of Honor",
+    "id": "OATH-103",
+    "description": "±2 `symbol:dicer` but you **cannot** use other battle plans.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Outriders.webp",
+    "name": "Outriders",
+    "id": "OATH-104",
+    "description": "Ignore all skulls `symbol:skull` you roll.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Messenger.webp",
+    "name": "Messenger",
+    "id": "OATH-105",
+    "description": "**Action**: Move any warbands to and from your board and any sites you rule _(except the last warband from a site)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Field%20Promotion.webp",
+    "name": "Field Promotion",
+    "id": "OATH-106",
+    "description": "If you're victorious, gain three warbands.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Palanquin.webp",
+    "name": "Palanquin",
+    "id": "OATH-107",
+    "description": "**Action**: Choose a player whose pawn is at your site. Put your pawn on a site that they can travel to. Make them travel to that site, spending no Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Shield%20Wall.webp",
+    "name": "Shield Wall",
+    "id": "OATH-108",
+    "description": "+2 `symbol:diceb` If you're defeated, **kill** all of your force.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Military%20Parade.webp",
+    "name": "Military Parade",
+    "id": "OATH-109",
+    "description": "If you're victorious, gain `symbol:favor` from the favor banks matching each adviser of your enemy _(including Imperial Allies)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tome%20Guardians.webp",
+    "name": "Tome Guardians",
+    "id": "OATH-110",
+    "description": "Enemies of Tome Guardians' ruler **cannot** target or take the Darkest Secret in any way.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tyrant.webp",
+    "name": "Tyrant",
+    "id": "OATH-111",
+    "description": "You **must** kill a warband _(even your own)_ at the site you travel to, if able.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Forced%20Labor.webp",
+    "name": "Forced Labor",
+    "id": "OATH-112",
+    "description": "Enemies **cannot** search if their pawn is at any site ruled by Forced Labor's ruler unless they give `symbol:favor` to its ruler. _(Give it to Chancellor if Empire, burn it if bandits.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Secret%20Police.webp",
+    "name": "Secret Police",
+    "id": "OATH-113",
+    "description": "Enemies **cannot** play Visions faceup while their pawn is at any site ruled by Secret Police's ruler.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Specialist.webp",
+    "name": "Specialist",
+    "id": "OATH-114",
+    "description": "The defender **cannot** use battle plans.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Captains.webp",
+    "name": "Captains",
+    "id": "OATH-115",
+    "description": "**Action**: Campaign at any site you rule. Act as if your pawn is there. Spend no Supply and add your warbands there to your force.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Siege%20Engines.webp",
+    "name": "Siege Engines",
+    "id": "OATH-116",
+    "description": "**Action**: Kill two warbands _(even yours)_ at any one site in your region.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Royal%20Tax.webp",
+    "name": "Royal Tax",
+    "id": "OATH-117",
+    "description": "**When Played**: take `symbol:favor` `symbol:favor` from each player whose pawn is at a site you rule in your pawn's region.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Toll%20Roads.webp",
+    "name": "Toll Roads",
+    "id": "OATH-118",
+    "description": "Enemies **cannot** travel to sites ruled by Toll Roads' ruler unless they give `symbol:favor` to its ruler. _(Give it to Chancellor if Empire, burn it if bandits.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Curfew.webp",
+    "name": "Curfew",
+    "id": "OATH-119",
+    "description": "Enemies **cannot** trade with cards ruled by Curfew's ruler unless they give `symbol:favor` to its ruler. _(Give it to Chancellor if Empire, burn it if bandits.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Knights%20Errant.webp",
+    "name": "Knights Errant",
+    "id": "OATH-120",
+    "description": "After mustering, you may campaign, spending no Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Obedience.webp",
+    "name": "Vow of Obedience",
+    "id": "OATH-121",
+    "description": "You **cannot** play Visions faceup. **Rest**: Take `symbol:favor` from any one favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Hunting%20Party.webp",
+    "name": "Hunting Party",
+    "id": "OATH-122",
+    "description": "After searching the world deck, you may campaign, spending no Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Council%20Seat.webp",
+    "name": "Council Seat",
+    "id": "OATH-123",
+    "description": "If you're a Citizen, you **cannot** be exiled, even by yourself.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Encirclement.webp",
+    "name": "Encirclement",
+    "id": "OATH-124",
+    "description": "±2 `symbol:dicer` if your force is larger than your enemy's.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Peace%20Envoy.webp",
+    "name": "Peace Envoy",
+    "id": "OATH-125",
+    "description": "You **cannot** use other battle plans. If your enemy's pawn is at your site, give them one `symbol:favor` per `symbol:diceb` in the pool. You're victorious now. **Ignore** killing warbands.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Relic%20Hunter.webp",
+    "name": "Relic Hunter",
+    "id": "OATH-126",
+    "description": "You may target facedown relics at targeted sites, adding 1 `symbol:diceb` per relic. You may put any relics you take on the bottom of the relic deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Homesteaders.webp",
+    "name": "Homesteaders",
+    "id": "OATH-127",
+    "description": "**Action**: Move one of your faceup advisers to your site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Crop%20Rotation.webp",
+    "name": "Crop Rotation",
+    "id": "OATH-128",
+    "description": "If playing to a site, you may discard a denizen there first.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/A%20Round%20of%20Ale.webp",
+    "name": "A Round of Ale",
+    "id": "OATH-129",
+    "description": "**Action**: Return all `symbol:favor` and `symbol:secret`, and flip your `symbol:secret`, as in the Rest Phase, except for the `symbol:favor` here.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Land%20Warden.webp",
+    "name": "Land Warden",
+    "id": "OATH-130",
+    "description": "You may play two cards you draw _(instead of one)_ if you play at least one card to a site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Charming%20Friend.webp",
+    "name": "Charming Friend",
+    "id": "OATH-131",
+    "description": "**Action**: Take `symbol:favor` from a player whose pawn is at your site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Village%20Constable.webp",
+    "name": "Village Constable",
+    "id": "OATH-132",
+    "description": "±2 `symbol:dicer` unless your enemy has the People's Favor.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Family%20Heirloom.webp",
+    "name": "Family Heirloom",
+    "id": "OATH-133",
+    "description": "**When Played**, draw a relic. Take it or put it on the bottom of the relic deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/News%20from%20Afar.webp",
+    "name": "News from Afar",
+    "id": "OATH-134",
+    "description": "Spend no Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Levelers.webp",
+    "name": "Levelers",
+    "id": "OATH-135",
+    "description": "**Action**: Move `symbol:favor` `symbol:favor` from the favor bank from the most `symbol:favor` to that with the least `symbol:favor`. You decide ties.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Fabled%20Feast.webp",
+    "name": "Fabled Feast",
+    "id": "OATH-136",
+    "description": "**When Played**, take X `symbol:favor` equal to the number of `symbol:suit-hearth` cards you rule _(including Fabled Feast)_ from any one favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/The%20Great%20Levy.webp",
+    "name": "The Great Levy",
+    "id": "OATH-137",
+    "description": "±3 `symbol:dicer` and **ignore** all skulls `symbol:skull` you roll, unless your enemy has the People's Favor.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Hearts%20and%20Minds.webp",
+    "name": "Hearts and Minds",
+    "id": "OATH-138",
+    "description": "As defender, you're victorious now. At end, discard Hearts and Minds unless you hold the People's Favor.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Relic%20Breaker.webp",
+    "name": "Relic Breaker",
+    "id": "OATH-139",
+    "description": "**Action**: Put a facedown relic at your site on the bottom of the relic deck to gain three warbands.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Book%20Binders.webp",
+    "name": "Book Binders",
+    "id": "OATH-140",
+    "description": "After another player plays a Vision faceup, you gain `symbol:favor` `symbol:favor` from any one favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ballot%20Box.webp",
+    "name": "Ballot Box",
+    "id": "OATH-141",
+    "description": "**Action**: If you're an Exile and have the People's Favor, become a Citizen- take no relic, end your Act Phase, and refresh Supply to full.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Saddle%20Makers.webp",
+    "name": "Saddle Makers",
+    "id": "OATH-142",
+    "description": "After another player plays a `symbol:suit-nomad` or `symbol:suit-order` card, you gain `symbol:favor` `symbol:favor` from the matching favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Herald.webp",
+    "name": "Herald",
+    "id": "OATH-143",
+    "description": "After another player campaigns against a player _(not bandits)_, you gain `symbol:favor` from any favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Rowdy%20Pub.webp",
+    "name": "Rowdy Pub",
+    "id": "OATH-144",
+    "description": "Gain one more warband if mustering from Rowdy Pub.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Peace.webp",
+    "name": "Vow of Peace",
+    "id": "OATH-145",
+    "description": "You **cannot** campaign. Attackers **cannot** sacrifice warbands to increase their attack against you.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Deed%20Writer.webp",
+    "name": "Deed Writer",
+    "id": "OATH-146",
+    "description": "**Action**: Negotiate a binding exchange of `symbol:favor`, `symbol:secret`, and ruled sites with any player. Old ruler moves warbands to board, and new ruler moves warbands from board.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Salad%20Days.webp",
+    "name": "Salad Days",
+    "id": "OATH-147",
+    "description": "**When Played**, gain `symbol:favor` `symbol:favor` `symbol:favor`- one each from three different favor banks.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Marriage.webp",
+    "name": "Marriage",
+    "id": "OATH-148",
+    "description": "Marriage counts as two `symbol:suit-hearth` advisers, but only counts as one toward your adviser limit.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Hospital.webp",
+    "name": "Hospital",
+    "id": "OATH-149",
+    "description": "If any of your warbands would be killed, place them on Hospital's site instead if you still rule it.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Awaited%20Return.webp",
+    "name": "Awaited Return",
+    "id": "OATH-150",
+    "description": "Spend no Supply if you sacrifice one warband from your board.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Convoys.webp",
+    "name": "Convoys",
+    "id": "OATH-151",
+    "description": "**Action**: Take another region's discard pile and put it on top of your region's discard pile _(even if empty)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Kinship.webp",
+    "name": "Vow of Kinship",
+    "id": "OATH-152",
+    "description": "Move all of your `symbol:favor` to the `symbol:suit-nomad` bank. Any `symbol:favor` you gain or take is put in the `symbol:suit-nomad` bank. You can use `symbol:favor` in the `symbol:suit-nomad` bank as if it is on your board.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wild%20Mounts.webp",
+    "name": "Wild Mounts",
+    "id": "OATH-153",
+    "description": "If you would discard any number of `symbol:suit-nomad` battle plans, you may instead discard any one `symbol:suit-beast` you rule.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Lancers.webp",
+    "name": "Lancers",
+    "id": "OATH-154",
+    "description": "Double your total attack roll. At end, discard Lancers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Mountain%20Giant.webp",
+    "name": "Mountain Giant",
+    "id": "OATH-155",
+    "description": "±1 `symbol:dicer` or ±3. At end, discard.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Rival%20Khan.webp",
+    "name": "Rival Khan",
+    "id": "OATH-156",
+    "description": "±4 `symbol:dicer` if your enemy has a `symbol:suit-nomad` adviser. At end, discard Rival Khan.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Lost%20Tongue.webp",
+    "name": "Lost Tongue",
+    "id": "OATH-157",
+    "description": "Other players **cannot** target or take your relics or banners in any way unless they rule a `symbol:suit-nomad` card.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Special%20Envoy.webp",
+    "name": "Special Envoy",
+    "id": "OATH-158",
+    "description": "Spend no Supply. After traveling, end your Act Phase.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Resettle.webp",
+    "name": "Resettle",
+    "id": "OATH-159",
+    "description": "**Action**: Move a faceup `symbol:suit-nomad` card from any player's advisers to any site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Oracle.webp",
+    "name": "Oracle",
+    "id": "OATH-160",
+    "description": "**Action**: Draw the Vision closest to the top of the world deck. Play or discard it as if you searched.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Pilgrimage.webp",
+    "name": "Pilgrimage",
+    "id": "OATH-161",
+    "description": "**When Played**, move all denizens at your site to the Dispossessed. Shuffle and draw denizens from the Dispossessed equal to the number you moved. Peek at them and put them on your region's discard pile.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Spell%20Breaker.webp",
+    "name": "Spell Breaker",
+    "id": "OATH-162",
+    "description": "Enemies of Spell Breaker's ruler **cannot** use powers that cost any `symbol:secret` or `symbol:secretb`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Mounted%20Patrol.webp",
+    "name": "Mounted Patrol",
+    "id": "OATH-163",
+    "description": "The attacker rolls only half the `symbol:dicer` in their attack pool, rounded down. At end, discard Mounted Patrol.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Great%20Crusade.webp",
+    "name": "Great Crusade",
+    "id": "OATH-164",
+    "description": "± `symbol:dicer` per `symbol:suit-nomad` card you rule. At end, discard Great Crusade.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ancient%20Bloodline.webp",
+    "name": "Ancient Bloodline",
+    "id": "OATH-165",
+    "description": "Your enemies act as if denizens and relics at sites you rule are **locked**.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ancient%20Pact.webp",
+    "name": "Ancient Pact",
+    "id": "OATH-166",
+    "description": "**When Played**, you may give the Chancellor the Darkest Secret to become a Citizen- take any one Reliquary relic without peeking, end your Act Phase, and refresh Supply to full.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Storm%20Caller.webp",
+    "name": "Storm Caller",
+    "id": "OATH-167",
+    "description": "+2 `symbol:diceb` At end, discard Storm Caller.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Family%20Wagon.webp",
+    "name": "Family Wagon",
+    "id": "OATH-168",
+    "description": "You can only have one adviser that is not a `symbol:suit-nomad`. You can have any number of `symbol:suit-nomad` advisers- they **ignore** your adviser limit.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Way%20Station.webp",
+    "name": "Way Station",
+    "id": "OATH-169",
+    "description": "Spend no Supply if you're traveling to this site and either rule Way Station or choose to give `symbol:favor` to its ruler. _(Give it to Chancellor if Empire, burn it if bandits.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Twin%20Brother.webp",
+    "name": "Twin Brother",
+    "id": "OATH-170",
+    "description": "**When Played**, you may swap this card with a faceup `symbol:suit-nomad` adviser of another player.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Hospitality.webp",
+    "name": "Hospitality",
+    "id": "OATH-171",
+    "description": "After traveling, gain `symbol:favor` from one favor bank that matches both a card at your site and one of your advisers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/A%20Fast%20Steed.webp",
+    "name": "A Fast Steed",
+    "id": "OATH-172",
+    "description": "Spend no Supply if you have three or fewer warbands on your board.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Relic%20Worship.webp",
+    "name": "Relic Worship",
+    "id": "OATH-173",
+    "description": "After you recover a relic, gain 3 Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Sacred%20Ground.webp",
+    "name": "Sacred Ground",
+    "id": "OATH-174",
+    "description": "Players **cannot** play Visions, except the Conspiracy, faceup, unless their pawn is at this site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Nature%20Worship.webp",
+    "name": "Nature Worship",
+    "id": "OATH-175",
+    "description": "± `symbol:dicer` per `symbol:suit-beast` adviser you have.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Birdsong.webp",
+    "name": "Birdsong",
+    "id": "OATH-176",
+    "description": "Spend no Supply if you're trading with a `symbol:suit-beast` or `symbol:suit-nomad` card.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Small%20Friends.webp",
+    "name": "Small Friends",
+    "id": "OATH-177",
+    "description": "Act as if your pawn is at any site with a `symbol:suit-beast` card. _(You may use Trade modifiers there.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Grasping%20Vines.webp",
+    "name": "Grasping Vines",
+    "id": "OATH-178",
+    "description": "Enemies traveling from any site ruled by Grasping Vines' ruler **must** kill one warband on their board if able.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Threatening%20Roar.webp",
+    "name": "Threatening Roar",
+    "id": "OATH-179",
+    "description": "**When Played**, discard all `symbol:suit-nomad` and `symbol:suit-beast` cards at sites in your region.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Fae%20Merchant.webp",
+    "name": "Fae Merchant",
+    "id": "OATH-180",
+    "description": "**Action**: Draw a relic and take it. Put any relic you hold except the Grand Scepter on the bottom of the relic deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Second%20Chance.webp",
+    "name": "Second Chance",
+    "id": "OATH-181",
+    "description": "**Action**: Kill one warband on the board of a player who has an `symbol:suit-order` or `symbol:suit-discord` adviser to gain one warband.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Pied%20Piper.webp",
+    "name": "Pied Piper",
+    "id": "OATH-182",
+    "description": "This card ignores the adviser limit. **Action**: Move this card to any other player's advisers. Take `symbol:favor` `symbol:favor` from them.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Mushrooms.webp",
+    "name": "Mushrooms",
+    "id": "OATH-183",
+    "description": "Spend no Supply, but draw only one card _(not three)_ from the bottom of your region's discard pile.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Insect%20Swarm.webp",
+    "name": "Insect Swarm",
+    "id": "OATH-184",
+    "description": "Your enemy's battle plans each have an added cost of `symbol:favorb`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Union.webp",
+    "name": "Vow of Union",
+    "id": "OATH-185",
+    "description": "In campaigns, warbands at sites you rule add to your attacking force. You **cannot** travel from a site you rule if any warbands are on your board.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Giant%20Python.webp",
+    "name": "Giant Python",
+    "id": "OATH-186",
+    "description": "Whenever a player attacks you, they **must** declare targets that add an even total _(2, 4, etc)_ of `symbol:diceb` to your defense pool.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/War%20Tortoise.webp",
+    "name": "War Tortoise",
+    "id": "OATH-187",
+    "description": "**Ignore** all attack or defense added by your enemy's rolls of `symbol:sword` `symbol:sword` `symbol:skull` or `symbol:shield` `symbol:shield`. _(Any `symbol:skull` they roll still kill their warbands.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/New%20Growth.webp",
+    "name": "New Growth",
+    "id": "OATH-188",
+    "description": "You may play `symbol:suit-beast` and `symbol:suit-hearth` cards to any site _(that has space)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wild%20Cry.webp",
+    "name": "Wild Cry",
+    "id": "OATH-189",
+    "description": "If you play a `symbol:suit-beast` card, gain 1 Supply and 2 warbands.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Animal%20Host.webp",
+    "name": "Animal Host",
+    "id": "OATH-190",
+    "description": "**When Played**, gain warbands equal to the total number of `symbol:suit-beast` cards _(including Animal Host)_ at any sites _(regardless of rule)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Memory%20of%20Nature.webp",
+    "name": "Memory of Nature",
+    "id": "OATH-191",
+    "description": "**Action**: Move a total of X `symbol:favor` from any favor banks to the `symbol:suit-beast` bank. X is the number of `symbol:suit-beast` cards on the map.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Marsh%20Spirit.webp",
+    "name": "Marsh Spirit",
+    "id": "OATH-192",
+    "description": "Players who target this site **cannot** use battle plans.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Poverty.webp",
+    "name": "Vow of Poverty",
+    "id": "OATH-193",
+    "description": "You **cannot** gain `symbol:favor` from Trade. **Rest**: If you have no `symbol:favor`, take `symbol:favor` `symbol:favor` from any one favor bank.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Forest%20Council.webp",
+    "name": "Forest Council",
+    "id": "OATH-194",
+    "description": "Enemies of Forest Council's rule **cannot** trade with or must from `symbol:suit-beast` cards.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Walled%20Garden.webp",
+    "name": "Walled Garden",
+    "id": "OATH-195",
+    "description": "± `symbol:diceb` per `symbol:suit-beast` at any sites if this site is targeted.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Beastkin.webp",
+    "name": "Vow of Beastkin",
+    "id": "OATH-196",
+    "description": "You **must** muster on a card that matching any of your advisers, but you gain one more warband.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bracken.webp",
+    "name": "Bracken",
+    "id": "OATH-197",
+    "description": "You may put all the cards you discard on the top or bottom of any one discard pile _(even your region's)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wild%20Allies.webp",
+    "name": "Wild Allies",
+    "id": "OATH-198",
+    "description": "**Action**: Campaign at any site with a `symbol:suit-beast` card. Act as if your pawn is there. Spend no Supply and add your warbands there to your force.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Sprawling%20Rampart.webp",
+    "name": "Sprawling Rampart",
+    "id": "OATH-199",
+    "description": "Each site ruled by Sprawling Rampart's ruler adds one more `symbol:diceb` when targeted.",
+    "tags": [
+      "Edifice"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bandit%20Rampart.webp",
+    "name": "Bandit Rampart",
+    "id": "OATH-200",
+    "description": "-2 `symbol:dicer` if this site is targeted.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Hall%20of%20Debate.webp",
+    "name": "Hall of Debate",
+    "id": "OATH-201",
+    "description": "Players **cannot** target the People's Favor",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Hall%20of%20Mockery.webp",
+    "name": "Hall of Mockery",
+    "id": "OATH-202",
+    "description": "Recovering the People's Favor always flips it to the Mob side.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Forest%20Temple.webp",
+    "name": "Forest Temple",
+    "id": "OATH-203",
+    "description": "In the Chronicle, do not discard sites with any `symbol:suit-beast` cards.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ruined%20Temple.webp",
+    "name": "Ruined Temple",
+    "id": "OATH-204",
+    "description": "Enemies of Ruined Temple's ruler **cannot** play `symbol:suit-beast` cards faceup.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Festival%20District.webp",
+    "name": "Festival District",
+    "id": "OATH-205",
+    "description": "**Action**: Negotiate a binding exchange of `symbol:favor`, `symbol:secret`, and advisers with any player.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Squalid%20District.webp",
+    "name": "Squalid District",
+    "id": "OATH-206",
+    "description": "Whenever the `symbol:dicer` is rolled to end the game, Squalid District's ruler may increase or decrease this roll by one. Citizens **cannot** use this power.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Great%20Spire.webp",
+    "name": "Great Spire",
+    "id": "OATH-207",
+    "description": "You may swap any number of denizens you draw with random cards from the Dispossessed.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Fallen%20Spire.webp",
+    "name": "Fallen Spire",
+    "id": "OATH-208",
+    "description": "**Action**: Swap up to five denizens from the top of your region's discard pile _(skipping Visions)_ with random cards from the Dispossessed.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ancient%20Forge.webp",
+    "name": "Ancient Forge",
+    "id": "OATH-209",
+    "description": "**Action**: Draw a relic. Take it or put it on the bottom of the relic deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Broken%20Forge.webp",
+    "name": "Broken Forge",
+    "id": "OATH-210",
+    "description": "**Action**: Flip this card over.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Sticky%20Fire.webp",
+    "name": "Sticky Fire",
+    "id": "OATH-211",
+    "description": "If you're victorious, you may kill all the warbands in your enemy's force. If you do, you **must** give them `symbol:favor` if able.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Cursed%20Cauldron.webp",
+    "name": "Cursed Cauldron",
+    "id": "OATH-212",
+    "description": "If you're victorious, gain one warband per enemy warband killed in this campaign.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Brass%20Horse.webp",
+    "name": "Brass Horse",
+    "id": "OATH-213",
+    "description": "**Action**: Reveal the top card of your discard pile. Travel to a site with a card of this suit. If unable, travel as normal. In either case, spend no Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Truthful%20Harp.webp",
+    "name": "Truthful Harp",
+    "id": "OATH-214",
+    "description": "You may choose to draw two more cards. If you do, you **must** reveal every card you draw and the card you keep.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Grand%20Mask.webp",
+    "name": "Grand Mask",
+    "id": "OATH-215",
+    "description": "If you're an Exile, during your turn you rule cards except battle plans at Imperial sites, and Imperial players do not.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Horned%20Mask.webp",
+    "name": "Horned Mask",
+    "id": "OATH-216",
+    "description": "**Action**: Swap one of your faceup advisers with a card at your site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Cup%20of%20Plenty.webp",
+    "name": "Cup of Plenty",
+    "id": "OATH-217",
+    "description": "Spend no Supply if you're trading with a card that matches any of your advisers.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Whistle.webp",
+    "name": "Whistle",
+    "id": "OATH-218",
+    "description": "**Action**: Choose a pawn at another site. they **must** travel to your site if able, spending no Supply. If they do, give them the `symbol:secret` here.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Dowsing%20Sticks.webp",
+    "name": "Dowsing Sticks",
+    "id": "OATH-219",
+    "description": "Dowsing Sticks",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Cracked%20Horn.webp",
+    "name": "Cracked Horn",
+    "id": "OATH-220",
+    "description": "You may put all the cards you discard on the bottom of the world deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bandit%20Crown.webp",
+    "name": "Bandit Crown",
+    "id": "OATH-221",
+    "description": "Act as if bandits are your warbands except at sites ruled by enemies. _(You rule empty sites.)_ They **cannot** be killed, moved, or sacrificed.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ring%20of%20Devotion.webp",
+    "name": "Ring of Devotion",
+    "id": "OATH-222",
+    "description": "You **cannot** place warbands at sites. When mustering, you gain two more warbands.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Skeleton%20Key.webp",
+    "name": "Skeleton Key",
+    "id": "OATH-223",
+    "description": "**Action**: If the Chancellor rules your site, peek at any one relic in the Imperial Reliquary, and you may take it.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Oracular%20Pig.webp",
+    "name": "Oracular Pig",
+    "id": "OATH-224",
+    "description": "**Action**: Peek at the top three cards of the world deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Circlet%20of%20Command.webp",
+    "name": "Circlet of Command",
+    "id": "OATH-225",
+    "description": "Players **cannot** target or take your banners or your other relics. In campaigns, banishing your pawn and favor adds one more `symbol:diceb`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ivory%20Eye.webp",
+    "name": "Ivory Eye",
+    "id": "OATH-226",
+    "description": "**Action**: Peek at any facedown site, adviser, or relic at any site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Map.webp",
+    "name": "Map",
+    "id": "OATH-227",
+    "description": "**Action**: Put this relic on the bottom of the relic deck to gain 4 Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Obsidian%20Cage.webp",
+    "name": "Obsidian Cage",
+    "id": "OATH-228",
+    "description": "If you're victorious, move all unkilled warbands in your enemy's force to the Obsidian Cage. **Action**: Move any number of warbands from Obsidian Cage to any board of the same color.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Book%20of%20Records.webp",
+    "name": "Book of Records",
+    "id": "OATH-229",
+    "description": "You **must** gain `symbol:secret` instead of `symbol:favor` when you play to a site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Dragonskin%20Drum.webp",
+    "name": "Dragonskin Drum",
+    "id": "OATH-230",
+    "description": "After traveling, gain one warband.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/The%20Grand%20Scepter.webp",
+    "name": "The Grand Scepter",
+    "id": "OATH-231",
+    "description": "You cannot use this if you took it on this turn. **Action**: Peek in the Imperial Reliquary. **Action**: Offer Citizenship to any Exile, or exile a Citizen except yourself.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Conspiracy.webp",
+    "name": "Conspiracy",
+    "id": "OATH-232",
+    "description": "_If drawn from the world deck, increase Visions Drawn. **Anyone** can play his face up._ **When Played**: You may burn `symbol:secret` to take one relic or banner from a player whose pawn is at your site. If it's a banner, it burns `symbol:favor` `symbol:favor` / `symbol:secret` `symbol:secret`. To do so, you **must** have at least two advisers whose suits match any of their adviers. Return this card to the box.",
+    "tags": [
+      "Vision"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vision%20of%20Faith.webp",
+    "name": "Vision of Faith",
+    "id": "OATH-233",
+    "description": "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you hold the Darkest Secret and at least three visions have been drawn from the deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vision%20of%20Rebellion.webp",
+    "name": "Vision of Rebellion",
+    "id": "OATH-234",
+    "description": "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you hold the People's Favor and at least three visions have been drawn from the deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vision%20of%20Sanctuary.webp",
+    "name": "Vision of Sanctuary",
+    "id": "OATH-235",
+    "description": "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you hold the most relics and banners, and at least three visions have been drawn from the deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vision%20of%20Conquest.webp",
+    "name": "Vision of Conquest",
+    "id": "OATH-236",
+    "description": "_If drawn from the world deck, increase Visions Drawn. **Exiles** can play this face up on their Revealed Vision space._ **Wake**: You win if you rule the most sites and at least three visions have been drawn from the deck.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ancient%20City.webp",
+    "name": "Ancient City",
+    "id": "OATH-237",
+    "description": "If you play an `symbol:suit-order` card to this site, and you have not discarded an `symbol:suit-order` card here during this turn, you get 2 warbands.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Barren%20Coast.webp",
+    "name": "Barren Coast",
+    "id": "OATH-238",
+    "description": "When traveling from here to a Coast site, the Travel cost is 1 Supply and you **ignore** the Narrow Pass tower.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Buried%20Giant.webp",
+    "name": "Buried Giant",
+    "id": "OATH-239",
+    "description": "When traveling from here, you may flip one secret on your board facedown to spend no Supply and **ignore** the Narrow Pass power. _(Facedown secrets cannot be used to pay a cost.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Charming%20Valley.webp",
+    "name": "Charming Valley",
+    "id": "OATH-240",
+    "description": "When traveling from here, increase the Travel cost by 1 Supply. _(For example, traveling from the Provinces costs 3 Supply, not 2 Supply.)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Deep%20Woods.webp",
+    "name": "Deep Woods",
+    "id": "OATH-241",
+    "description": "If you play a `symbol:suit-beast` card to this site, and you have not discarded a `symbol:suit-beast` card here during this turn, you take the relic here, treating this as recovering it.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Drowned%20City.webp",
+    "name": "Drowned City",
+    "id": "OATH-242",
+    "description": "At the end of your Wake Phase, if your pawn is here, you may take one `symbol:secret` from this site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Fertile%20Valley.webp",
+    "name": "Fertile Valley",
+    "id": "OATH-243",
+    "description": "If you play a `suit:heart` card to this site, and you have not discarded a `symbol:suit-hearth` card here during this turn, you get `symbol:favor`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Great%20Slum.webp",
+    "name": "Great Slum",
+    "id": "OATH-244",
+    "description": "When playing or moving a card to this site, you may discard a card here first.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/The%20Tribunal.webp",
+    "name": "The Tribunal",
+    "id": "OATH-245",
+    "description": "**Action**: If you rule this site or your pawn is here, negotiate a binding exchange of `symbol:favor` and `symbol:secret` as well as binding actions at any future time, in any combination, with any player. _(Be as creative as you want with your agreement and your agreed-upon penalties if someone breaks it!)_",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Lush%20Coast.webp",
+    "name": "Lush Coast",
+    "id": "OATH-246",
+    "description": "When traveling from here to a Coast site, the Travel cost is 1 Supply and you **ignore** the Narrow Pass power.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Marshes.webp",
+    "name": "Marshes",
+    "id": "OATH-247",
+    "description": "When searching, you **must** draw one fewer card if your pawn is here.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Mine.webp",
+    "name": "Mine",
+    "id": "OATH-248",
+    "description": "At the end of your Wake Phase, if your pawn is here, you may take one `symbol:favor` from this site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Mountain.webp",
+    "name": "Mountain",
+    "id": "OATH-249",
+    "description": "You **must** subtract one `symbol:dicer` if you declare any number of targets at this site _(even if you rule)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Narrow%20Pass.webp",
+    "name": "Narrow Pass",
+    "id": "OATH-250",
+    "description": "When traveling from another region to this region, you **must** Travel to this site. When campaigning, if you declare any targets in this region and your pawn is in a different region, you **must** target this site unless you rule it.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Plains.webp",
+    "name": "Plains",
+    "id": "OATH-251",
+    "description": "You **must** add one `symbol:dicer` if you declare any number of targets at this site _(even if you rule)_.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/River.webp",
+    "name": "River",
+    "id": "OATH-252",
+    "description": "When mustering from a card at this site, you gain one more warband if you rule this site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Rocky%20Coast.webp",
+    "name": "Rocky Coast",
+    "id": "OATH-253",
+    "description": "Rocky Coast",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Salt%20Flats.webp",
+    "name": "Salt Flats",
+    "id": "OATH-254",
+    "description": "At the end of your Wake Phase, if your pawn is here, you may take one `symbol:favor` or `symbol:secret` from this site.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Shrouded%20Wood.webp",
+    "name": "Shrouded Wood",
+    "id": "OATH-255",
+    "description": "When traveling from here, the Travel cost is 2 Supply, and you **ignore** the Narrow Pass and The Hidden Place powers. If an enemy rules here, you travel to the site of the ruler's choice _(Chancellor's choice if ruled by the Empire)_, even if another player is making you travel.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Standing%20Stones.webp",
+    "name": "Standing Stones",
+    "id": "OATH-256",
+    "description": "If you play an `symbol:suit-arcane` card to this site, and you have not discarded an `symbol:suit-arcane` card here during this turn, you get `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Steppe.webp",
+    "name": "Steppe",
+    "id": "OATH-257",
+    "description": "If you play a `symbol:suit-nomad` card to this site, and you have not discarded a `symbol:suit-nomad` card here during this turn, you get `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/The%20Hidden%20Place.webp",
+    "name": "The Hidden Place",
+    "id": "OATH-258",
+    "description": "You **cannot** travel to here or declare campaign targets here unless you flip one secret on your board facedown.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wastes.webp",
+    "name": "Wastes",
+    "id": "OATH-259",
+    "description": "If you play a `symbol:suit-discord` card to this site, and you have not discarded a `symbol:suit-discord` card here during this turn, you get take the relic here, treating this as recovering it.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Banner%20of%20the%20Darkest%20Secret.webp",
+    "name": "Banner of the Darkest Secret",
+    "id": "OATH-260",
+    "description": "**Recovery**: Players can only recover this from you if there is a card at your site whose suit does not match any of your advisers. _(You can recover it from yourself or the shared bank freely.)_ The new holder must place more `symbol:secret` than old `symbol:secret` here, then takes one `symbol:secret` from the old `symbol:secret` here, and the old holder takes the rest. **Search**: Spend 2 Supply if you're drawing from the world deck _(not the printed cost)_.",
+    "tags": [
+      "Reference"
+    ]
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Banner%20of%20the%20Mob's%20Favor.webp",
+    "name": "Banner of the Mob's Favor",
+    "id": "OATH-261",
+    "description": "**Recovery**: Put more `symbol:favor` here than old `symbol:favor`. Put old `symbol:favor` in the favor banks, one by one, starting with any suit. Then, flip this banner. **Wake**: You **must** put `symbol:favor` here or move `symbol:favor` here to the favor bank with the least `symbol:favor`. Do this twice. **Search**: When playing to site, you may first discard a denizen card at any site in your region, and you may play to any site in your region.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Banner%20of%20the%20People's%20Favor.webp",
+    "name": "Banner of the People's Favor",
+    "id": "OATH-262",
+    "description": "**Recovery**: Put more `symbol:favor` here than old `symbol:favor`. Put old `symbol:favor` in the favor banks, one by one, starting with any suit. **Wake**: You **must** put `symbol:favor` here or move `symbol:favor` here to the favor bank with the least `symbol:favor`. Then, if this banner has 6+ `symbol:favor`, flip it. **Search**: When playing to site, you may first discard a denizen card at any site in your region, and you may play to any site in your region.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Oathkeeper%20of%20Devotion.webp",
+    "name": "Oathkeeper of Devotion",
+    "id": "OATH-263",
+    "description": "Oathkeeper of Devotion holds the Darkest Secret. Successor to the Chancellor holds the Grand Scepter.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Oathkeeper%20of%20Protection.webp",
+    "name": "Oathkeeper of Protection",
+    "id": "OATH-264",
+    "description": "Oathkeeper of Protection holds the most relics and banners. Successor to the Chancellor holds the People's Favor.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Oathkeeper%20of%20Supremacy.webp",
+    "name": "Oathkeeper of Supremacy",
+    "id": "OATH-265",
+    "description": "Oathkeeper of Supremacy rules the most sites. Successor to the Chancellor holds more relics and banners.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Oathkeeper%20of%20the%20People.webp",
+    "name": "Oathkeeper of the People",
+    "id": "OATH-266",
+    "description": "Oathkeeper of the People holds the People's Favor. Successor to the Chancellor holds the Darkest Secret.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Brutal.webp",
+    "name": "Brutal",
+    "id": "OATH-267",
+    "description": "If you're the attacker, the defeated player _(even you)_ **must** kill all warbands in their force.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Careless.webp",
+    "name": "Careless",
+    "id": "OATH-268",
+    "description": "You gain one more `symbol:favor` _(even when trading for `symbol:secret`)_. You **must** gain one less `symbol:secret` when trading for `symbol:secret`.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Decadent.webp",
+    "name": "Decadent",
+    "id": "OATH-269",
+    "description": "Spend no Supply if you're traveling to a site in the Cradle from a site in the Provinces or Hinterland. If you're traveling to a site in the Hinterland, increase the Travel cost by 1 Supply.",
+    "tags": []
+  },
+  {
+    "image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Greedy.webp",
+    "name": "Greedy",
+    "id": "OATH-270",
+    "description": "Draw two more cards. _(Stop after a Vision as normal.)_ You **cannot** search if you would spend more than 2 Supply.",
+    "tags": []
+  }
+]
