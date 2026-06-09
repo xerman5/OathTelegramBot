@@ -1,8 +1,8 @@
 """
-send_weekly_digestv2.py (Versión 6 - Multi-part Fix & XML Sanitize)
+send_weekly_digestv2.py (Versión 7 - Token Limit & BGG Proxy Fix)
 ------------------------------------------------------------------
-Corrige el truncado uniendo todas las partes de la respuesta de Gemini,
-sanea los feeds de BGG y adopta un formato de viñetas ultra-limpio.
+Soluciona el truncado liberando el límite máximo de tokens de salida.
+Devuelve BGG a CodeTabs con saneamiento de strings y compacta el prompt.
 """
 
 import json
@@ -58,10 +58,15 @@ RSS_FEEDS = [
 # ── Utilidades HTTP ───────────────────────────────────────────────────────────
 def http_get(url: str, timeout: int = 15) -> bytes | None:
     target_url = url
-    domains_to_proxy = ["shutupandsitdown.com", "boardgamegeek.com", "kicktraq.com"]
-    if any(domain in url for domain in domains_to_proxy):
+    
+    # Enrutar SUSD al Cloudflare Worker privado
+    if "shutupandsitdown.com" in url:
         target_url = f"{CLOUDFLARE_WORKER_URL}/?url={urllib.parse.quote_plus(url)}"
         log.info(f"Enrutando via Cloudflare Worker: {url}")
+    # Enrutar BGG y Kickstarter a CodeTabs (Cloudflare da 403 en BGG)
+    elif "boardgamegeek.com" in url or "kicktraq.com" in url:
+        target_url = f"https://api.codetabs.com/v1/proxy?quest={urllib.parse.quote_plus(url)}"
+        log.info(f"Enrutando via CodeTabs Proxy: {url}")
 
     try:
         req = urllib.request.Request(
@@ -121,9 +126,9 @@ def fetch_rss_items(feed: dict) -> list[dict]:
     if not raw: return []
     items = []
     try:
-        # SOLUCIÓN AL INPUT DE BGG: Sanear caracteres '&' sueltos antes de parsear XML
+        # Sanear caracteres '&' sueltos que rompen BGG en proxies públicos
         xml_str = raw.decode("utf-8", errors="ignore")
-        xml_str = re.sub(r"&(?![a-zA-Z0-9#]+;)", "&amp;", xml_str)
+        xml_str = re.sub(r"&(?!amp;|lt;|gt;|quot;|apos;|#[0-9]+;)", "&amp;", xml_str)
         
         root = ET.fromstring(xml_str)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
@@ -157,19 +162,19 @@ def fetch_youtube_items(channel: dict) -> list[dict]:
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"]
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
-PROMPT_TEMPLATE = """Eres un asistente encargado de resumir las novedades semanales del ecosistema de Leder Games y Buried Giant Studios para el canal de Telegram "Oath España".
+PROMPT_TEMPLATE = """Eres un asistente encargado de resumir las novedades semanales del ecosistema de Leder Games (Oath, Arcs, Root, Vast, Ahoy...) para el canal de Telegram "Oath España".
 
-REGLAS DE FORMATO CRÍTICAS (SÉ ULTRA-CONCISO):
-1. PROHIBIDA LA PAJA. No incluyas saludos, introducciones, explicaciones ni textos de transición. Ve directo a la información.
+REGLAS DE FORMATO ESTRICTAS:
+1. No incluyas saludos, introducciones ni textos aclaratorios. Empieza directamente con el contenido.
 2. La primera línea debe ser exactamente: "Resumen de la semana de **Oath**, **Arcs**, **Root** y compañía:"
-3. Genera una lista organizada por temáticas o juegos usando únicamente guiones simples (`-`). 
-4. Cada línea debe seguir este formato estricto:
-   - [Título del contenido](URL): Breve descripción de una sola línea.
-5. Agrupa de forma inteligente o ignora contenidos repetitivos (como Shorts de YouTube idénticos) para mantener el boletín compacto y legible.
-6. NUNCA uses etiquetas HTML. Usa Markdown estándar para los enlaces: `[Texto](URL)`.
-7. Termina el mensaje con la línea exacta: "📅 Próximo resumen: miércoles que viene"
+3. Organiza los contenidos en una lista limpia agrupada por juegos o temáticas (ej: **Arcs**, **Root**, **Otros juegos** o **Shut Up & Sit Down**). Usa subtítulos simples si lo consideras necesario.
+4. Cada viñeta debe usar obligatoriamente un guion simple (`-`) y este formato:
+   - [Título adaptado o claro](URL): Breve descripción de una línea sobre lo que trata.
+5. Agrupa o consolida elementos si detectas múltiples vídeos de diarios de desarrollo o hilos redundantes del mismo tema, de forma que el boletín sea conciso pero incluya la información esencial.
+6. NUNCA utilices etiquetas HTML como <a> o <b>. Usa únicamente Markdown estándar.
+7. Termina el boletín con la línea exacta: "📅 Próximo resumen: miércoles que viene"
 
-LISTA DE CONTENIDOS DE LA SEMANA (USA LAS URLs PROVISTAS):
+LISTA DE ENLACES DISPONIBLES (USA LAS URLs PROVISTAS AL FINAL DE CADA LÍNEA):
 {items}
 """
 
@@ -180,7 +185,10 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
     
     payload = {
         "contents": [{"parts": [{"text": PROMPT_TEMPLATE.format(items=items_text)}]}],
-        "generationConfig": {"temperature": 0.1, "maxOutputTokens": 2048}
+        "generationConfig": {
+            "temperature": 0.2,
+            "maxOutputTokens": 8192  # CRÍTICO: Soluciona el error MAX_TOKENS aumentando el límite al máximo
+        }
     }
 
     for model in GEMINI_MODELS:
@@ -194,15 +202,13 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
             try:
                 candidate = result["candidates"][0]
                 parts = candidate.get("content", {}).get("parts", [])
-                
-                # SOLUCIÓN AL TRUNCADO: Concatenar todas las 'parts' de texto que devuelva Gemini
                 text = "".join([p.get("text", "") for p in parts])
                 reason = candidate.get("finishReason", "UNKNOWN")
                 
-                log.info(f"Gemini respondió con éxito ({len(text)} caracteres). Fin: {reason}")
+                log.info(f"Gemini respondió con éxito ({len(text)} caracteres). FinReason: {reason}")
                 return text
             except (KeyError, IndexError) as e:
-                log.error(f"Error parseando respuesta: {e}")
+                log.error(f"Error parseando respuesta de Gemini: {e}")
                 time.sleep(3)
                 continue
     return None
@@ -223,7 +229,7 @@ def build_message(summary: str, item_count: int) -> str:
     return header + body + footer
 
 def send_message(token: str, chat_id: str, text: str, thread_id: str = "") -> bool:
-    log.info(f"Enviando mensaje a Telegram...")
+    log.info(f"Enviando mensaje final a Telegram...")
     params = {"chat_id": chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": "true"}
     if thread_id: params["message_thread_id"] = thread_id
     try:
@@ -238,7 +244,7 @@ def send_message(token: str, chat_id: str, text: str, thread_id: str = "") -> bo
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main() -> None:
     if not all([TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, GEMINI_API_KEY]):
-        log.error("Faltan variables de entorno")
+        log.error("Faltan variables de entorno esenciales.")
         sys.exit(1)
 
     all_items = []
@@ -255,7 +261,7 @@ def main() -> None:
 
     ok = send_message(TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, build_message(summary, len(all_items)), TELEGRAM_THREAD_ID)
     if not ok:
-        log.error("Fallo definitivo al enviar el mensaje")
+        log.error("Fallo definitivo al enviar a Telegram")
         sys.exit(1)
     log.info("✅ Digest semanal enviado correctamente")
 
