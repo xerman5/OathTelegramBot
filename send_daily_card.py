@@ -8,12 +8,12 @@ Uso:
     python send_daily_card.py
 
 Variables de entorno requeridas (GitHub Secrets):
-    TELEGRAM_BOT_TOKEN   — token del bot (BotFather)
-    TELEGRAM_CHAT_ID     — canal/grupo destino (ej: "@oathespana" o "-1001234567890")
+    TELEGRAM_BOT_TOKEN   — token del bot 
+    TELEGRAM_CHAT_ID     — canal/grupo destino
 
 Variables opcionales:
-    TELEGRAM_THREAD_ID   — ID del topic en grupos con temas (ej: 143 para General)
-    CARDS_FILE           — ruta al JSON (por defecto: oath_cards.json)
+    TELEGRAM_THREAD_ID   — ID del topic en grupos con temas (
+    CARDS_FILE           — ruta al JSON 
 """
 
 import json
@@ -70,7 +70,7 @@ def pick_card(cards: list[dict]) -> dict:
 
 SYMBOL_MAP = {
     "symbol:favor":       "🪙",
-    "symbol:secret":      "🔮",
+    "symbol:secret":      "📖",
     "symbol:supply":      "📦",
     "symbol:diceb":       "🎲",
     "symbol:dicer":       "🎲",
