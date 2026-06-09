@@ -138,7 +138,7 @@ def http_get(url: str, timeout: int = 15) -> bytes | None:
     try:
         req = urllib.request.Request(
             url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; RSS reader)"},
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0"},
         )
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read()
@@ -274,6 +274,9 @@ def fetch_gamefound_items() -> list[dict]:
 
 # Modelos a probar en orden — si uno da 429 se prueba el siguiente
 GEMINI_MODELS = [
+    "gemini-3.5-flash",
+    "gemini-3.1-flash-lite",
+    "gemini-2.5-pro",
     "gemini-2.5-flash",
     "gemini-2.0-flash",
     "gemini-1.5-flash",
