@@ -122,21 +122,11 @@ RSS_FEEDS = [
         "emoji": "🎲",
     },
 
-    # ── Kickstarter via OpenRSS ─────────────────────────────────────────────
-    # openrss.org convierte cualquier búsqueda de Kickstarter en RSS gratuito
+    # ── Kickstarter via Kicktraq ────────────────────────────────────────────────
+    # Kicktraq genera RSS de Kickstarter por categoría (tabletop games)
     {
-        "name":  "Kickstarter — Leder Games",
-        "url":   "https://openrss.org/www.kickstarter.com/projects/search?q=leder+games",
-        "emoji": "🚀",
-    },
-    {
-        "name":  "Kickstarter — Buried Giant",
-        "url":   "https://openrss.org/www.kickstarter.com/projects/search?q=buried+giant",
-        "emoji": "🚀",
-    },
-    {
-        "name":  "Kickstarter — Cole Wehrle",
-        "url":   "https://openrss.org/www.kickstarter.com/projects/search?q=cole+wehrle",
+        "name":  "Kickstarter — Tabletop Games (nuevos)",
+        "url":   "https://www.kicktraq.com/categories/tabletop-games/rss/",
         "emoji": "🚀",
     },
 ]
@@ -148,7 +138,7 @@ def http_get(url: str, timeout: int = 15) -> bytes | None:
     try:
         req = urllib.request.Request(
             url,
-            headers={"User-Agent": "OathDigestBot/1.0"},
+            headers={"User-Agent": "Mozilla/5.0 (compatible; RSS reader)"},
         )
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read()
@@ -274,32 +264,9 @@ def fetch_youtube_items(channel: dict) -> list[dict]:
 
 
 def fetch_gamefound_items() -> list[dict]:
-    """Consulta la API pública de Gamefound buscando proyectos de Leder/Buried Giant."""
-    items = []
-    keywords = ["leder games", "buried giant", "oath", "cole wehrle"]
-    url = "https://gamefound.com/api/public/projects/search"
-
-    for kw in keywords:
-        params = urllib.parse.urlencode({"q": kw, "pageSize": 5})
-        raw = http_get(f"{url}?{params}")
-        if not raw:
-            continue
-        try:
-            data = json.loads(raw)
-            projects = data.get("projects") or data.get("items") or []
-            for p in projects:
-                items.append({
-                    "source": "Gamefound",
-                    "emoji":  "🎯",
-                    "title":  p.get("name") or p.get("title") or kw,
-                    "link":   f"https://gamefound.com/projects/{p.get('slug', '')}",
-                    "date":   p.get("launchDate") or p.get("createdAt") or "",
-                })
-        except (json.JSONDecodeError, KeyError):
-            pass
-
-    log.info(f"  Gamefound: {len(items)} proyectos encontrados")
-    return items
+    """Gamefound no tiene API pública estable — función desactivada por ahora."""
+    log.info("  Gamefound: desactivado (API sin documentación pública)")
+    return []
 
 # ── Resumen con Gemini ────────────────────────────────────────────────────────
 
