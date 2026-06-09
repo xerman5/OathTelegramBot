@@ -9,9 +9,9 @@ Sin dependencias externas — solo stdlib de Python 3.12.
 
 Variables de entorno (GitHub Secrets):
     TELEGRAM_BOT_TOKEN   — token del bot
-    TELEGRAM_CHAT_ID     — ej: "@oathespana"
-    TELEGRAM_THREAD_ID   — topic del grupo (ej: 143)
-    GEMINI_API_KEY       — Google AI Studio (gratuito)
+    TELEGRAM_CHAT_ID     — 
+    TELEGRAM_THREAD_ID   — 
+    GEMINI_API_KEY       — Google AI Studio
 """
 
 import json
@@ -39,7 +39,7 @@ TELEGRAM_THREAD_ID = os.environ.get("TELEGRAM_THREAD_ID", "")
 GEMINI_API_KEY     = os.environ.get("GEMINI_API_KEY", "")
 
 # Ventana de tiempo: últimos 7 días
-DAYS_BACK = 7
+DAYS_BACK = 30
 
 # ── Fuentes ───────────────────────────────────────────────────────────────────
 # Fácil de modificar: añade o quita entradas de estas listas
