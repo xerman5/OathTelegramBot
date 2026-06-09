@@ -217,7 +217,9 @@ def fetch_rss_items(feed: dict) -> list[dict]:
             for entry in entries:
                 title   = (entry.findtext("atom:title", namespaces=ns)
                            or entry.findtext("title") or "")
-                link_el = (entry.find("atom:link", ns) or entry.find("link"))
+                link_el = entry.find("atom:link", ns)
+        if link_el is None:
+            link_el = entry.find("link")
                 link    = link_el.get("href", "") if link_el is not None else ""
                 date    = (entry.findtext("atom:updated", namespaces=ns)
                            or entry.findtext("atom:published", namespaces=ns)
@@ -319,8 +321,8 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature":    0.4,
-            "maxOutputTokens": 1200,
+            "temperature":    0.5,
+            "maxOutputTokens": 4096,
         },
     }
 
@@ -344,13 +346,18 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
 
             # Respuesta recibida — intentar parsear
             try:
-                text = result["candidates"][0]["content"]["parts"][0]["text"]
+                log.info(f"Respuesta cruda de Gemini: {json.dumps(result)[:500]}")
+                candidate = result["candidates"][0]
+                # Comprobar finish_reason
+                finish = candidate.get("finishReason", "UNKNOWN")
+                log.info(f"finishReason: {finish}")
+                text = candidate["content"]["parts"][0]["text"]
                 log.info(f"Gemini respondió con {model} ({len(text)} caracteres)")
                 return text
             except (KeyError, IndexError) as e:
                 log.error(f"Error parseando respuesta de {model}: {e}")
-                log.error(f"Respuesta: {json.dumps(result)[:300]}")
-            break  # si llegamos aquí el resultado no era parseable, pasar al siguiente modelo
+                log.error(f"Respuesta completa: {json.dumps(result)[:800]}")
+            break
 
     log.error("Todos los modelos de Gemini fallaron.")
     return None
