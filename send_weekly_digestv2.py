@@ -1,11 +1,8 @@
 """
-send_weekly_digestv2.py
----------------------
+send_weekly_digestv2.py (Versión 3 - Antispam & Estructura Forzada)
+------------------------------------------------------------------
 Recopila novedades semanales del universo Leder Games / Buried Giant,
-las resume con Gemini y las publica en Telegram.
-
-Ejecutado desde GitHub Actions.
-Sin dependencias externas — solo stdlib de Python 3.12.
+las resume con Gemini mediante una plantilla estricta y publica en Telegram.
 """
 
 import json
@@ -34,7 +31,7 @@ GEMINI_API_KEY     = os.environ.get("GEMINI_API_KEY", "")
 
 DAYS_BACK = 30  # Ventana de tiempo en días
 
-# Tu URL de Cloudflare Worker (sin barra al final)
+# Tu URL de Cloudflare Worker
 CLOUDFLARE_WORKER_URL = "https://square-term-7f74.xermanpl.workers.dev"
 
 # ── Fuentes ───────────────────────────────────────────────────────────────────
@@ -44,7 +41,6 @@ YOUTUBE_CHANNELS = [
     {"name": "Shut Up & Sit Down",   "id": "UCyRhIGDUKdIOw07Pd8pHxCw"},
 ]
 
-# Modificado ligeramente el orden para su procesamiento
 RSS_FEEDS = [
     {"name": "Leder Games — Blog", "url": "https://feeds.feedburner.com/LederGames"},
     {"name": "Buried Giant Studios — Blog", "url": "https://buriedgiant.com/rss.xml"},
@@ -65,16 +61,14 @@ RSS_FEEDS = [
 def http_get(url: str, timeout: int = 15) -> bytes | None:
     target_url = url
     
-    # 1. SUSD funciona de lujo a través de tu Worker propio
     if "shutupandsitdown.com" in url:
         target_url = f"{CLOUDFLARE_WORKER_URL}/?url={urllib.parse.quote_plus(url)}"
         log.info(f"Enrutando via Cloudflare Worker: {url}")
         
-    # 2. BGG y Kicktraq rechazan peticiones cruzadas entre Workers de Cloudflare. 
-    #    Para ellos usamos un proxy de backend tradicional (AllOrigins)
     elif "boardgamegeek.com" in url or "kicktraq.com" in url:
-        target_url = f"https://api.allorigins.win/raw?url={urllib.parse.quote_plus(url)}"
-        log.info(f"Enrutando via AllOrigins Proxy: {url}")
+        # Cambiado a CodeTabs Proxy para evitar el bloqueo que sufrió AllOrigins
+        target_url = f"https://api.codetabs.com/v1/proxy/?quest={urllib.parse.quote_plus(url)}"
+        log.info(f"Enrutando via CodeTabs Proxy: {url}")
 
     try:
         req = urllib.request.Request(
@@ -121,7 +115,6 @@ def fetch_rss_items(feed: dict) -> list[dict]:
         root = ET.fromstring(raw)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
         
-        # Corrección del DeprecationWarning usando comprobaciones explícitas 'is not None'
         if "Atom" in root.tag or root.tag == "{http://www.w3.org/2005/Atom}feed":
             entries = root.findall("atom:entry", ns)
             if not entries:
@@ -150,25 +143,29 @@ def fetch_youtube_items(channel: dict) -> list[dict]:
     return fetch_rss_items({"name": f"YouTube — {channel['name']}", "url": f"https://www.youtube.com/feeds/videos.xml?channel_id={channel['id']}"})
 
 # ── Resumen con Gemini ────────────────────────────────────────────────────────
-# Reorganizados los modelos poniendo en cabeza el modelo actual 2.5-flash
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"]
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
-PROMPT_TEMPLATE = """Eres el editor de una newsletter semanal en español para el grupo de Telegram "Oath España", un grupo de aficionados a los juegos de mesa de Leder Games y Buried Giant Studios.
+# PROMPT REDISEÑADO CON ESTRUCTURA MILITAR EXPLICITA
+PROMPT_TEMPLATE = """Eres el redactor oficial de la newsletter semanal en español para el canal de Telegram "Oath España". Tu comunidad está compuesta por fans apasionados de los juegos de mesa de **Leder Games** y **Buried Giant Studios** (Oath, Root, Arcs, Pax Pamir, etc.).
 
-Tu tarea es redactar un resumen semanal bien desarrollado basándote en la lista de contenidos recientes.
+Tu objetivo es leer la lista de contenidos recientes provista al final y redactar un boletín informativo EXTENSO, con cuerpo, estructurado y muy entusiasta. No resumas todo en un párrafo genérico.
 
-INSTRUCCIONES IMPORTANTES:
-- Escribe SIEMPRE en español, con un tono cercano y entusiasta.
-- El resumen debe tener desarrollo y párrafos explicativos.
-- Para cada vídeo o artículo mencionado, describe brevemente de qué podría tratar basándote en el título.
-- Agrupa la información por secciones usando emojis: 📺 Vídeos, 🎲 Foros y Comunidad, 🚀 Crowdfunding (omite las vacías).
-- Usa **negrita** con doble asterisco para los nombres propios.
-- FORMATO DE ENLACES: Usa estrictamente Markdown: [Título](URL).
-- PROHIBICIÓN ABSOLUTA: NO escribas NINGUNA etiqueta HTML (<a>, <b>, <br>).
-- Termina siempre con: "📅 Próximo resumen: miércoles que viene"
+DEBES SEGUIR ESTA ESTRUCTURA OBLIGATORIA PASO A PASO:
 
-CONTENIDOS DE ESTA SEMANA:
+1. **Introducción**: Un saludo cercano y emocionante adaptado a la comunidad de estrategas de Oath España.
+2. **📺 SECCIÓN VÍDEOS Y DIARIOS DE DISEÑO**: Analiza los vídeos de YouTube provistos. Habla extensamente sobre el final de la campaña de Kickstarter de **Arcs: Beyond the Reach**, los diarios de diseño de **Buried Giant**, las charlas de estudio de **Leder Games** y el contenido reciente de **Shut Up & Sit Down** (menciona especialmente su reseña de 'Dirt & Dust'). Agrupa los vídeos por temáticas comunes y redacta párrafos descriptivos para cada una.
+3. **🎲 SECCIÓN COMUNIDAD Y FOROS**: Si en la lista ves hilos de BoardGameGeek (BGG), coméntalos. Si no aparecen hilos esta semana, haz una sección breve animando a los miembros del grupo a pasarse por los foros de BGG a generar debate sobre las expansiones de **Root** o las crónicas de **Oath**.
+4. **Cierre**: Termina OBLIGATORIAMENTE con la frase exacta: "📅 Próximo resumen: miércoles que viene"
+
+NORMAS DE FORMATO ESTRICTAS:
+- Escribe completamente en español.
+- Usa **negrita** con doble asterisco para resaltar los nombres de juegos y canales de contenido.
+- Para todos los enlaces que uses, emplea estrictamente el formato Markdown: [Título del Vídeo/Artículo](URL). No dejes URLs sueltas.
+- PROHIBICIÓN ABSOLUTA: No generes ninguna etiqueta HTML (como <a>, <b>, <br>).
+- Sé generoso en la extensión de los párrafos explicativos. No te dejes contenidos importantes fuera.
+
+LISTA DE CONTENIDOS DISPONIBLES ESTA SEMANA:
 {items}
 """
 
@@ -180,7 +177,8 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
     
     payload = {
         "contents": [{"parts": [{"text": PROMPT_TEMPLATE.format(items=items_text)}]}],
-        "generationConfig": {"temperature": 0.4, "maxOutputTokens": 4096}
+        # Temperatura bajada a 0.2 para evitar que la IA divague o recorte el texto a su antojo
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 4096}
     }
 
     for model in GEMINI_MODELS:
