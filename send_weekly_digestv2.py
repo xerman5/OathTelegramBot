@@ -1,8 +1,8 @@
 """
-send_weekly_digestv2.py (Versión 5 - URLs Corregidas & Cloudflare Routing)
---------------------------------------------------------------------------
-Recopila novedades semanales y las resume con Gemini en formato viñetas.
-Corrige el parseo XML que perdía los enlaces y unifica el proxy.
+send_weekly_digestv2.py (Versión 6 - Multi-part Fix & XML Sanitize)
+------------------------------------------------------------------
+Corrige el truncado uniendo todas las partes de la respuesta de Gemini,
+sanea los feeds de BGG y adopta un formato de viñetas ultra-limpio.
 """
 
 import json
@@ -30,8 +30,6 @@ TELEGRAM_THREAD_ID = os.environ.get("TELEGRAM_THREAD_ID", "")
 GEMINI_API_KEY     = os.environ.get("GEMINI_API_KEY", "")
 
 DAYS_BACK = 30  # Ventana de tiempo en días
-
-# Tu URL de Cloudflare Worker
 CLOUDFLARE_WORKER_URL = "https://square-term-7f74.xermanpl.workers.dev"
 
 # ── Fuentes ───────────────────────────────────────────────────────────────────
@@ -60,16 +58,15 @@ RSS_FEEDS = [
 # ── Utilidades HTTP ───────────────────────────────────────────────────────────
 def http_get(url: str, timeout: int = 15) -> bytes | None:
     target_url = url
-    
-    # Enrutamos por tu Cloudflare Worker los dominios que bloquean bots
-    if "shutupandsitdown.com" in url or "boardgamegeek.com" in url or "kicktraq.com" in url:
+    domains_to_proxy = ["shutupandsitdown.com", "boardgamegeek.com", "kicktraq.com"]
+    if any(domain in url for domain in domains_to_proxy):
         target_url = f"{CLOUDFLARE_WORKER_URL}/?url={urllib.parse.quote_plus(url)}"
         log.info(f"Enrutando via Cloudflare Worker: {url}")
 
     try:
         req = urllib.request.Request(
             target_url,
-            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"},
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
         )
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read()
@@ -90,7 +87,7 @@ def http_post_json(url: str, payload: dict, timeout: int = 30) -> dict | None:
 # ── Parseo de fechas RSS/Atom ─────────────────────────────────────────────────
 def parse_date(date_str: str) -> datetime | None:
     if not date_str: return None
-    formats = ["%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S GMT", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S.%f%z"]
+    formats = ["%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S GMT", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ"]
     for fmt in formats:
         try: return datetime.strptime(date_str.strip(), fmt)
         except ValueError: continue
@@ -102,43 +99,51 @@ def is_recent(date_str: str, days: int = DAYS_BACK) -> bool:
     if dt.tzinfo is None: dt = dt.replace(tzinfo=timezone.utc)
     return dt >= datetime.now(timezone.utc) - timedelta(days=days)
 
-# ── Recolección de fuentes ────────────────────────────────────────────────────
+# ── Extracción XML Segura ─────────────────────────────────────────────────────
+def get_node_text(element, tags, ns=None) -> str:
+    for tag in tags:
+        el = element.find(tag, ns) if ns and ":" in tag else element.find(tag)
+        if el is not None and el.text:
+            return el.text.strip()
+    return ""
+
+def get_node_link(element, tags, ns=None) -> str:
+    for tag in tags:
+        els = element.findall(tag, ns) if ns and ":" in tag else element.findall(tag)
+        for el in els:
+            href = el.get("href")
+            if href: return href
+            if el.text and "http" in el.text: return el.text.strip()
+    return ""
+
 def fetch_rss_items(feed: dict) -> list[dict]:
     raw = http_get(feed["url"])
     if not raw: return []
     items = []
     try:
-        root = ET.fromstring(raw)
+        # SOLUCIÓN AL INPUT DE BGG: Sanear caracteres '&' sueltos antes de parsear XML
+        xml_str = raw.decode("utf-8", errors="ignore")
+        xml_str = re.sub(r"&(?![a-zA-Z0-9#]+;)", "&amp;", xml_str)
+        
+        root = ET.fromstring(xml_str)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
         
         if "Atom" in root.tag or root.tag == "{http://www.w3.org/2005/Atom}feed":
-            entries = root.findall("atom:entry", ns)
-            if not entries: entries = root.findall("entry")
-            
+            entries = root.findall("atom:entry", ns) or root.findall("entry")
             for entry in entries:
-                # Titulo seguro
-                t_el = entry.find("atom:title", ns)
-                if t_el is None: t_el = entry.find("title")
-                title = (t_el.text or "").strip() if t_el is not None else ""
-                
-                # Enlace seguro (Evita el DeprecationWarning y recoge el href real)
-                l_el = entry.find("atom:link", ns)
-                if l_el is None: l_el = entry.find("link")
-                link = l_el.get("href", "") if l_el is not None else ""
-                
-                # Fecha segura
-                d_el = entry.find("atom:updated", ns)
-                if d_el is None: d_el = entry.find("atom:published", ns)
-                if d_el is None: d_el = entry.find("updated")
-                date = (d_el.text or "") if d_el is not None else ""
-                
-                if is_recent(date): items.append({"source": feed["name"], "title": title, "link": link})
+                title = get_node_text(entry, ["atom:title", "{http://www.w3.org/2005/Atom}title", "title"], ns)
+                link = get_node_link(entry, ["atom:link", "{http://www.w3.org/2005/Atom}link", "link"], ns)
+                date = get_node_text(entry, ["atom:updated", "atom:published", "updated"], ns)
+                if title and link and is_recent(date):
+                    items.append({"source": feed["name"], "title": title, "link": link})
         else:
             for item in root.iter("item"):
-                title = (item.findtext("title") or "").strip()
-                link = item.findtext("link") or ""
-                date = item.findtext("pubDate") or ""
-                if is_recent(date): items.append({"source": feed["name"], "title": title, "link": link})
+                title = get_node_text(item, ["title"])
+                link = get_node_link(item, ["link"])
+                date = get_node_text(item, ["pubDate", "date"])
+                if title and link and is_recent(date):
+                    items.append({"source": feed["name"], "title": title, "link": link})
+                    
     except ET.ParseError as e:
         log.warning(f"XML parse error for {feed['name']}: {e}")
     
@@ -152,20 +157,19 @@ def fetch_youtube_items(channel: dict) -> list[dict]:
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"]
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
-PROMPT_TEMPLATE = """Eres un asistente encargado de generar un resumen semanal ultra-conciso y limpio.
+PROMPT_TEMPLATE = """Eres un asistente encargado de resumir las novedades semanales del ecosistema de Leder Games y Buried Giant Studios para el canal de Telegram "Oath España".
 
-Tu único objetivo es procesar la lista de contenidos y estructurarla en una lista ordenada de viñetas agrupadas por juego.
+REGLAS DE FORMATO CRÍTICAS (SÉ ULTRA-CONCISO):
+1. PROHIBIDA LA PAJA. No incluyas saludos, introducciones, explicaciones ni textos de transición. Ve directo a la información.
+2. La primera línea debe ser exactamente: "Resumen de la semana de **Oath**, **Arcs**, **Root** y compañía:"
+3. Genera una lista organizada por temáticas o juegos usando únicamente guiones simples (`-`). 
+4. Cada línea debe seguir este formato estricto:
+   - [Título del contenido](URL): Breve descripción de una sola línea.
+5. Agrupa de forma inteligente o ignora contenidos repetitivos (como Shorts de YouTube idénticos) para mantener el boletín compacto y legible.
+6. NUNCA uses etiquetas HTML. Usa Markdown estándar para los enlaces: `[Texto](URL)`.
+7. Termina el mensaje con la línea exacta: "📅 Próximo resumen: miércoles que viene"
 
-REGLAS ESTRICTAS:
-1. PROHIBIDO cualquier texto introductorio de relleno.
-2. La primera línea del mensaje debe ser: "Resumen de la semana de **Oath**, **Arcs**, **Root** y compañía:"
-3. Usa este formato exacto para las viñetas:
-   - [Título del contenido]({url}): Descripción de 1 línea.
-   IMPORTANTE: Sustituye "{url}" por el enlace REAL que te proporciono en la lista. Si te doy un enlace de YouTube, úsalo.
-4. NO utilices HTML. Usa Markdown estándar: [Texto](Enlace) y **negritas**.
-5. Termina el mensaje con: "📅 Próximo resumen: miércoles que viene"
-
-LISTA DE CONTENIDOS DE LA SEMANA:
+LISTA DE CONTENIDOS DE LA SEMANA (USA LAS URLs PROVISTAS):
 {items}
 """
 
@@ -173,11 +177,10 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
     if not items: return None
     
     items_text = "\n".join([f"[{i['source']}] {i['title']} — {i['link']}" for i in items])
-    log.info(f"Items enviados a Gemini:\n{items_text}")
     
     payload = {
-        "contents": [{"parts": [{"text": PROMPT_TEMPLATE.format(items=items_text, url="{url}")}]}],
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 2048}
+        "contents": [{"parts": [{"text": PROMPT_TEMPLATE.format(items=items_text)}]}],
+        "generationConfig": {"temperature": 0.1, "maxOutputTokens": 2048}
     }
 
     for model in GEMINI_MODELS:
@@ -190,11 +193,16 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
                 continue
             try:
                 candidate = result["candidates"][0]
-                text = candidate["content"]["parts"][0]["text"]
-                log.info(f"Gemini respondió con éxito usando {model} ({len(text)} caracteres)")
+                parts = candidate.get("content", {}).get("parts", [])
+                
+                # SOLUCIÓN AL TRUNCADO: Concatenar todas las 'parts' de texto que devuelva Gemini
+                text = "".join([p.get("text", "") for p in parts])
+                reason = candidate.get("finishReason", "UNKNOWN")
+                
+                log.info(f"Gemini respondió con éxito ({len(text)} caracteres). Fin: {reason}")
                 return text
             except (KeyError, IndexError) as e:
-                log.error(f"Error parseando respuesta de {model}: {e}")
+                log.error(f"Error parseando respuesta: {e}")
                 time.sleep(3)
                 continue
     return None
@@ -204,7 +212,7 @@ def markdown_to_html(text: str) -> str:
     if not text: return ""
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
-    text = re.sub(r"\[(.+?)\]\((https?://.+?)\)", r'<a href="\2">\1</a>', text)
+    text = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', text)
     return text
 
 def build_message(summary: str, item_count: int) -> str:
@@ -214,34 +222,18 @@ def build_message(summary: str, item_count: int) -> str:
     body   = markdown_to_html(summary)
     return header + body + footer
 
-def split_message(text: str, limit: int = 4000) -> list[str]:
-    if len(text) <= limit: return [text]
-    chunks, current = [], ""
-    for paragraph in text.split("\n"):
-        line = paragraph + "\n"
-        if len(current) + len(line) > limit:
-            if current: chunks.append(current.rstrip())
-            current = line
-        else:
-            current += line
-    if current.strip(): chunks.append(current.rstrip())
-    return chunks
-
 def send_message(token: str, chat_id: str, text: str, thread_id: str = "") -> bool:
-    chunks = split_message(text)
-    log.info(f"Enviando mensaje en {len(chunks)} parte/s...")
-    for i, chunk in enumerate(chunks):
-        params = {"chat_id": chat_id, "text": chunk, "parse_mode": "HTML", "disable_web_page_preview": "true"}
-        if thread_id: params["message_thread_id"] = thread_id
-        try:
-            req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=urllib.parse.urlencode(params).encode(), method="POST")
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                res = json.loads(resp.read())
-                if not res.get("ok"): return False
-        except Exception as e:
-            log.error(f"Error enviando chunk {i+1}: {e}")
-            return False
-    return True
+    log.info(f"Enviando mensaje a Telegram...")
+    params = {"chat_id": chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": "true"}
+    if thread_id: params["message_thread_id"] = thread_id
+    try:
+        req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=urllib.parse.urlencode(params).encode(), method="POST")
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            res = json.loads(resp.read())
+            return res.get("ok", False)
+    except Exception as e:
+        log.error(f"Error enviando a Telegram: {e}")
+        return False
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main() -> None:
@@ -259,7 +251,7 @@ def main() -> None:
     if not all_items: return
 
     summary = summarize_with_gemini(all_items)
-    if not summary or "no hay novedades" in summary.lower(): return
+    if not summary: return
 
     ok = send_message(TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, build_message(summary, len(all_items)), TELEGRAM_THREAD_ID)
     if not ok:
