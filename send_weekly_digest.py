@@ -218,8 +218,8 @@ def fetch_rss_items(feed: dict) -> list[dict]:
                 title   = (entry.findtext("atom:title", namespaces=ns)
                            or entry.findtext("title") or "")
                 link_el = entry.find("atom:link", ns)
-        if link_el is None:
-            link_el = entry.find("link")
+                if link_el is None:
+                    link_el = entry.find("link")
                 link    = link_el.get("href", "") if link_el is not None else ""
                 date    = (entry.findtext("atom:updated", namespaces=ns)
                            or entry.findtext("atom:published", namespaces=ns)
