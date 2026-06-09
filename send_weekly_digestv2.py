@@ -1,8 +1,8 @@
 """
-send_weekly_digestv2.py (Versión 7 - Token Limit & BGG Proxy Fix)
+send_weekly_digestv2.py (Versión 8 - BGG Content Fix & Video Emojis)
 ------------------------------------------------------------------
-Soluciona el truncado liberando el límite máximo de tokens de salida.
-Devuelve BGG a CodeTabs con saneamiento de strings y compacta el prompt.
+Sanea los tokens inválidos de BGG y obliga a Gemini a usar el emoji 🎦
+en vídeos, garantizando que cada elemento mantenga su URL intacta.
 """
 
 import json
@@ -58,12 +58,9 @@ RSS_FEEDS = [
 # ── Utilidades HTTP ───────────────────────────────────────────────────────────
 def http_get(url: str, timeout: int = 15) -> bytes | None:
     target_url = url
-    
-    # Enrutar SUSD al Cloudflare Worker privado
     if "shutupandsitdown.com" in url:
         target_url = f"{CLOUDFLARE_WORKER_URL}/?url={urllib.parse.quote_plus(url)}"
         log.info(f"Enrutando via Cloudflare Worker: {url}")
-    # Enrutar BGG y Kickstarter a CodeTabs (Cloudflare da 403 en BGG)
     elif "boardgamegeek.com" in url or "kicktraq.com" in url:
         target_url = f"https://api.codetabs.com/v1/proxy?quest={urllib.parse.quote_plus(url)}"
         log.info(f"Enrutando via CodeTabs Proxy: {url}")
@@ -126,9 +123,12 @@ def fetch_rss_items(feed: dict) -> list[dict]:
     if not raw: return []
     items = []
     try:
-        # Sanear caracteres '&' sueltos que rompen BGG en proxies públicos
         xml_str = raw.decode("utf-8", errors="ignore")
+        
+        # Limpieza agresiva de entidades e hilos mal estructurados (Parsea BGG sin romper)
         xml_str = re.sub(r"&(?!amp;|lt;|gt;|quot;|apos;|#[0-9]+;)", "&amp;", xml_str)
+        # Elimina caracteres de control y tokens inválidos comunes en los foros de BGG
+        xml_str = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", xml_str)
         
         root = ET.fromstring(xml_str)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
@@ -162,16 +162,18 @@ def fetch_youtube_items(channel: dict) -> list[dict]:
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"]
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
-PROMPT_TEMPLATE = """Eres un asistente encargado de resumir las novedades semanales del ecosistema de Leder Games (Oath, Arcs, Root, Vast, Ahoy...) para el canal de Telegram "Oath España".
+PROMPT_TEMPLATE = """Eres un asistente encargado de resumir las novedades semanales del ecosistema de Leder Games (Oath, Arcs, Root, Wehrlegig Games...) para el canal de Telegram "Oath España".
 
-REGLAS DE FORMATO ESTRICTAS:
-1. No incluyas saludos, introducciones ni textos aclaratorios. Empieza directamente con el contenido.
+REGLAS DE OBLIGADO CUMPLIMIENTO (SÉ ESTRICTO):
+1. No incluyas intros, saludos ni conclusiones. Ve directamente a las novedades.
 2. La primera línea debe ser exactamente: "Resumen de la semana de **Oath**, **Arcs**, **Root** y compañía:"
-3. Organiza los contenidos en una lista limpia agrupada por juegos o temáticas (ej: **Arcs**, **Root**, **Otros juegos** o **Shut Up & Sit Down**). Usa subtítulos simples si lo consideras necesario.
-4. Cada viñeta debe usar obligatoriamente un guion simple (`-`) y este formato:
-   - [Título adaptado o claro](URL): Breve descripción de una línea sobre lo que trata.
-5. Agrupa o consolida elementos si detectas múltiples vídeos de diarios de desarrollo o hilos redundantes del mismo tema, de forma que el boletín sea conciso pero incluya la información esencial.
-6. NUNCA utilices etiquetas HTML como <a> o <b>. Usa únicamente Markdown estándar.
+3. Divide el contenido mediante bloques temáticos usando subtítulos limpios (ej: ### Arcs, ### Root, ### Otros Juegos o Temas...).
+4. Cada recurso o elemento listado debe aparecer OBLIGATORIAMENTE en una línea individual con un guion simple (`-`).
+5. REGLA DE ENLACES: Está prohibido listar elementos que no contengan su hipervínculo Markdown. Cada viñeta debe usar exactamente esta estructura:
+   - [Título adaptado o claro](URL): Breve descripción de una línea.
+6. REGLA DEL EMOJI DE VÍDEO: Si la fuente original del elemento empieza por "YouTube — ", debes colocar obligatoriamente el emoji 🎦 justo antes del enlace. Ejemplo:
+   - 🎦 [Título del Vídeo](URL): Breve descripción del vídeo.
+   Si no es un vídeo (es un artículo, blog o foro de BGG), no añadas el emoji 🎦.
 7. Termina el boletín con la línea exacta: "📅 Próximo resumen: miércoles que viene"
 
 LISTA DE ENLACES DISPONIBLES (USA LAS URLs PROVISTAS AL FINAL DE CADA LÍNEA):
@@ -186,8 +188,8 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
     payload = {
         "contents": [{"parts": [{"text": PROMPT_TEMPLATE.format(items=items_text)}]}],
         "generationConfig": {
-            "temperature": 0.2,
-            "maxOutputTokens": 8192  # CRÍTICO: Soluciona el error MAX_TOKENS aumentando el límite al máximo
+            "temperature": 0.1,
+            "maxOutputTokens": 8192
         }
     }
 
@@ -218,6 +220,7 @@ def markdown_to_html(text: str) -> str:
     if not text: return ""
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
+    # Soporta correctamente emojis delante de la etiqueta Markdown del enlace
     text = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', text)
     return text
 
