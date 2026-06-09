@@ -9,9 +9,9 @@ Sin dependencias externas — solo stdlib de Python 3.12.
 
 Variables de entorno (GitHub Secrets):
     TELEGRAM_BOT_TOKEN   — token del bot
-    TELEGRAM_CHAT_ID     — 
-    TELEGRAM_THREAD_ID   — 
-    GEMINI_API_KEY       — Google AI Studio
+    TELEGRAM_CHAT_ID     — ej: "@oathespana"
+    TELEGRAM_THREAD_ID   — topic del grupo (ej: 143)
+    GEMINI_API_KEY       — Google AI Studio (gratuito)
 """
 
 import json
@@ -38,7 +38,8 @@ TELEGRAM_CHAT_ID   = os.environ.get("TELEGRAM_CHAT_ID", "")
 TELEGRAM_THREAD_ID = os.environ.get("TELEGRAM_THREAD_ID", "")
 GEMINI_API_KEY     = os.environ.get("GEMINI_API_KEY", "")
 
-# Ventana de tiempo: últimos 7 días
+# Ventana de tiempo: últimos N días
+# Cámbialo a 7 para producción, 30 para pruebas con más contenido
 DAYS_BACK = 30
 
 # ── Fuentes ───────────────────────────────────────────────────────────────────
@@ -455,16 +456,24 @@ def main() -> None:
 
     log.info(f"Total items recopilados: {len(all_items)}")
 
-    # 4. Resumen con Gemini
+    # 4. Si no hay ningún item, no hay nada que resumir ni enviar
+    if not all_items:
+        log.info("Sin items esta semana — no se envía nada.")
+        return
+
+    # 5. Resumen con Gemini
     summary = summarize_with_gemini(all_items)
 
+    # Si Gemini no devuelve nada o indica que no hay novedades, no enviamos
     if not summary:
-        summary = ("No se han encontrado novedades relevantes esta semana "
-                   "o hubo un problema al generar el resumen.\n\n"
-                   "📅 Próximo resumen: miércoles que viene")
-        log.warning("Usando mensaje de fallback")
+        log.info("Gemini no devolvió resumen — no se envía nada.")
+        return
 
-    # 5. Enviar a Telegram
+    if "no hay novedades" in summary.lower() or "no se han encontrado" in summary.lower():
+        log.info("Gemini indica que no hay novedades relevantes — no se envía nada.")
+        return
+
+    # 6. Enviar a Telegram
     message = build_message(summary, len(all_items))
     ok = send_message(TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, message, TELEGRAM_THREAD_ID)
 
