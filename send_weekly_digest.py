@@ -281,26 +281,21 @@ GEMINI_URL = (
     "{model}:generateContent?key={key}"
 )
 
-PROMPT_TEMPLATE = """Eres el editor de una newsletter semanal en español para el grupo de Telegram "Oath España", 
-un grupo de aficionados a los juegos de mesa de Leder Games y Buried Giant Studios.
+PROMPT_TEMPLATE = """Eres el editor de una newsletter semanal en español para el grupo de Telegram "Oath España", un grupo de aficionados a los juegos de mesa de Leder Games y Buried Giant Studios (Oath, Root, Arcs, Pax Pamir, John Company, Ahoy).
 
-A continuación tienes los titulares y novedades recopilados de diversas fuentes durante los últimos 7 días.
-Tu tarea es redactar un resumen semanal conciso, bien organizado y en español.
+Tu tarea es redactar un resumen semanal bien desarrollado basándote en la lista de contenidos recientes que te paso.
 
-INSTRUCCIONES:
-- Escribe en español, tono cercano pero informado
-- Agrupa las noticias por temática (no por fuente)
-- Si no hay noticias relevantes de alguna categoría, omítela completamente
-- Destaca especialmente novedades de Oath, Leder Games y Buried Giant
-- Menciona vídeos nuevos de YouTube si los hay
-- Menciona campañas de crowdfunding activas o anunciadas
-- Usa emojis con moderación para separar secciones
-- NO inventes noticias. Si no hay contenido relevante, dilo claramente
-- Formato: texto plano con negritas en **asteriscos dobles** para Telegram HTML
-- Máximo 800 palabras
-- Termina siempre con una línea: "📅 Próximo resumen: miércoles que viene"
+INSTRUCCIONES IMPORTANTES:
+- Escribe SIEMPRE en español, tono cercano y entusiasta
+- El resumen debe tener al menos 300 palabras aunque solo haya vídeos de YouTube
+- Para cada vídeo de YouTube mencionado, describe brevemente de qué podría tratar basándote en el título
+- Agrupa por secciones: 📺 Vídeos, 🎲 Foros y comunidad, 🚀 Crowdfunding (omite secciones vacías)
+- Usa **negrita** con doble asterisco para títulos de secciones y nombres de juegos
+- Enlaza los vídeos con formato HTML: <a href="URL">Título</a>
+- NO inventes noticias ni campañas que no estén en la lista
+- Termina siempre con: "📅 Próximo resumen: miércoles que viene"
 
-TITULARES DE ESTA SEMANA:
+CONTENIDOS DE ESTA SEMANA:
 {items}
 """
 
@@ -319,6 +314,7 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
             items_text += f" — {item['link']}"
         items_text += "\n"
 
+    log.info(f"Items enviados a Gemini:\n{items_text}")
     prompt = PROMPT_TEMPLATE.format(items=items_text)
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
