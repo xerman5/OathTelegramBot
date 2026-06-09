@@ -380,10 +380,33 @@ def build_message(summary: str, item_count: int) -> str:
 TELEGRAM_API = "https://api.telegram.org/bot{token}/{method}"
 
 
+def split_message(text: str, limit: int = 4000) -> list[str]:
+    """Divide el texto en chunks respetando párrafos para no romper HTML."""
+    if len(text) <= limit:
+        return [text]
+
+    chunks = []
+    current = ""
+
+    for paragraph in text.split("\n"):
+        line = paragraph + "\n"
+        if len(current) + len(line) > limit:
+            if current:
+                chunks.append(current.rstrip())
+            current = line
+        else:
+            current += line
+
+    if current.strip():
+        chunks.append(current.rstrip())
+
+    return chunks
+
+
 def send_message(token: str, chat_id: str, text: str, thread_id: str = "") -> bool:
-    """Envía un mensaje de texto HTML a Telegram."""
-    # Telegram limita mensajes a 4096 caracteres; dividimos si es necesario
-    chunks = [text[i:i+4000] for i in range(0, len(text), 4000)]
+    """Envía un mensaje de texto HTML a Telegram, dividiendo por párrafos si es largo."""
+    chunks = split_message(text)
+    log.info(f"Enviando mensaje en {len(chunks)} parte/s...")
 
     for i, chunk in enumerate(chunks):
         params: dict = {
@@ -403,13 +426,14 @@ def send_message(token: str, chat_id: str, text: str, thread_id: str = "") -> bo
             with urllib.request.urlopen(req, timeout=30) as resp:
                 result = json.loads(resp.read())
                 if not result.get("ok"):
-                    log.error(f"Telegram error: {result.get('description')}")
+                    log.error(f"Telegram error (chunk {i+1}): {result.get('description')}")
+                    log.error(f"Chunk problemático: {chunk[:200]}")
                     return False
         except Exception as e:
             log.error(f"Error enviando chunk {i+1}: {e}")
             return False
 
-    log.info(f"Mensaje enviado ({len(chunks)} parte/s)")
+    log.info(f"Mensaje enviado correctamente ({len(chunks)} parte/s)")
     return True
 
 # ── Main ──────────────────────────────────────────────────────────────────────
