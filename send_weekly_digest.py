@@ -270,9 +270,15 @@ def fetch_gamefound_items() -> list[dict]:
 
 # ── Resumen con Gemini ────────────────────────────────────────────────────────
 
+# Modelos a probar en orden — si uno da 429 se prueba el siguiente
+GEMINI_MODELS = [
+    "gemini-2.5-flash",
+    "gemini-2.0-flash",
+    "gemini-1.5-flash",
+]
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-2.0-flash:generateContent?key={key}"
+    "{model}:generateContent?key={key}"
 )
 
 PROMPT_TEMPLATE = """Eres el editor de una newsletter semanal en español para el grupo de Telegram "Oath España", 
@@ -300,7 +306,8 @@ TITULARES DE ESTA SEMANA:
 
 
 def summarize_with_gemini(items: list[dict]) -> str | None:
-    """Envía los titulares a Gemini Flash y devuelve el resumen en texto."""
+    """Envía los titulares a Gemini y devuelve el resumen en texto.
+    Prueba varios modelos en orden; reintenta una vez si hay 429."""
     if not items:
         return None
 
@@ -313,7 +320,6 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
         items_text += "\n"
 
     prompt = PROMPT_TEMPLATE.format(items=items_text)
-
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
@@ -322,21 +328,36 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
         },
     }
 
-    url = GEMINI_URL.format(key=GEMINI_API_KEY)
-    log.info("Enviando a Gemini Flash...")
-    result = http_post_json(url, payload)
+    import time
 
-    if not result:
-        return None
+    for model in GEMINI_MODELS:
+        url = GEMINI_URL.format(model=model, key=GEMINI_API_KEY)
+        log.info(f"Probando Gemini modelo: {model}...")
 
-    try:
-        text = result["candidates"][0]["content"]["parts"][0]["text"]
-        log.info(f"Gemini respondió ({len(text)} caracteres)")
-        return text
-    except (KeyError, IndexError) as e:
-        log.error(f"Error parseando respuesta de Gemini: {e}")
-        log.error(f"Respuesta: {json.dumps(result)[:500]}")
-        return None
+        for attempt in range(2):  # máx 2 intentos por modelo
+            result = http_post_json(url, payload)
+
+            if result is None:
+                # http_post_json devuelve None en errores HTTP (incluido 429)
+                if attempt == 0:
+                    log.warning(f"  Fallo en {model}, reintentando en 10s...")
+                    time.sleep(10)
+                else:
+                    log.warning(f"  {model} no disponible, probando siguiente modelo...")
+                continue
+
+            # Respuesta recibida — intentar parsear
+            try:
+                text = result["candidates"][0]["content"]["parts"][0]["text"]
+                log.info(f"Gemini respondió con {model} ({len(text)} caracteres)")
+                return text
+            except (KeyError, IndexError) as e:
+                log.error(f"Error parseando respuesta de {model}: {e}")
+                log.error(f"Respuesta: {json.dumps(result)[:300]}")
+            break  # si llegamos aquí el resultado no era parseable, pasar al siguiente modelo
+
+    log.error("Todos los modelos de Gemini fallaron.")
+    return None
 
 # ── Formateo para Telegram ────────────────────────────────────────────────────
 
