@@ -1,10 +1,10 @@
 """
-send_weekly_digest.py
+send_weekly_digestv2.py
 ---------------------
 Recopila novedades semanales del universo Leder Games / Buried Giant,
 las resume con Gemini y las publica en Telegram.
 
-Ejecutado cada miércoles desde GitHub Actions.
+Ejecutado desde GitHub Actions.
 Sin dependencias externas — solo stdlib de Python 3.12.
 """
 
@@ -34,8 +34,8 @@ GEMINI_API_KEY     = os.environ.get("GEMINI_API_KEY", "")
 
 DAYS_BACK = 30  # Ventana de tiempo en días
 
-# PEGA AQUÍ LA URL DE TU CLOUDFLARE WORKER (sin barra al final)
-CLOUDFLARE_WORKER_URL = "https://square-term-7f74.xermanpl.workers.dev/"
+# Tu URL de Cloudflare Worker (sin barra al final)
+CLOUDFLARE_WORKER_URL = "https://square-term-7f74.xermanpl.workers.dev"
 
 # ── Fuentes ───────────────────────────────────────────────────────────────────
 YOUTUBE_CHANNELS = [
@@ -44,31 +44,37 @@ YOUTUBE_CHANNELS = [
     {"name": "Shut Up & Sit Down",   "id": "UCyRhIGDUKdIOw07Pd8pHxCw"},
 ]
 
+# Modificado ligeramente el orden para su procesamiento
 RSS_FEEDS = [
-    {"name": "Leder Games — Blog", "url": "https://feeds.feedburner.com/LederGames", "emoji": "🌿"},
-    {"name": "Buried Giant Studios — Blog", "url": "https://buriedgiant.com/rss.xml", "emoji": "⚔️"},
-    {"name": "Shut Up & Sit Down — Artículos", "url": "https://www.shutupandsitdown.com/feed/", "emoji": "🎙️"},
-    {"name": "Shut Up & Sit Down — Vídeos", "url": "https://www.shutupandsitdown.com/feed/?post_type=videos", "emoji": "🎙️"},
-    {"name": "Shut Up & Sit Down — Reseñas", "url": "https://www.shutupandsitdown.com/feed/?post_type=games", "emoji": "🎙️"},
-    {"name": "BGG — Oath", "url": "https://boardgamegeek.com/rss/boardgame/291572/forums", "emoji": "🎲"},
-    {"name": "BGG — Root", "url": "https://boardgamegeek.com/rss/boardgame/237182/forums", "emoji": "🎲"},
-    {"name": "BGG — Arcs", "url": "https://boardgamegeek.com/rss/boardgame/341254/forums", "emoji": "🎲"},
-    {"name": "BGG — Pax Pamir", "url": "https://boardgamegeek.com/rss/boardgame/256960/forums", "emoji": "🎲"},
-    {"name": "BGG — John Company", "url": "https://boardgamegeek.com/rss/boardgame/332686/forums", "emoji": "🎲"},
-    {"name": "BGG — Ahoy", "url": "https://boardgamegeek.com/rss/boardgame/338628/forums", "emoji": "🎲"},
-    {"name": "BGG — Infamous Traffic", "url": "https://boardgamegeek.com/rss/boardgame/394240/forums", "emoji": "🎲"},
-    {"name": "Kickstarter — Tabletop Games", "url": "https://www.kicktraq.com/categories/tabletop-games/rss/", "emoji": "🚀"},
+    {"name": "Leder Games — Blog", "url": "https://feeds.feedburner.com/LederGames"},
+    {"name": "Buried Giant Studios — Blog", "url": "https://buriedgiant.com/rss.xml"},
+    {"name": "Shut Up & Sit Down — Artículos", "url": "https://www.shutupandsitdown.com/feed/"},
+    {"name": "Shut Up & Sit Down — Vídeos", "url": "https://www.shutupandsitdown.com/feed/?post_type=videos"},
+    {"name": "Shut Up & Sit Down — Reseñas", "url": "https://www.shutupandsitdown.com/feed/?post_type=games"},
+    {"name": "BGG — Oath", "url": "https://boardgamegeek.com/rss/boardgame/291572/forums"},
+    {"name": "BGG — Root", "url": "https://boardgamegeek.com/rss/boardgame/237182/forums"},
+    {"name": "BGG — Arcs", "url": "https://boardgamegeek.com/rss/boardgame/341254/forums"},
+    {"name": "BGG — Pax Pamir", "url": "https://boardgamegeek.com/rss/boardgame/256960/forums"},
+    {"name": "BGG — John Company", "url": "https://boardgamegeek.com/rss/boardgame/332686/forums"},
+    {"name": "BGG — Ahoy", "url": "https://boardgamegeek.com/rss/boardgame/338628/forums"},
+    {"name": "BGG — Infamous Traffic", "url": "https://boardgamegeek.com/rss/boardgame/394240/forums"},
+    {"name": "Kickstarter — Tabletop Games", "url": "https://www.kicktraq.com/categories/tabletop-games/rss/"},
 ]
 
 # ── Utilidades HTTP ───────────────────────────────────────────────────────────
 def http_get(url: str, timeout: int = 15) -> bytes | None:
     target_url = url
     
-    # Enrutamos peticiones conflictivas a través de nuestro Cloudflare Worker
-    dominios_bloqueados = ["boardgamegeek.com", "shutupandsitdown.com", "kicktraq.com"]
-    if any(domain in url for domain in dominios_bloqueados):
+    # 1. SUSD funciona de lujo a través de tu Worker propio
+    if "shutupandsitdown.com" in url:
         target_url = f"{CLOUDFLARE_WORKER_URL}/?url={urllib.parse.quote_plus(url)}"
         log.info(f"Enrutando via Cloudflare Worker: {url}")
+        
+    # 2. BGG y Kicktraq rechazan peticiones cruzadas entre Workers de Cloudflare. 
+    #    Para ellos usamos un proxy de backend tradicional (AllOrigins)
+    elif "boardgamegeek.com" in url or "kicktraq.com" in url:
+        target_url = f"https://api.allorigins.win/raw?url={urllib.parse.quote_plus(url)}"
+        log.info(f"Enrutando via AllOrigins Proxy: {url}")
 
     try:
         req = urllib.request.Request(
@@ -114,11 +120,17 @@ def fetch_rss_items(feed: dict) -> list[dict]:
     try:
         root = ET.fromstring(raw)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
+        
+        # Corrección del DeprecationWarning usando comprobaciones explícitas 'is not None'
         if "Atom" in root.tag or root.tag == "{http://www.w3.org/2005/Atom}feed":
-            entries = root.findall("atom:entry", ns) or root.findall("entry")
+            entries = root.findall("atom:entry", ns)
+            if not entries:
+                entries = root.findall("entry")
             for entry in entries:
                 title = (entry.findtext("atom:title", namespaces=ns) or entry.findtext("title") or "").strip()
-                link_el = entry.find("atom:link", ns) or entry.find("link")
+                link_el = entry.find("atom:link", ns)
+                if link_el is None:
+                    link_el = entry.find("link")
                 link = link_el.get("href", "") if link_el is not None else ""
                 date = (entry.findtext("atom:updated", namespaces=ns) or entry.findtext("atom:published", namespaces=ns) or entry.findtext("updated") or "")
                 if is_recent(date): items.append({"source": feed["name"], "title": title, "link": link})
@@ -138,7 +150,8 @@ def fetch_youtube_items(channel: dict) -> list[dict]:
     return fetch_rss_items({"name": f"YouTube — {channel['name']}", "url": f"https://www.youtube.com/feeds/videos.xml?channel_id={channel['id']}"})
 
 # ── Resumen con Gemini ────────────────────────────────────────────────────────
-GEMINI_MODELS = ["gemini-1.5-pro", "gemini-1.5-flash", "gemini-2.0-flash"]
+# Reorganizados los modelos poniendo en cabeza el modelo actual 2.5-flash
+GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"]
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
 PROMPT_TEMPLATE = """Eres el editor de una newsletter semanal en español para el grupo de Telegram "Oath España", un grupo de aficionados a los juegos de mesa de Leder Games y Buried Giant Studios.
@@ -162,7 +175,6 @@ CONTENIDOS DE ESTA SEMANA:
 def summarize_with_gemini(items: list[dict]) -> str | None:
     if not items: return None
     
-    # Se arreglaron los verdaderos saltos de línea aquí
     items_text = "\n".join([f"[{i['source']}] {i['title']} — {i['link']}" for i in items])
     log.info(f"Items enviados a Gemini:\n{items_text}")
     
