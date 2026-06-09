@@ -1,8 +1,8 @@
 """
-send_weekly_digestv2.py (Versión 3 - Antispam & Estructura Forzada)
-------------------------------------------------------------------
+send_weekly_digestv2.py (Versión 4 - Ultra-Conciso & Sin Paja)
+--------------------------------------------------------------
 Recopila novedades semanales del universo Leder Games / Buried Giant,
-las resume con Gemini mediante una plantilla estricta y publica en Telegram.
+las resume con Gemini en un formato de viñetas directo y publica en Telegram.
 """
 
 import json
@@ -66,7 +66,6 @@ def http_get(url: str, timeout: int = 15) -> bytes | None:
         log.info(f"Enrutando via Cloudflare Worker: {url}")
         
     elif "boardgamegeek.com" in url or "kicktraq.com" in url:
-        # Cambiado a CodeTabs Proxy para evitar el bloqueo que sufrió AllOrigins
         target_url = f"https://api.codetabs.com/v1/proxy/?quest={urllib.parse.quote_plus(url)}"
         log.info(f"Enrutando via CodeTabs Proxy: {url}")
 
@@ -116,14 +115,10 @@ def fetch_rss_items(feed: dict) -> list[dict]:
         ns = {"atom": "http://www.w3.org/2005/Atom"}
         
         if "Atom" in root.tag or root.tag == "{http://www.w3.org/2005/Atom}feed":
-            entries = root.findall("atom:entry", ns)
-            if not entries:
-                entries = root.findall("entry")
+            entries = root.findall("atom:entry", ns) or root.findall("entry")
             for entry in entries:
                 title = (entry.findtext("atom:title", namespaces=ns) or entry.findtext("title") or "").strip()
-                link_el = entry.find("atom:link", ns)
-                if link_el is None:
-                    link_el = entry.find("link")
+                link_el = entry.find("atom:link", ns) or entry.find("link")
                 link = link_el.get("href", "") if link_el is not None else ""
                 date = (entry.findtext("atom:updated", namespaces=ns) or entry.findtext("atom:published", namespaces=ns) or entry.findtext("updated") or "")
                 if is_recent(date): items.append({"source": feed["name"], "title": title, "link": link})
@@ -146,26 +141,21 @@ def fetch_youtube_items(channel: dict) -> list[dict]:
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"]
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
-# PROMPT REDISEÑADO CON ESTRUCTURA MILITAR EXPLICITA
-PROMPT_TEMPLATE = """Eres el redactor oficial de la newsletter semanal en español para el canal de Telegram "Oath España". Tu comunidad está compuesta por fans apasionados de los juegos de mesa de **Leder Games** y **Buried Giant Studios** (Oath, Root, Arcs, Pax Pamir, etc.).
+# PROMPT REDISEÑADO: Formato viñetas estricto, prohibida la paja
+PROMPT_TEMPLATE = """Eres un asistente encargado de generar un resumen semanal ultra-conciso y limpio para el canal de Telegram "Oath España" (comunidad de fans de **Leder Games** y **Buried Giant Studios**).
 
-Tu objetivo es leer la lista de contenidos recientes provista al final y redactar un boletín informativo EXTENSO, con cuerpo, estructurado y muy entusiasta. No resumas todo en un párrafo genérico.
+Tu único objetivo es procesar la lista de contenidos recientes provista al final y estructurarla en una lista ordenada de viñetas agrupadas por juego o temática principal (como **Oath**, **Arcs**, **Root**, etc.).
 
-DEBES SEGUIR ESTA ESTRUCTURA OBLIGATORIA PASO A PASO:
+REGLAS DE OBLIGADO CUMPLIMIENTO:
+1. PROHIBIDO CUALQUIER TEXTO DE RELLENO ("PAJA"). No escribas introducciones largas, saludos corporativos ni párrafos narrativos. Ve directo al grano.
+2. La primera línea del mensaje debe ser exactamente: "Resumen de la semana de **Oath**, **Arcs**, **Root** y compañía:"
+3. A continuación, añade una lista limpia de viñetas con el siguiente formato exacto:
+   - [Título del contenido](URL): Breve descripción de una sola línea sobre qué trata.
+4. Si hay contenidos muy repetitivos o similares (por ejemplo, múltiples Shorts de YouTube sobre el mismo diario de diseño de **Arcs**), puedes agruparlos en una sola viñeta inteligente o listar solo los más importantes para mantener el mensaje compacto.
+5. NO utilices ninguna etiqueta HTML (como <a>, <b>, etc.). Usa únicamente formato Markdown estándar para los enlaces: [Texto](URL) y dobles asteriscos para las negritas.
+6. Termina el mensaje con la línea exacta: "📅 Próximo resumen: miércoles que viene"
 
-1. **Introducción**: Un saludo cercano y emocionante adaptado a la comunidad de estrategas de Oath España.
-2. **📺 SECCIÓN VÍDEOS Y DIARIOS DE DISEÑO**: Analiza los vídeos de YouTube provistos. Habla extensamente sobre el final de la campaña de Kickstarter de **Arcs: Beyond the Reach**, los diarios de diseño de **Buried Giant**, las charlas de estudio de **Leder Games** y el contenido reciente de **Shut Up & Sit Down** (menciona especialmente su reseña de 'Dirt & Dust'). Agrupa los vídeos por temáticas comunes y redacta párrafos descriptivos para cada una.
-3. **🎲 SECCIÓN COMUNIDAD Y FOROS**: Si en la lista ves hilos de BoardGameGeek (BGG), coméntalos. Si no aparecen hilos esta semana, haz una sección breve animando a los miembros del grupo a pasarse por los foros de BGG a generar debate sobre las expansiones de **Root** o las crónicas de **Oath**.
-4. **Cierre**: Termina OBLIGATORIAMENTE con la frase exacta: "📅 Próximo resumen: miércoles que viene"
-
-NORMAS DE FORMATO ESTRICTAS:
-- Escribe completamente en español.
-- Usa **negrita** con doble asterisco para resaltar los nombres de juegos y canales de contenido.
-- Para todos los enlaces que uses, emplea estrictamente el formato Markdown: [Título del Vídeo/Artículo](URL). No dejes URLs sueltas.
-- PROHIBICIÓN ABSOLUTA: No generes ninguna etiqueta HTML (como <a>, <b>, <br>).
-- Sé generoso en la extensión de los párrafos explicativos. No te dejes contenidos importantes fuera.
-
-LISTA DE CONTENIDOS DISPONIBLES ESTA SEMANA:
+LISTA DE CONTENIDOS DE LA SEMANA:
 {items}
 """
 
@@ -177,8 +167,7 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
     
     payload = {
         "contents": [{"parts": [{"text": PROMPT_TEMPLATE.format(items=items_text)}]}],
-        # Temperatura bajada a 0.2 para evitar que la IA divague o recorte el texto a su antojo
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 4096}
+        "generationConfig": {"temperature": 0.1, "maxOutputTokens": 2048}
     }
 
     for model in GEMINI_MODELS:
@@ -187,7 +176,7 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
         for attempt in range(2):
             result = http_post_json(url, payload)
             if not result:
-                time.sleep(5)
+                time.sleep(3)  # Pausa de cortesía para evitar saturación de peticiones rápidas
                 continue
             try:
                 candidate = result["candidates"][0]
@@ -195,7 +184,9 @@ def summarize_with_gemini(items: list[dict]) -> str | None:
                 log.info(f"Gemini respondió con éxito usando {model} ({len(text)} caracteres)")
                 return text
             except (KeyError, IndexError) as e:
-                log.error(f"Error parseando respuesta de {model}: {e}")
+                # Si es un error de cuotas (429/503), esperamos un poco más antes de saltar o reintentar
+                log.error(f"Error o saturación con {model}: {e}. Esperando...")
+                time.sleep(3)
                 continue
     return None
 
