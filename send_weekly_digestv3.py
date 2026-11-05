@@ -205,7 +205,7 @@ def fetch_backerkit_items(page: dict) -> list[dict]:
 GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"]
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
-PROMPT_TEMPLATE = """Eres el redactor del resumen semanal de novedades del ecosistema de Leder Games (Oath, Arcs, Root, Ahoy...) para el canal de Telegram "Oath España".
+PROMPT_TEMPLATE = """Eres el redactor del resumen semanal de novedades del ecosistema de Buried Giant Studio y Leder Games (Oath, Arcs, Root, Ahoy...) para el canal de Telegram "Oath España".
 
 REGLAS DE FORMATO ESTRICTAS:
 1. Omite cualquier introducción. Ve directamente a las novedades.
