@@ -1,14 +1,14 @@
 # .github/workflows/daily_card.yml
 #
 # Envía "La Carta del Día" de Oath cada mañana a Telegram
-# y actualiza el historial en el repo (evita el auto-disable de 60 días).
+# y actualiza el historial en el repo después del envío.
 
 name: Carta del Día
 
 on:
   # Cron en UTC. España peninsular:
-  #   Invierno (CET  = UTC+1): 8 UTC → 9:00 local
-  #   Verano   (CEST = UTC+2): 8 UTC → 10:00 local  (cambia a 7 si quieres las 9:00 en verano)
+  #   Invierno (CET  = UTC+1): 7 UTC → 8:00 local
+  #   Verano   (CEST = UTC+2): 7 UTC → 9:00 local
   schedule:
     - cron: "0 7 * * *"
 

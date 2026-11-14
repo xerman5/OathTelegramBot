@@ -1,0 +1,287 @@
+{
+  "reviewed_on": "2026-11-14",
+  "target_locale": "es-ES",
+  "rule_authority": "NF",
+  "spanish_terminology_priority": "Texto legible de componentes 2Tomatoes, antes que paráfrasis secundarias y traducciones históricas.",
+  "limitations": [
+    "No se ha podido consultar el PDF completo de las reglas de 2Tomatoes.",
+    "Ninguna equivalencia ha sido aprobada por el usuario; los catálogos conservan traducciones vacías."
+  ],
+  "sources": [
+    {
+      "id": "ES-AYUDA",
+      "url": "https://misutmeeple.com/wp-content/uploads/2022/12/oath_detalle_canciller.jpg",
+      "kind": "printed_2tomatoes_component_photo",
+      "consulted_on": "2026-11-14",
+      "host": "Misut Meeple",
+      "limitation": "Texto visible de la edición española base; no es el reglamento completo ni traducción oficial de NF.",
+      "sha256": "30a61b31b90b37304790a9842b9badffd5d1902d342018f1228b70852a0bb341"
+    },
+    {
+      "id": "ES-MAPA",
+      "url": "https://misutmeeple.com/wp-content/uploads/2022/12/oath_tapete.jpg",
+      "kind": "printed_2tomatoes_component_photo",
+      "consulted_on": "2026-11-14",
+      "host": "Misut Meeple",
+      "limitation": "Texto visible de la edición española base; no es el reglamento completo ni traducción oficial de NF.",
+      "sha256": "bb9954e83b2d0afcde89a84a73d8451f928c267ed9535a1bcc292e6a343bb290"
+    },
+    {
+      "id": "ES-HABITANTES",
+      "url": "https://misutmeeple.com/wp-content/uploads/2022/12/oath_cartas.jpg",
+      "kind": "printed_2tomatoes_component_photo",
+      "consulted_on": "2026-11-14",
+      "host": "Misut Meeple",
+      "limitation": "Texto visible de la edición española base; no es el reglamento completo ni traducción oficial de NF.",
+      "sha256": "2c95d97df45ce91d92c9f98c6f1ab202af19ea4bb1cfa4ff606d8546404fc5b7"
+    },
+    {
+      "id": "ES-RELIQUIAS",
+      "url": "https://misutmeeple.com/wp-content/uploads/2022/12/oath_reliquias.jpg",
+      "kind": "printed_2tomatoes_component_photo",
+      "consulted_on": "2026-11-14",
+      "host": "Misut Meeple",
+      "limitation": "Texto visible de la edición española base; no es el reglamento completo ni traducción oficial de NF.",
+      "sha256": "67270f0f0259b6bc08f4c139f6c81176069d67d45e3cf33cfd39c7cad8c42150"
+    },
+    {
+      "id": "ES-ESTANDARTES",
+      "url": "https://misutmeeple.com/wp-content/uploads/2022/12/oath_favores_estandartes.jpg",
+      "kind": "printed_2tomatoes_component_photo",
+      "consulted_on": "2026-11-14",
+      "host": "Misut Meeple",
+      "limitation": "Texto visible de la edición española base; no es el reglamento completo ni traducción oficial de NF.",
+      "sha256": "4ba6513bd31767497d55372a41f7f486a92b2f3b3115bb6b387401bd4bdde0b3"
+    },
+    {
+      "id": "ES-JURAMENTOS",
+      "url": "https://misutmeeple.com/wp-content/uploads/2022/12/oath_juramentos.jpg",
+      "kind": "printed_2tomatoes_component_photo",
+      "consulted_on": "2026-11-14",
+      "host": "Misut Meeple",
+      "limitation": "Texto visible de la edición española base; no es el reglamento completo ni traducción oficial de NF.",
+      "sha256": "4897cf00d252ba9fbd68486841185afc6eb233c98d150ff534b28e039e3464c0"
+    },
+    {
+      "id": "ES-VISIONES",
+      "url": "https://misutmeeple.com/wp-content/uploads/2022/12/oath_visiones.jpg",
+      "kind": "printed_2tomatoes_component_photo",
+      "consulted_on": "2026-11-14",
+      "host": "Misut Meeple",
+      "limitation": "Texto visible de la edición española base; no es el reglamento completo ni traducción oficial de NF.",
+      "sha256": "ce713c36519cb5c1af418761f2c35479af9a498bb69a98a9e7de9260f226dcfb"
+    },
+    {
+      "id": "ES-RESENA",
+      "url": "https://misutmeeple.com/2022/12/resena-oath-cronicas-del-imperio-y-del-exilio/",
+      "kind": "firsthand_review_of_2tomatoes_copy",
+      "consulted_on": "2026-11-14",
+      "published_on": "2022-12-21",
+      "limitation": "Fuente secundaria; para palabras impresas se priorizan fotografías.",
+      "sha256": "fc70c19a0569224cc6a1973fa91855bf7bae24d01a8e8c70fdd0a763fdfb66b1"
+    },
+    {
+      "id": "ES-EDITORIAL",
+      "url": "https://2tomatoesgames.com/es/oath-cronica-del-imperio-y-el-exilio-8437022321301.html",
+      "kind": "publisher_product_page",
+      "consulted_on": "2026-11-14",
+      "access_status": 403,
+      "used_for_terminology": false
+    },
+    {
+      "id": "NF",
+      "url": "https://buriedgiant.com/oath/New_Foundations_Rulebook.pdf",
+      "kind": "official_english_rules",
+      "consulted_on": "2026-11-14",
+      "pages": 48,
+      "printed_date": "2026-06",
+      "relevant_pages": [
+        9,
+        10,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45
+      ],
+      "sha256": "a88a53b6de518fe2267af63c5eb761e71fcbfa10bd47ec0cd52a75cabd187b52"
+    },
+    {
+      "id": "NF-WELCOME",
+      "url": "https://buriedgiant.com/oath/Welcome_to_New_Foundations_Booklet.pdf",
+      "kind": "official_english_transition_booklet",
+      "consulted_on": "2026-11-14",
+      "pages": 16,
+      "printed_date": "2026-06",
+      "sha256": "2c851cd3b4bd7c7436a25a324bc90464e5091777cde54f00a5ab625b4ece7e77"
+    },
+    {
+      "id": "ES-SUFFO",
+      "url": "https://mesadeguerra.com/download/oath-manual-esp/",
+      "kind": "historical_fan_translation",
+      "consulted_on": "2026-11-14",
+      "pages": 22,
+      "translator": "Manuel Suffo",
+      "download_page_created": "2020-12-25",
+      "download_page_updated": "2021-02-09",
+      "download_url": "https://mesadeguerra.com/download/oath-manual-esp/?wpdmdl=17140",
+      "used_for_terminology": false,
+      "reason": "Reglas anteriores a la edición comercial: Concentración, Interior, Asesores, Aventura. No identificado como reglamento de 2Tomatoes.",
+      "sha256": "ed07a3a39c82eb5aa5f77a6021709bd046818908a3876ba255c15ee68b8a71b2"
+    },
+    {
+      "id": "CORPUS",
+      "url": "https://cards.buriedgiant.com/",
+      "kind": "official_english_card_catalog",
+      "consulted_on": "2026-11-14",
+      "local_context_file": "terminology-context.json",
+      "local_image_audit": "../original-png-audit.json",
+      "repository": "https://github.com/buriedgiantstudios/cards",
+      "official_image_commit": "c9ef9b6f75c4979fad00da31622519556d444ae8",
+      "catalog_version": "d53a26b7562f40726e916f074ac31675",
+      "cards": 300
+    },
+    {
+      "id": "LEX-BEE",
+      "url": "https://spellingbee.com/node/85",
+      "kind": "institutional_lexical_reference",
+      "consulted_on": "2026-11-14",
+      "used_for": "T026: sentido de reunión comunitaria en spinning bee; no determina la redacción española del título."
+    },
+    {
+      "id": "ES-VIDEO-1",
+      "title": "Cómo se Juega - Oath 1. Intro y Roles",
+      "url": "https://www.youtube.com/watch?v=opLXFjIpBHk",
+      "provenance": "Vídeo oficial según el usuario; enlace incluido en el TXT. No se ha verificado de forma independiente el canal mediante la página del vídeo.",
+      "metadata_verified": false,
+      "timestamped": true,
+      "segments": 341,
+      "files": [
+        "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "assets/[Spanish (auto-generated)] Cómo se Juega - Oath 1. Intro y Roles [DownSub.com].srt"
+      ],
+      "kind": "user_supplied_automatic_transcript_of_publisher_video",
+      "consulted_on": "2026-11-14",
+      "evaluation": "EVALUACION_TRANSCRIPCIONES.md",
+      "evidence_file": "video-evidence.json",
+      "files_sha256": {
+        "assets/tactiq-free-transcript-opLXFjIpBHk.txt": "eb3705890f4965af54db51f20f92a9ad1cec1111bc321964b62e83cf96806e74",
+        "assets/[Spanish (auto-generated)] Cómo se Juega - Oath 1. Intro y Roles [DownSub.com].srt": "01ad2264bafb24dc8e5a4e5c4c626850d05e43a67f6e946100a74f1e396b64e4"
+      },
+      "audio_verified": false,
+      "frames_verified": false,
+      "limitation": "ASR del juego base; no es texto impreso revisado ni reglamento actualizado de NF."
+    },
+    {
+      "id": "ES-VIDEO-2",
+      "title": "Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio",
+      "url": null,
+      "provenance": "Vídeo oficial según el usuario. El archivo no contiene URL ni tiempos; no se ha localizado un enlace verificable.",
+      "metadata_verified": false,
+      "timestamped": false,
+      "segments": 339,
+      "files": [
+        "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt"
+      ],
+      "kind": "user_supplied_automatic_transcript_of_publisher_video",
+      "consulted_on": "2026-11-14",
+      "evaluation": "EVALUACION_TRANSCRIPCIONES.md",
+      "evidence_file": "video-evidence.json",
+      "files_sha256": {
+        "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt": "e60b1277a526092db6b2cbd076e22188e011c910311f8a8b145ea632ae11d607"
+      },
+      "audio_verified": false,
+      "frames_verified": false,
+      "limitation": "ASR del juego base; no es texto impreso revisado ni reglamento actualizado de NF."
+    },
+    {
+      "id": "ES-VIDEO-3",
+      "title": "Cómo se Juega - Oath 3. Palos de Cartas",
+      "url": "https://www.youtube.com/watch?v=7ti48TdTJ9k",
+      "provenance": "Título, canal 2Tomatoes Games y fecha corroborados en el resultado web de YouTube; no se ha escuchado el audio ni revisado fotogramas.",
+      "metadata_verified": true,
+      "published_on": "2022-12-16",
+      "channel": "2Tomatoes Games",
+      "timestamped": false,
+      "segments": 191,
+      "files": [
+        "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt"
+      ],
+      "kind": "user_supplied_automatic_transcript_of_publisher_video",
+      "consulted_on": "2026-11-14",
+      "evaluation": "EVALUACION_TRANSCRIPCIONES.md",
+      "evidence_file": "video-evidence.json",
+      "files_sha256": {
+        "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt": "c30f085c8d5fd44ef0d9a791d22bca12a95307d1a0c59c18820b804d5d6f640f"
+      },
+      "audio_verified": false,
+      "frames_verified": false,
+      "limitation": "ASR del juego base; no es texto impreso revisado ni reglamento actualizado de NF."
+    }
+  ],
+  "summary": {
+    "entries": 408,
+    "priority": {
+      "alta": 89,
+      "media": 319
+    },
+    "source_types": {
+      "2T-visible": 84,
+      "propuesta-NF": 160,
+      "2T-transcripcion": 5,
+      "adaptacion-2T": 11,
+      "propuesta-tematica": 148
+    },
+    "confidence": {
+      "alta": 85,
+      "media": 268,
+      "baja": 55
+    },
+    "status": {
+      "proposed": 408
+    }
+  },
+  "translation_policy": {
+    "confirmed_by": "user",
+    "confirmed_on": "2026-11-14",
+    "common_terms": "Conservar la traducción oficial de 2Tomatoes para los términos habituales; evitar sinónimos nuevos.",
+    "new_terms": "Proponer equivalencias para los conceptos nuevos o sin nombre español comprobado.",
+    "rule_authority": "Inglés actual de New Foundations, incluso cuando sus efectos difieran del base.",
+    "publication_context_from_user": "New Foundations todavía no ha salido en español."
+  },
+  "transcript_evaluation": {
+    "input_files": 4,
+    "unique_videos": 3,
+    "duplicate_subtitle_segments": 341,
+    "evidence_items": 30,
+    "glossary_source_reclassifications": [
+      "M007",
+      "M014",
+      "M051",
+      "M061",
+      "N049"
+    ],
+    "spanish_proposals_changed": 0,
+    "entry_statuses_changed": 0,
+    "report": "EVALUACION_TRANSCRIPCIONES.md"
+  }
+}

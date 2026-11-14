@@ -1,0 +1,643 @@
+{
+  "reviewed_on": "2026-11-14",
+  "review_method": "Lectura íntegra de tres transcripciones únicas, comparación exacta del duplicado, contraste con el glosario y efectos del catálogo inglés. Sin verificación auditiva ni de fotogramas.",
+  "input_files": 4,
+  "unique_videos": 3,
+  "sources": [
+    {
+      "id": "ES-VIDEO-1",
+      "title": "Cómo se Juega - Oath 1. Intro y Roles",
+      "url": "https://www.youtube.com/watch?v=opLXFjIpBHk",
+      "provenance": "Vídeo oficial según el usuario; enlace incluido en el TXT. No se ha verificado de forma independiente el canal mediante la página del vídeo.",
+      "metadata_verified": false,
+      "timestamped": true,
+      "segments": 341,
+      "files": [
+        "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "assets/[Spanish (auto-generated)] Cómo se Juega - Oath 1. Intro y Roles [DownSub.com].srt"
+      ]
+    },
+    {
+      "id": "ES-VIDEO-2",
+      "title": "Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio",
+      "url": null,
+      "provenance": "Vídeo oficial según el usuario. El archivo no contiene URL ni tiempos; no se ha localizado un enlace verificable.",
+      "metadata_verified": false,
+      "timestamped": false,
+      "segments": 339,
+      "files": [
+        "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt"
+      ]
+    },
+    {
+      "id": "ES-VIDEO-3",
+      "title": "Cómo se Juega - Oath 3. Palos de Cartas",
+      "url": "https://www.youtube.com/watch?v=7ti48TdTJ9k",
+      "provenance": "Título, canal 2Tomatoes Games y fecha corroborados en el resultado web de YouTube; no se ha escuchado el audio ni revisado fotogramas.",
+      "metadata_verified": true,
+      "published_on": "2022-12-16",
+      "channel": "2Tomatoes Games",
+      "timestamped": false,
+      "segments": 191,
+      "files": [
+        "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt"
+      ]
+    }
+  ],
+  "asset_sha256": {
+    "assets/tactiq-free-transcript-opLXFjIpBHk.txt": "eb3705890f4965af54db51f20f92a9ad1cec1111bc321964b62e83cf96806e74",
+    "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt": "e60b1277a526092db6b2cbd076e22188e011c910311f8a8b145ea632ae11d607",
+    "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt": "c30f085c8d5fd44ef0d9a791d22bca12a95307d1a0c59c18820b804d5d6f640f",
+    "assets/[Spanish (auto-generated)] Cómo se Juega - Oath 1. Intro y Roles [DownSub.com].srt": "01ad2264bafb24dc8e5a4e5c4c626850d05e43a67f6e946100a74f1e396b64e4"
+  },
+  "duplicate_check": {
+    "files": [
+      "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+      "assets/[Spanish (auto-generated)] Cómo se Juega - Oath 1. Intro y Roles [DownSub.com].srt"
+    ],
+    "method": "Retirar numeración y tiempos del SRT; retirar cabecera y tiempos del TXT; comparar secuencia literal de subtítulos.",
+    "text_exactly_equal": true,
+    "segments": 341,
+    "normalized_text_sha256": "fd632f476fc6206eb09a1ef707abf9b2f2699dd4a1ca03a45453de664f4d911a",
+    "independent_sources": 1
+  },
+  "evidence": [
+    {
+      "id": "V001",
+      "glossary_ids": [
+        "M014"
+      ],
+      "decision": "corroborates",
+      "note": "Palo queda respaldado por la explicación del vídeo y por el título oficial indexado Palos de Cartas.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 10,
+        "line_end": 19,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "en este vídeo vamos a hablar sobre los diferentes palos del juego y vamos a hacer una pequeña explicación sobre cada una de ellas",
+        "matched_phrase": "diferentes palos del juego"
+      }
+    },
+    {
+      "id": "V002",
+      "glossary_ids": [
+        "M051"
+      ],
+      "decision": "corroborates",
+      "note": "La fórmula aparece varias veces; respalda plan de batalla frente a la alternativa propia plan de combate.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 118,
+        "line_end": 130,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "nuestro sitio tienen bastante bastantes planes de batalla Como por ejemplo Los mercenarios que te pueden dar hasta más o menos tres dados no de ataque",
+        "matched_phrase": "planes de batalla"
+      }
+    },
+    {
+      "id": "V003",
+      "glossary_ids": [
+        "M061"
+      ],
+      "decision": "corroborates",
+      "note": "Uso explícito de jugadores imperiales; no es necesario deducirlo solo de Relicario Imperial.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 334,
+        "line_end": 343,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "más todos los ciudadanos Vale y todo se denominan jugadores imperiales vale esto es importante porque va a afectar al juego de muchas maneras vale os voy a",
+        "matched_phrase": "denominan jugadores imperiales"
+      }
+    },
+    {
+      "id": "V004",
+      "glossary_ids": [
+        "M007"
+      ],
+      "decision": "corroborates",
+      "note": "Edificio aparece como categoría junto a habitante y reliquia. Apoyo oral transcrito, sin prueba del rótulo impreso.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 673,
+        "line_end": 682,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "tablero y sobre cualquier carta de habitante edificio o reliquia más el número de tropas en su tablero al jugador que tiene el gran centro por",
+        "matched_phrase": "habitante edificio o reliquia"
+      }
+    },
+    {
+      "id": "V005",
+      "glossary_ids": [
+        "N049"
+      ],
+      "decision": "corroborates",
+      "note": "Se conserva la lectura limpia Usurpador; observador aparece como corrupción en otros pasajes.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 184,
+        "line_end": 187,
+        "timestamp_start": "00:08:11.880",
+        "timestamp_last_segment": "00:08:22.139",
+        "verbatim_transcript_excerpt": "los exiliados tienen dos maneras de ganar pueden ganar siendo el usurpador vale que lo voy a explicar ahora o bien pueden ganar",
+        "matched_phrase": "siendo el usurpador"
+      }
+    },
+    {
+      "id": "V006",
+      "glossary_ids": [
+        "M001",
+        "M005"
+      ],
+      "decision": "corroborates",
+      "note": "Corrobora los nombres de tipos de carta ya comprobados en otros componentes.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 673,
+        "line_end": 682,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "tablero y sobre cualquier carta de habitante edificio o reliquia más el número de tropas en su tablero al jugador que tiene el gran centro por",
+        "matched_phrase": "habitante edificio o reliquia"
+      }
+    },
+    {
+      "id": "V007",
+      "glossary_ids": [
+        "M002"
+      ],
+      "decision": "corroborates",
+      "note": "Consejero coincide con las fotografías; el resto de la frase contiene errores de reconocimiento.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 139,
+        "line_end": 148,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "a un pequeño favor que a cambio de quedarse como consejero nuestro para el resto de la partida nos da cuatro capas arcano",
+        "matched_phrase": "quedarse como consejero nuestro"
+      }
+    },
+    {
+      "id": "V008",
+      "glossary_ids": [
+        "M003",
+        "M056"
+      ],
+      "decision": "corroborates",
+      "note": "Sitio y gobernar coinciden con los componentes; lugar se usa también como sinónimo explicativo.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 253,
+        "line_end": 262,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "en un lugar ganas una tropa por cada sitio que gobiernes y mueves una tropa desde el tablero a cada sitio que gobiernas para así poder consolidar tu",
+        "matched_phrase": "sitio que gobiernes"
+      }
+    },
+    {
+      "id": "V009",
+      "glossary_ids": [
+        "M017",
+        "F011"
+      ],
+      "decision": "corroborates",
+      "note": "Actividad y Suministro se usan juntos en el cambio de rol.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 253,
+        "line_end": 265,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "turno si es el turno de ahora ciudadano se termina su fase de actividad y pone su suministro en la casilla más a la izquierda esto ya lo veréis se me olvida de acciones que es muy muy",
+        "matched_phrase": "se termina su fase de actividad"
+      }
+    },
+    {
+      "id": "V010",
+      "glossary_ids": [
+        "F012",
+        "F038"
+      ],
+      "decision": "corroborates",
+      "note": "Actualiza su suministro coincide con la ayuda impresa; contador es una paráfrasis oral.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 412,
+        "line_end": 424,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "segundo punto durante su fase de descanso un jugador actualiza su suministro a la misma casilla en la que esté el del canciller como veis aquí vale esto es el contador de suministro y",
+        "matched_phrase": "descanso un jugador actualiza su"
+      }
+    },
+    {
+      "id": "V011",
+      "glossary_ids": [
+        "M019",
+        "F044"
+      ],
+      "decision": "corroborates",
+      "note": "Tropa y sustituir se reconocen claramente; no copiar las reglas antiguas de cambio de rol a NF.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 190,
+        "line_end": 202,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "usurpador ni ni sino un visionario luego sustituye todas sus tropas ya sean en su tablero o en el mapa que no lo estamos viendo aquí por",
+        "matched_phrase": "sustituye todas sus tropas"
+      }
+    },
+    {
+      "id": "V012",
+      "glossary_ids": [
+        "M062"
+      ],
+      "decision": "corroborates",
+      "note": "Canciller aparece de forma limpia y reiterada, pese a variantes erróneas en otros puntos.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 29,
+        "line_end": 32,
+        "timestamp_start": "00:01:11.040",
+        "timestamp_last_segment": "00:01:17.400",
+        "verbatim_transcript_excerpt": "poco más adelante vale siempre habrá un jugador que es el canciller y el canciller es digamos es el jugador que domina no administra un imperio y luego",
+        "matched_phrase": "jugador que es el canciller"
+      }
+    },
+    {
+      "id": "V013",
+      "glossary_ids": [
+        "M063",
+        "N008"
+      ],
+      "decision": "corroborates",
+      "note": "Usar Gran Cetro, ya impreso, no gran centro. La condición de oferta descrita es del base.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 85,
+        "line_end": 94,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "para que se puede realizar esta oferta de ciudadanía el jugador que hace la oferta debe tener el gran cetro en la gran mayoría de veces será el propio",
+        "matched_phrase": "oferta de ciudadanía el jugador que hace la oferta debe tener el gran cetro"
+      }
+    },
+    {
+      "id": "V014",
+      "glossary_ids": [
+        "M060"
+      ],
+      "decision": "corroborates",
+      "note": "Ciudadano coincide con los componentes.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 49,
+        "line_end": 52,
+        "timestamp_start": "00:01:59.460",
+        "timestamp_last_segment": "00:02:09.239",
+        "verbatim_transcript_excerpt": "partida que es el rol de ciudadano los ciudadanos son jugadores que están aliados vale pero pongo aliados con muchas comillas con el",
+        "matched_phrase": "ciudadano los ciudadanos son jugadores"
+      }
+    },
+    {
+      "id": "V015",
+      "glossary_ids": [
+        "M064"
+      ],
+      "decision": "corroborates",
+      "note": "Exiliar como verbo coincide con la reliquia fotografiada.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 520,
+        "line_end": 529,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "la ciudadanía a otro jugador vale en ese caso siempre podrá exiliar a dicha ciudadano este exilio A diferencia de la oferta de",
+        "matched_phrase": "podrá exiliar a dicha"
+      }
+    },
+    {
+      "id": "V016",
+      "glossary_ids": [
+        "M065"
+      ],
+      "decision": "corroborates",
+      "note": "Sucesor del Canciller coincide con los objetivos impresos.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 57,
+        "line_end": 60,
+        "timestamp_start": "00:02:23.819",
+        "timestamp_last_segment": "00:02:31.560",
+        "verbatim_transcript_excerpt": "a hacer Pues convirtiéndose en el sucesor del canciller Bueno aquí os Quería dar una pequeña introducción vale A cómo va el juego al final de cada",
+        "matched_phrase": "sucesor del canciller"
+      }
+    },
+    {
+      "id": "V017",
+      "glossary_ids": [
+        "M066"
+      ],
+      "decision": "corroborates",
+      "note": "Lectura limpia del título; mejoramiento y guardeando son errores en pasajes próximos.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 150,
+        "line_end": 153,
+        "timestamp_start": "00:06:40.020",
+        "timestamp_last_segment": "00:06:46.680",
+        "verbatim_transcript_excerpt": "voy a poner aquí un poco vale que es la ficha del Guardián del juramento el jugador que esté cumpliendo dicho juramento la condición del juramiento se",
+        "matched_phrase": "ficha del Guardián del juramento"
+      }
+    },
+    {
+      "id": "V018",
+      "glossary_ids": [
+        "M048"
+      ],
+      "decision": "corroborates",
+      "note": "Campaña coincide con la ayuda; no sustituye el procedimiento actual de NF.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 448,
+        "line_end": 457,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "pueden ayudar unos a otros durante la acción de campaña vale sin embargo también pueden realizar campañas contra el canciller o contra",
+        "matched_phrase": "acción de campaña"
+      }
+    },
+    {
+      "id": "V019",
+      "glossary_ids": [
+        "N022",
+        "N024",
+        "N025",
+        "N027"
+      ],
+      "decision": "corroborates",
+      "note": "Discordia, Arcano, Orden y Hogar coinciden con el tapete.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 25,
+        "line_end": 31,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "carta de cada uno de los palos de nuestro palo de discordia el palo arcano el palo de orden el palo de hogar el",
+        "matched_phrase": "palo de discordia el palo arcano"
+      }
+    },
+    {
+      "id": "V020",
+      "glossary_ids": [
+        "N023"
+      ],
+      "decision": "corroborates",
+      "note": "Bestia es legible, pero el siguiente palo sale deformado como nuevo; no normalizar la lista a ciegas.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 31,
+        "line_end": 34,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "el palo de orden el palo de hogar el palo de Bestia y el palo de nuevo",
+        "matched_phrase": "palo de Bestia"
+      }
+    },
+    {
+      "id": "V021",
+      "glossary_ids": [
+        "N026"
+      ],
+      "decision": "corroborates",
+      "note": "El bloque final reconoce nómada limpiamente; la foto del tapete confirma el nombre.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 478,
+        "line_end": 487,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "garganta sedientas y tripas que rugen el palo de nómada enoz representa toda todas aquellos grupos que viven un poco al margen de la sociedad civilizada no",
+        "matched_phrase": "palo de nómada"
+      }
+    },
+    {
+      "id": "V022",
+      "glossary_ids": [
+        "N006"
+      ],
+      "decision": "corroborates",
+      "note": "Nombre del estandarte coincidente con el componente impreso.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 406,
+        "line_end": 415,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "que en este caso este ciudadano tiene el estandarte del favor del pueblo segundo punto durante su fase de descanso un jugador actualiza su",
+        "matched_phrase": "estandarte del favor del pueblo"
+      }
+    },
+    {
+      "id": "V023",
+      "glossary_ids": [
+        "N007"
+      ],
+      "decision": "corroborates",
+      "note": "Nombre del estandarte coincidente con el componente impreso.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 136,
+        "line_end": 139,
+        "timestamp_start": "00:06:05.360",
+        "timestamp_last_segment": "00:06:12.780",
+        "verbatim_transcript_excerpt": "tienes que tener el estandarte al secreto más oscuro vale el jugador que cumpla vale al principio de la partida se va a escoger uno de",
+        "matched_phrase": "secreto más oscuro"
+      }
+    },
+    {
+      "id": "V024",
+      "glossary_ids": [
+        "N009"
+      ],
+      "decision": "corroborates",
+      "note": "Confirma la forma completa del base; no obliga a añadir Imperial al Reliquary de NF.",
+      "passage": {
+        "source": "ES-VIDEO-2",
+        "file": "assets/Cómo se Juega - Oath 2. Canciller, Ciudadano e Imperio.txt",
+        "line_start": 112,
+        "line_end": 121,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "ciudadanía debe ofrecer una de las reliquias del relicario imperial al jugador al que le quiere hacer la oferta y además por si esto no fuera",
+        "matched_phrase": "reliquias del relicario imperial"
+      }
+    },
+    {
+      "id": "V025",
+      "glossary_ids": [
+        "T153"
+      ],
+      "decision": "candidate",
+      "note": "Candidato Código de Magos frente a la propuesta Código del Mago. El efecto descrito encaja con Magician's Code base, pero comprobar pantalla o audio para fijar el título exacto.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 205,
+        "line_end": 223,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "terminar nuestro turno Y por último el código de magos que nos permite pagar dos favores para cuando recuperemos el secreto más oscuro ganar dos secretos no haciendo ahí un poco de transmutación de diferentes recursos",
+        "matched_phrase": "el código de magos"
+      }
+    },
+    {
+      "id": "V026",
+      "glossary_ids": [
+        "T076"
+      ],
+      "decision": "candidate",
+      "note": "Apoya la familia heredero largo tiempo perdido, pero la concordancia de género es errónea y no fija el título exacto.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 442,
+        "line_end": 454,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "última carta que os he puesto El Heredero largo tiempo perdida Pues nos permite a jugarla sobre nuestros consejeros digamos que descubrimos a este heredero que se había perdido Y",
+        "matched_phrase": "Heredero largo tiempo perdida"
+      }
+    },
+    {
+      "id": "V027",
+      "glossary_ids": [
+        "N051"
+      ],
+      "decision": "rejected_mapping",
+      "note": "No respalda Outriders. El efecto de ganar 1 Suministro al atacar corresponde a Scouts (OATH-008); Outriders (OATH-104) ignora calaveras.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 292,
+        "line_end": 307,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "cartas para poder expandir el orden por la Tierra como por ejemplo la carta de exploradores que es un plan de batalla en el que si eres el atacante ganas uno de su maestro hogar",
+        "matched_phrase": "la carta de exploradores"
+      }
+    },
+    {
+      "id": "V028",
+      "glossary_ids": [
+        "F022",
+        "F033"
+      ],
+      "decision": "do_not_generalize",
+      "note": "Robar secretos es una paráfrasis de tomar/steal; no convertir el verbo técnico take en draw por este pasaje.",
+      "passage": {
+        "source": "ES-VIDEO-3",
+        "file": "assets/Cómo se Juega - Oath 3. Palos de Cartas.txt",
+        "line_start": 109,
+        "line_end": 118,
+        "timestamp_start": null,
+        "timestamp_last_segment": null,
+        "verbatim_transcript_excerpt": "directamente Como por ejemplo el juego de manos no que nos sirve para robar secretos de jugadores cuyo Peón estén en nuestro sitio",
+        "matched_phrase": "el juego de manos no que nos sirve para robar secretos"
+      }
+    },
+    {
+      "id": "V029",
+      "glossary_ids": [
+        "M010"
+      ],
+      "decision": "do_not_generalize",
+      "note": "Habla del género o continuidad del juego, no de las cartas legacy introducidas por NF. No acredita legado como término oficial español.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 13,
+        "line_end": 16,
+        "timestamp_start": "00:00:28.680",
+        "timestamp_last_segment": "00:00:36.620",
+        "verbatim_transcript_excerpt": "digamos en el que no hay conexión entre las partidas y juego Legacy vale tranquilo tranquilas Que este modo de juego Legacy no requiere",
+        "matched_phrase": "juego Legacy"
+      }
+    },
+    {
+      "id": "V030",
+      "glossary_ids": [
+        "F065"
+      ],
+      "decision": "do_not_generalize",
+      "note": "Mayoría es la formulación oral del base; no sustituir el mayor número de ni alterar los empates actuales de NF.",
+      "passage": {
+        "source": "ES-VIDEO-1",
+        "file": "assets/tactiq-free-transcript-opLXFjIpBHk.txt",
+        "line_start": 130,
+        "line_end": 134,
+        "timestamp_start": "00:05:49.139",
+        "timestamp_last_segment": "00:05:59.220",
+        "verbatim_transcript_excerpt": "de supremacía que quieres gobernar la mayoría de los sitios vale puede ser el juramento de protección vale que tenga la mayoría de reliquias y estandartes vale Y puede ser",
+        "matched_phrase": "gobernar la mayoría de los sitios"
+      }
+    }
+  ],
+  "decision_counts": {
+    "corroborates": 24,
+    "candidate": 2,
+    "rejected_mapping": 1,
+    "do_not_generalize": 3
+  },
+  "source_catalog_sha256": {
+    "local_cards/new-foundations/cards.json": "85c02fb4a1b3904492f22c795e2b6b68c572cd29b78ef5637e180f78f03e8d05",
+    "local_cards/denizen-pack/cards.json": "f311620cc00d74b5680701adad8450d5847d7221695ab996f8d14e58fbff8828"
+  },
+  "policy": "Texto impreso legible y audio o fotogramas comprobados tienen prioridad sobre ASR. Las transcripciones pueden corroborar vocabulario, pero no fijan por sí solas grafías, títulos exactos ni reglas de NF.",
+  "glossary_update": {
+    "input_files": 4,
+    "unique_videos": 3,
+    "duplicate_subtitle_segments": 341,
+    "evidence_items": 30,
+    "glossary_source_reclassifications": [
+      "M007",
+      "M014",
+      "M051",
+      "M061",
+      "N049"
+    ],
+    "spanish_proposals_changed": 0,
+    "entry_statuses_changed": 0,
+    "report": "EVALUACION_TRANSCRIPCIONES.md"
+  }
+}

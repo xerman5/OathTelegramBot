@@ -216,3 +216,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Repositorio público: las imágenes originales y derivadas solo se guardan en local.
+*.[pP][nN][gG]
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[wW][eE][bB][pP]
+*.[gG][iI][fF]
+*.[sS][vV][gG]
+*.[sS][vV][gG][zZ]
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
+*.[bB][mM][pP]
+*.[aA][vV][iI][fF]
+*.[hH][eE][iI][cC]
+*.[hH][eE][iI][fF]
+*.[iI][cC][oO]
+*.[pP][sS][dD]
+*.[xX][cC][fF]
+
+# Metadatos locales de macOS.
+.DS_Store
+._*

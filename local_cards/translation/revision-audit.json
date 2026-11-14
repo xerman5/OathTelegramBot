@@ -1,0 +1,115 @@
+{
+  "reviewed_on": "2026-11-14",
+  "passes": 2,
+  "scope": {
+    "local_card_faces": 300,
+    "terminology_entries": 408,
+    "groups": {
+      "M": 82,
+      "F": 89,
+      "N": 81,
+      "T": 156
+    },
+    "high_priority": 89,
+    "low_confidence": 55,
+    "cross_referenced_titles": 22,
+    "symbol_tokens": 24
+  },
+  "checks": {
+    "unique_stable_ids": true,
+    "all_proposals_nonempty": true,
+    "all_entries_unapproved": true,
+    "user_notes_preserved_empty": true,
+    "all_source_references_resolve": true,
+    "context_and_csv_agree": true,
+    "all_300_cards_represented_in_context": true,
+    "markdown_views_match_csv": true,
+    "markdown_table_columns_consistent": true,
+    "local_document_links_resolve": true,
+    "original_catalogs_unchanged": true,
+    "original_300_png_unchanged": true,
+    "card_translations_still_empty": true,
+    "existing_unittests_passed": 14,
+    "python_syntax_check_passed": true,
+    "production_json_validation_passed": true
+  },
+  "source_catalog_sha256": {
+    "new-foundations/cards.json": "85c02fb4a1b3904492f22c795e2b6b68c572cd29b78ef5637e180f78f03e8d05",
+    "denizen-pack/cards.json": "f311620cc00d74b5680701adad8450d5847d7221695ab996f8d14e58fbff8828"
+  },
+  "translation_artifact_sha256": {
+    "glossary.csv": "352ef2412b2f48b931f0c8792d1f4375e28d631f0303802a26e8c9df78dc4c74",
+    "sources.json": "36f74ae85b2997c1f7b1c9e7df9848e5b365dbb599da13951a10b4812576f608",
+    "GLOSARIO.md": "21b0243e7050a3cbdfbba265c6ff678621f23e391bba25813ff9c69fda7a85f1",
+    "FUENTES.md": "c9137473364f3ba5da3ef4d38535704c6eca557fb3968671c1bfd7685e114791",
+    "PROPUESTA_TERMINOS.md": "acbae4feb1387c44302f47b59f0458f6a2be165de49b15c2e8dd6b0c1f1e826c",
+    "EVALUACION_TRANSCRIPCIONES.md": "b1478d6c45680f2e470c43557fc097bf35ec28636acce708f9828567f2a12d99",
+    "PENDIENTES.md": "dfdfd8dccea4911a50ee231a0dbfb69fa55441c6d68746e443e0118ecd7f5d86",
+    "GUIA_TRADUCCION.md": "79471673950785e428e904a6fff7d57b15fa661a0e5f7f86100e985b10a89a88",
+    "video-evidence.json": "370e0ff29fe751defcc64e4853c06f6fd153620c6cf5faa4a2bd691e7445d0d5",
+    "terminology-context.json": "33cf4347536a8be84cfe45e055267cb58b51e1b04cf24562a734f28ccd56c03a"
+  },
+  "limitations": [
+    "No se ha podido consultar el PDF completo de las reglas de 2Tomatoes.",
+    "Ninguna equivalencia ha sido aprobada por el usuario; los catálogos conservan traducciones vacías."
+  ],
+  "translation_policy_confirmed_by_user_on": "2026-11-14",
+  "transcript_review": {
+    "reviewed_on": "2026-11-14",
+    "input_files": 4,
+    "unique_videos": 3,
+    "evidence_items": 30,
+    "exact_duplicate_segments": 341,
+    "asset_files_unchanged": true,
+    "all_excerpt_locations_verified": true,
+    "all_glossary_source_references_resolve": true,
+    "source_classifications_synchronized": true,
+    "spanish_proposals_changed": 0,
+    "entry_statuses_changed": 0,
+    "source_catalogs_unchanged": true,
+    "original_300_png_unchanged": true,
+    "glossary_entries": 408,
+    "report": "EVALUACION_TRANSCRIPCIONES.md",
+    "evidence": "video-evidence.json",
+    "audio_or_frames_verified": false
+  },
+  "documentation_review": {
+    "reviewed_on": "2026-11-14",
+    "markdown_documents": 13,
+    "local_links_checked": 70,
+    "scope_state_and_limitations_documented": true,
+    "local_update_pipeline_absence_documented": true,
+    "source_of_truth_and_review_states_documented": true,
+    "tracking_state_checked": true,
+    "runtime_code_and_data_unchanged": true,
+    "original_png_unchanged": 300,
+    "protected_existing_files_unchanged": 314,
+    "workflow_changes_comments_only": true,
+    "markdown_structure_links_and_views_checked": true,
+    "external_services_or_remote_actions_not_tested": true,
+    "document_sha256": {
+      "README.md": "0b99f39c8dc2f6ac5b55a4b994e3a976a07123c289775ae1d66ae9a8c2c02a01",
+      "AGENTS.md": "f0ab137ac44482cf8e18124ae874579d69186823b896dfe7e45aa9f3c370641a",
+      "docs/ESTADO_PROYECTO.md": "8c91f92babaf0722eaad33fca57a95268a21900dc882c7ad41e6fbbfd8eef257",
+      "assets/README.md": "f581e8a90cfb8f69b118bf4a1302e6439132c963b1057518b9199d023c53cf53",
+      "local_cards/VERIFICACION.md": "50f5727208301f277ba6fb64738b40a4d5ed7c0c86df9487313223376a05ff23",
+      "local_cards/README.md": "13938e1a35898197c43b88106dc0afcb7176afc3357fa584904c04e22a989022",
+      "local_cards/CONTRASTE_CAJA.md": "4c748faf899f1c75056c275c884c788b0a18ba81cb748ca278c1d67dc93b19c1",
+      "local_cards/translation/GLOSARIO.md": "21b0243e7050a3cbdfbba265c6ff678621f23e391bba25813ff9c69fda7a85f1",
+      "local_cards/translation/FUENTES.md": "c9137473364f3ba5da3ef4d38535704c6eca557fb3968671c1bfd7685e114791",
+      "local_cards/translation/PROPUESTA_TERMINOS.md": "acbae4feb1387c44302f47b59f0458f6a2be165de49b15c2e8dd6b0c1f1e826c",
+      "local_cards/translation/EVALUACION_TRANSCRIPCIONES.md": "b1478d6c45680f2e470c43557fc097bf35ec28636acce708f9828567f2a12d99",
+      "local_cards/translation/PENDIENTES.md": "dfdfd8dccea4911a50ee231a0dbfb69fa55441c6d68746e443e0118ecd7f5d86",
+      "local_cards/translation/GUIA_TRADUCCION.md": "79471673950785e428e904a6fff7d57b15fa661a0e5f7f86100e985b10a89a88"
+    }
+  },
+  "publication_policy": {
+    "confirmed_by_user_on": "2026-11-14",
+    "repository_is_public": true,
+    "images_must_not_be_committed": true,
+    "scope": "Originales, referencias, reescalados y futuras imágenes tradumaquetadas.",
+    "local_image_files_ignored": 603,
+    "data_and_documentation_remain_versionable": true,
+    "fresh_clone_contains_no_images": true
+  }
+}

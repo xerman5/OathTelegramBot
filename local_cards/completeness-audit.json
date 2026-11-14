@@ -1,0 +1,4583 @@
+{
+  "checked_on": "2026-11-14",
+  "catalog_version": "d53a26b7562f40726e916f074ac31675",
+  "official_repository_commit": "c9ef9b6f75c4979fad00da31622519556d444ae8",
+  "products": {
+    "denizen-deck": {
+      "local_records": 60,
+      "official_records": 60,
+      "official_yaml_records": 60,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "source_field_discrepancies": [],
+      "empty_text_ids": [],
+      "broken_flip_sides": [],
+      "double_sided_pairs": 0,
+      "tag_counts": {
+        "Base Game": 60,
+        "New Foundations": 60,
+        "Arcane": 10,
+        "Muster": 3,
+        "Recover": 1,
+        "Search": 5,
+        "Battle Plan": 14,
+        "Beast": 10,
+        "Discord": 10,
+        "Trade": 5,
+        "Hearth": 10,
+        "Campaign": 1,
+        "Nomad": 10,
+        "Travel": 1,
+        "Order": 10
+      },
+      "all_original_images_exist": true
+    },
+    "oath-newfoundations": {
+      "local_records": 240,
+      "official_records": 240,
+      "official_yaml_records": 240,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "source_field_discrepancies": [],
+      "empty_text_ids": [],
+      "broken_flip_sides": [],
+      "double_sided_pairs": 42,
+      "tag_counts": {
+        "New Foundations": 240,
+        "Relic": 48,
+        "Battle Plan": 19,
+        "Search": 16,
+        "Trade": 3,
+        "Campaign": 10,
+        "Travel": 15,
+        "Recover": 14,
+        "Order": 12,
+        "Arcane": 17,
+        "Hearth": 16,
+        "Discord": 20,
+        "Beast": 15,
+        "Nomad": 13,
+        "Vision": 5,
+        "Legacy": 36,
+        "Setup": 19,
+        "Site": 24,
+        "Edifice": 60,
+        "Intact": 30,
+        "Ruined": 30,
+        "Power": 2,
+        "Chronicle": 7,
+        "Banner": 4,
+        "Oathkeeper Goal": 4
+      },
+      "all_original_images_exist": true
+    }
+  },
+  "image_checks": [
+    {
+      "id": "OATH-199",
+      "product": "denizen-deck",
+      "image": "OATH-199-golem-legions.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "9d3d4625941f2b1c6152325b6f2c0593d1e1baece408ac3f4d88cee5b815fdf3",
+      "local_rgba_sha256": "2f902a3c7c57ade5ec65896632c56a9e7b61d0bcd5fa4bdb1bd25e27526ee762",
+      "cdn_rgba_sha256": "2f902a3c7c57ade5ec65896632c56a9e7b61d0bcd5fa4bdb1bd25e27526ee762",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Golem Legions.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-200",
+      "product": "denizen-deck",
+      "image": "OATH-200-council-arbiter.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "6f364ceaa7f5c54dec9c6037d047c61ccb83b5448a4a9c8950a008f7f0f068b2",
+      "local_rgba_sha256": "2b6c93fee4d43ec1aa8c10c9f902d9c497c909426438ab004e57391be2429353",
+      "cdn_rgba_sha256": "2b6c93fee4d43ec1aa8c10c9f902d9c497c909426438ab004e57391be2429353",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Council Arbiter.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-201",
+      "product": "denizen-deck",
+      "image": "OATH-201-catacombs.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "db6aab899ad0d62e7debf231abce9757e50771ffd44a796f875c1ade191ec170",
+      "local_rgba_sha256": "a16822837e4f95173621edf10e78911c809768681fd89d3ef14399c229eb3292",
+      "cdn_rgba_sha256": "a16822837e4f95173621edf10e78911c809768681fd89d3ef14399c229eb3292",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Catacombs.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-202",
+      "product": "denizen-deck",
+      "image": "OATH-202-ward-of-silence.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "0faa67119537230ec1960d9840022f474df1443ecc8fd8be39780fc82ba1068b",
+      "local_rgba_sha256": "39abd4d51a624d5e687658d77e2af51f2a2776d3b91ee417054cc4514a2f0b58",
+      "cdn_rgba_sha256": "39abd4d51a624d5e687658d77e2af51f2a2776d3b91ee417054cc4514a2f0b58",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ward of Silence.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-203",
+      "product": "denizen-deck",
+      "image": "OATH-203-vow-of-wisdom.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "a140abb14f0ac8ec316eff897463b0ea20f88014ce99523ad09f3bd991ff7923",
+      "local_rgba_sha256": "dc4e02f202cab5128750f0bda616afd77fd4659078e70585f5d0c86b983d6e6f",
+      "cdn_rgba_sha256": "dc4e02f202cab5128750f0bda616afd77fd4659078e70585f5d0c86b983d6e6f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vow of Wisdom.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-204",
+      "product": "denizen-deck",
+      "image": "OATH-204-arcane-brokers.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "e131a7178572020c72dc0b88be1f2f704f9c58ee32715790fe95e4ca9c4c2840",
+      "local_rgba_sha256": "c1849c6281f2c53a7ca15f28b55d01c492f8c25d28e4c63818f9824704e32a57",
+      "cdn_rgba_sha256": "c1849c6281f2c53a7ca15f28b55d01c492f8c25d28e4c63818f9824704e32a57",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Arcane Brokers.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-205",
+      "product": "denizen-deck",
+      "image": "OATH-205-disciples.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "e945ba6c4e2f4c59d5c713d39bc98d2b523e85db5d4c6d9e35828fb2111b41db",
+      "local_rgba_sha256": "77e01da4e276d9f550275cd5d289512c1e765c8bf5b79d5b2cc4f40d8ee249c7",
+      "cdn_rgba_sha256": "77e01da4e276d9f550275cd5d289512c1e765c8bf5b79d5b2cc4f40d8ee249c7",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Disciples.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-206",
+      "product": "denizen-deck",
+      "image": "OATH-206-arcane-armor.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "90aba91945a7a946e6ab4aab78db5f9508b2e990e1bd1bde1882d8a58596a739",
+      "local_rgba_sha256": "17af2e1827fd2b1fc4d18c9694f60ba3ed2c1b5b7b083e344f17c7cf79a1f473",
+      "cdn_rgba_sha256": "17af2e1827fd2b1fc4d18c9694f60ba3ed2c1b5b7b083e344f17c7cf79a1f473",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Arcane Armor.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-207",
+      "product": "denizen-deck",
+      "image": "OATH-207-glamor.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d9dff3e0af5c761e4ee0ff5e2cde1fbdec1ec69a4098d3903c563cc3a36cb3ec",
+      "local_rgba_sha256": "d559bfbf99a4c825aeb918674d8e7ba7d3b36067f8a82928e0f2c5b8384d3ea7",
+      "cdn_rgba_sha256": "d559bfbf99a4c825aeb918674d8e7ba7d3b36067f8a82928e0f2c5b8384d3ea7",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Glamor.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-208",
+      "product": "denizen-deck",
+      "image": "OATH-208-wizard-s-conclave.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "5ce53141b68c563b0f932547ee69daabc5713ceb31f96ed16f51d98d7717f3f7",
+      "local_rgba_sha256": "9b2ff35dcb908849ada4d96fb9a0d300da1f224a4977d3684e66bcf580996072",
+      "cdn_rgba_sha256": "9b2ff35dcb908849ada4d96fb9a0d300da1f224a4977d3684e66bcf580996072",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Wizard's Conclave.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-209",
+      "product": "denizen-deck",
+      "image": "OATH-209-true-oath.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "5b2355af7f6c8a3594bef3da0dddec0dda3a57d5043d6c4d50bc5e6a8a5015c3",
+      "local_rgba_sha256": "5f0a51b119250df7a6f553a155694011acd5c2c35b2b5126ff58a6926e4e39ac",
+      "cdn_rgba_sha256": "5f0a51b119250df7a6f553a155694011acd5c2c35b2b5126ff58a6926e4e39ac",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/True Oath.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-210",
+      "product": "denizen-deck",
+      "image": "OATH-210-bog.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "821999891302e00a67d6cbe70dcfb9700cc636d61fd538071581f0743dfb826f",
+      "local_rgba_sha256": "237e7b6dede967b18797d7ec22116270f35153891c97f4a03e2cfa3d0a1761f3",
+      "cdn_rgba_sha256": "237e7b6dede967b18797d7ec22116270f35153891c97f4a03e2cfa3d0a1761f3",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bog.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-211",
+      "product": "denizen-deck",
+      "image": "OATH-211-whispering-leaves.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "17bf987537c8db671a47550a0a1ab56a2374304f060cc535f1660450908f086f",
+      "local_rgba_sha256": "eeda1b2d0f5f8603ec013a6f842b11b7d4abbc3d8c3aa373fec25010b8e0c1b6",
+      "cdn_rgba_sha256": "eeda1b2d0f5f8603ec013a6f842b11b7d4abbc3d8c3aa373fec25010b8e0c1b6",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Whispering Leaves.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-212",
+      "product": "denizen-deck",
+      "image": "OATH-212-bed-of-roots.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "8cece013290dccd97d9872363a23b5a30ec36186149197f4fdbe7d135ceb2318",
+      "local_rgba_sha256": "5b08d79b229f2c3179d40dc600c4ffbd190a9d5d881c2605b56248def0a9bc52",
+      "cdn_rgba_sha256": "5b08d79b229f2c3179d40dc600c4ffbd190a9d5d881c2605b56248def0a9bc52",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bed of Roots.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-213",
+      "product": "denizen-deck",
+      "image": "OATH-213-autumn-wind.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "85a9fe35cbde0761e4130cf7c8f28f22e09725982390c6b8d8fe01cba356bb24",
+      "local_rgba_sha256": "c427241937a15d98f69705e34ff6d6331f8ba49b4bb1465a1530d63f399dd816",
+      "cdn_rgba_sha256": "c427241937a15d98f69705e34ff6d6331f8ba49b4bb1465a1530d63f399dd816",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Autumn Wind.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-214",
+      "product": "denizen-deck",
+      "image": "OATH-214-shifting-fog.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "8d895598a8075902fec7cf1fdbe1fc1705a366d33915c90c5b8cb02f6dd7b1f2",
+      "local_rgba_sha256": "9a392e822da0847988b184eead040f1b9288e2e4642ad1bb7acb5654505aa096",
+      "cdn_rgba_sha256": "9a392e822da0847988b184eead040f1b9288e2e4642ad1bb7acb5654505aa096",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Shifting Fog.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-215",
+      "product": "denizen-deck",
+      "image": "OATH-215-fae-battalion.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "851b458e1fde15a8a941cd5024c8ca7cc15fb86ba70e29a86b353b999fc5837c",
+      "local_rgba_sha256": "e1b0749dc1a08f4d2c6b902e5a7e6febf0cde9874159325a06add1d1fcbc306d",
+      "cdn_rgba_sha256": "e1b0749dc1a08f4d2c6b902e5a7e6febf0cde9874159325a06add1d1fcbc306d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Fae Battalion.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-216",
+      "product": "denizen-deck",
+      "image": "OATH-216-hunger.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "48c07540985fb026aa48d1caebe22d47dd6160146fa12fb698751e16df8018ed",
+      "local_rgba_sha256": "ba898f8b36fed031c7afa436a1a8054412e9b85c6f0e046cfd6c9653bfe21474",
+      "cdn_rgba_sha256": "ba898f8b36fed031c7afa436a1a8054412e9b85c6f0e046cfd6c9653bfe21474",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hunger.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-217",
+      "product": "denizen-deck",
+      "image": "OATH-217-signal-trees.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "4671029cb4fe2fb5d273701a98381ff669d13f07d8fc2cbe5c6d9cdceb1492d6",
+      "local_rgba_sha256": "3f94c5144c04dd873141d6d40c690c5e4485129ffb1ac5dd7dc1cdb03e85b1f0",
+      "cdn_rgba_sha256": "3f94c5144c04dd873141d6d40c690c5e4485129ffb1ac5dd7dc1cdb03e85b1f0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Signal Trees.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-218",
+      "product": "denizen-deck",
+      "image": "OATH-218-forest-warden.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d8b3e79287c669a060809c586c3d7eab9cb9af26f9a00f40107eb3d5fad962f6",
+      "local_rgba_sha256": "496945b1c3cbcb5fef76ab0551fdae2932de005e3daac0b00b9e66b843ea0ef8",
+      "cdn_rgba_sha256": "496945b1c3cbcb5fef76ab0551fdae2932de005e3daac0b00b9e66b843ea0ef8",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Forest Warden.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-219",
+      "product": "denizen-deck",
+      "image": "OATH-219-bandit-paymaster.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "02e486cedf8c14814e7630cef45bef4e1de4758e5f4e1c5ffe23eda8e69cbc49",
+      "local_rgba_sha256": "691fbd47196b522d86b5210f27fb27fa86e1ceab5301ee1c82f03093fad2f669",
+      "cdn_rgba_sha256": "691fbd47196b522d86b5210f27fb27fa86e1ceab5301ee1c82f03093fad2f669",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Paymaster.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-220",
+      "product": "denizen-deck",
+      "image": "OATH-220-reliquary-raid.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "67fa9ca59722625bf590bf560f76e54c32eebe071f2a003a0fdf68cb4b972023",
+      "local_rgba_sha256": "8e8e9dde98892bf36189b751d3859d23ad047108eafdb800fe44cc60562a785b",
+      "cdn_rgba_sha256": "8e8e9dde98892bf36189b751d3859d23ad047108eafdb800fe44cc60562a785b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Reliquary Raid.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-221",
+      "product": "denizen-deck",
+      "image": "OATH-221-tracker.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "10764e78ca56212fcc814253feb14eaea4bc964fb621f7fa5f60664ce1a6cd74",
+      "local_rgba_sha256": "6ce119cc355ac10a5e6ac8576db4513dc28eb122ac1ace157b6bc97c23b93723",
+      "cdn_rgba_sha256": "6ce119cc355ac10a5e6ac8576db4513dc28eb122ac1ace157b6bc97c23b93723",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Tracker.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-222",
+      "product": "denizen-deck",
+      "image": "OATH-222-banner-breakers.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "623cd877c732b54f276d9e0ac6829285778ebdb4846aaa44748ae64f45b185bd",
+      "local_rgba_sha256": "27c6199f46c1379d7eac64e963c4dd129429ac9a5cdf6b84c3c5b1e27d2cb19f",
+      "cdn_rgba_sha256": "27c6199f46c1379d7eac64e963c4dd129429ac9a5cdf6b84c3c5b1e27d2cb19f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Banner Breakers.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-223",
+      "product": "denizen-deck",
+      "image": "OATH-223-pledge-to-discord.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "3d1e296bb3f2a2da9c8672bea40d8aa3cb44fae952caf4739112ba1dfff4766d",
+      "local_rgba_sha256": "45fae6b0f791a76e12bf36c4099a3c1273b3959dce85a59dda8b620140438e8e",
+      "cdn_rgba_sha256": "45fae6b0f791a76e12bf36c4099a3c1273b3959dce85a59dda8b620140438e8e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Pledge to Discord.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-224",
+      "product": "denizen-deck",
+      "image": "OATH-224-friendly-familiar.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "0467cb1c85b95d4536ad3c92290ccb42600aa33c1e3936d27edc615e9bb60c8c",
+      "local_rgba_sha256": "994d20f3056fcb3da82a38934455a9d179cc16a56f240f885a0538bcbf72be3f",
+      "cdn_rgba_sha256": "994d20f3056fcb3da82a38934455a9d179cc16a56f240f885a0538bcbf72be3f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Friendly Familiar.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-225",
+      "product": "denizen-deck",
+      "image": "OATH-225-unstable-summon.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "588d5f2d30a9dbb9636101f834a967e4557aac146308787dbb1b86e9ca7fb2df",
+      "local_rgba_sha256": "f37d254468f518ede2f2324647ae3ad48c9fc474dd2296b88ac8934a24644f50",
+      "cdn_rgba_sha256": "f37d254468f518ede2f2324647ae3ad48c9fc474dd2296b88ac8934a24644f50",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Unstable Summon.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-226",
+      "product": "denizen-deck",
+      "image": "OATH-226-bandit-prince.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "e813a8e5b057ff8bccf96ef43362f752ebbd6ffa64fc137e9854b5885459d53d",
+      "local_rgba_sha256": "e63ad5ee81693b037f5c80c0d2aad590dc7c7e926aa6a6f72da8907aef0e4060",
+      "cdn_rgba_sha256": "e63ad5ee81693b037f5c80c0d2aad590dc7c7e926aa6a6f72da8907aef0e4060",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Prince.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-227",
+      "product": "denizen-deck",
+      "image": "OATH-227-dark-enforcer.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "9659dc1f94156e535c3c5d00aaaa6d196e86a035812f4afe3db7f84708c45db1",
+      "local_rgba_sha256": "dd76cb4e7322b6c967907af98104596893858f448e8648524e2df00317d29836",
+      "cdn_rgba_sha256": "dd76cb4e7322b6c967907af98104596893858f448e8648524e2df00317d29836",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Dark Enforcer.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-228",
+      "product": "denizen-deck",
+      "image": "OATH-228-spoiled-supplies.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "bea155a2c1820b6ea397e939abc45d06df62e374003f0633c0b2e2311bd0afac",
+      "local_rgba_sha256": "71a9197abc405888ab03d1515c1057394a0551c7bc78e516f225400f1a33f1a2",
+      "cdn_rgba_sha256": "71a9197abc405888ab03d1515c1057394a0551c7bc78e516f225400f1a33f1a2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Spoiled Supplies.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-229",
+      "product": "denizen-deck",
+      "image": "OATH-229-old-songs.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "14b24fe01474b2d3176f4727cb89717ece8f1a545b51d6600636390ee404943f",
+      "local_rgba_sha256": "3bd56c93e0513298b766d81f3b8914b7632fa4d1445cf40a5e93e71097109c14",
+      "cdn_rgba_sha256": "3bd56c93e0513298b766d81f3b8914b7632fa4d1445cf40a5e93e71097109c14",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Old Songs.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-230",
+      "product": "denizen-deck",
+      "image": "OATH-230-diplomat.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "92043027b79be0553b872a9cb937034922a6a9cf428d4f0b0ceed4e7af809c98",
+      "local_rgba_sha256": "3fcfd7d35f46646ba91b6a554621584639f015c4a73e1f2e5a9c921cd87908e5",
+      "cdn_rgba_sha256": "3fcfd7d35f46646ba91b6a554621584639f015c4a73e1f2e5a9c921cd87908e5",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Diplomat.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-231",
+      "product": "denizen-deck",
+      "image": "OATH-231-village-idiot.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "5262922fc8fc5d70c1903e630117d699a9a8cf690a991cd83bba576eb90101a4",
+      "local_rgba_sha256": "f3302900a0884bdc9a573dc214e2bd14421563814a36ee29dcb40fb2c1bf4fc9",
+      "cdn_rgba_sha256": "f3302900a0884bdc9a573dc214e2bd14421563814a36ee29dcb40fb2c1bf4fc9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Village Idiot.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-232",
+      "product": "denizen-deck",
+      "image": "OATH-232-spinning-bee.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "83627f2480c1324f1ea26bc8a829e2cb5c6674c6b51d897eb10036f989d0981e",
+      "local_rgba_sha256": "a8e4a67ec80a0a116f6c9dd9a4d569e18d6f050c9368dc5efde26ed51e191539",
+      "cdn_rgba_sha256": "a8e4a67ec80a0a116f6c9dd9a4d569e18d6f050c9368dc5efde26ed51e191539",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Spinning Bee.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-233",
+      "product": "denizen-deck",
+      "image": "OATH-233-firebrand.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "8c502ad8c40c942f7d193bc08f5b575cfea9310399302310dfd1ce046651f5fc",
+      "local_rgba_sha256": "fd22d1b946af078085cd39bd47523164dc8a6e35fc385f173373502cd6364874",
+      "cdn_rgba_sha256": "fd22d1b946af078085cd39bd47523164dc8a6e35fc385f173373502cd6364874",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Firebrand.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-234",
+      "product": "denizen-deck",
+      "image": "OATH-234-watchdog.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "534f42d086814cf0054e3754ea3ae5397b0e13382fab5d0bb2d1e7ac2b62ea31",
+      "local_rgba_sha256": "bfd0ce23ccbd0abcf492d554268742a3261bd9a72075a22e02f464fb5fe3fce8",
+      "cdn_rgba_sha256": "bfd0ce23ccbd0abcf492d554268742a3261bd9a72075a22e02f464fb5fe3fce8",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Watchdog.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-235",
+      "product": "denizen-deck",
+      "image": "OATH-235-favored-son.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "417dd9465a5b2a10a4ab38ab9c20260ddf8ee7a56ef09caed6b2dc722b6ba1c3",
+      "local_rgba_sha256": "08e71290b1968d1aaa9dc2813347fee4868abbe246824189aff6d51871fc8362",
+      "cdn_rgba_sha256": "08e71290b1968d1aaa9dc2813347fee4868abbe246824189aff6d51871fc8362",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Favored Son.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-236",
+      "product": "denizen-deck",
+      "image": "OATH-236-town-meeting.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "2580b32b110c3bf672d7953e33cd6b7c7b301f0e7a3d16834b032c3b187a245f",
+      "local_rgba_sha256": "096729ae679dc9044ad613092bdd74a2a8631ce9219b9ec902d1f47184f1d8a9",
+      "cdn_rgba_sha256": "096729ae679dc9044ad613092bdd74a2a8631ce9219b9ec902d1f47184f1d8a9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Town Meeting.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-237",
+      "product": "denizen-deck",
+      "image": "OATH-237-league-treaty.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "df0551ae3b3b4d00bb82ada435f91a324f49ac6b92b4173bc186468f4173da26",
+      "local_rgba_sha256": "9b6743c59f835fc1adbf864b00d1b7fea737720135c2a163f207e17fb3eb7308",
+      "cdn_rgba_sha256": "9b6743c59f835fc1adbf864b00d1b7fea737720135c2a163f207e17fb3eb7308",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/League Treaty.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-238",
+      "product": "denizen-deck",
+      "image": "OATH-238-skilled-merchants.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "1ce697184c88d9c8cef4d5f77614854dc2468fe4606cd98ac8d0a330e6825eb1",
+      "local_rgba_sha256": "bf7d83746eea498fdda9a3ad3afcf2efb85e5f54774a6fadacf7752292e2f7b1",
+      "cdn_rgba_sha256": "bf7d83746eea498fdda9a3ad3afcf2efb85e5f54774a6fadacf7752292e2f7b1",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Skilled Merchants.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-239",
+      "product": "denizen-deck",
+      "image": "OATH-239-tribute-spoils.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "7e7e4ad36cdaae46c99a844de583df5399e756f75dcbb3fe343f8167cebfcf1b",
+      "local_rgba_sha256": "cfae12787c326576bfa67055f17fec26618406bc597422d4563e88fc8161252e",
+      "cdn_rgba_sha256": "cfae12787c326576bfa67055f17fec26618406bc597422d4563e88fc8161252e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Tribute Spoils.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-240",
+      "product": "denizen-deck",
+      "image": "OATH-240-search-party.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "331496a403116131998ace24f29281f2e73ec81fb382f0fa9428855e135a724d",
+      "local_rgba_sha256": "1c093765a7cda060ceb77fbaf0b8ec285e1e615d2f0f9a62f7e639f9d29d38b1",
+      "cdn_rgba_sha256": "1c093765a7cda060ceb77fbaf0b8ec285e1e615d2f0f9a62f7e639f9d29d38b1",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Search Party.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-241",
+      "product": "denizen-deck",
+      "image": "OATH-241-moving-market.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "7f5e3fc53b0a87d76070062831e1f3de20433acc94cab7d798f5c37b284d9ac9",
+      "local_rgba_sha256": "00c2ca97b755c0d2cd3d050359132432df6fb3aad099a5cadcc4aefd214a05b0",
+      "cdn_rgba_sha256": "00c2ca97b755c0d2cd3d050359132432df6fb3aad099a5cadcc4aefd214a05b0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Moving Market.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-242",
+      "product": "denizen-deck",
+      "image": "OATH-242-traveling-negotiator.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "b29516886eb704b6e2d679837fbcf7a17820e3d94a32cb23071370f5fdf5c3ef",
+      "local_rgba_sha256": "af032175053b312a5b25f997cfa95d38e87d1c12249dfa432ce2685937f824de",
+      "cdn_rgba_sha256": "af032175053b312a5b25f997cfa95d38e87d1c12249dfa432ce2685937f824de",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Traveling Negotiator.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-243",
+      "product": "denizen-deck",
+      "image": "OATH-243-pledge-of-defense.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d08cc053a4d8b041e46f0ab29c73aa1883fa76ffbcc1557b194dd9b02fa1cba0",
+      "local_rgba_sha256": "2873f9e5ae2612162fe42cb876056370671477ffe8379db9fe30790dab5dadbf",
+      "cdn_rgba_sha256": "2873f9e5ae2612162fe42cb876056370671477ffe8379db9fe30790dab5dadbf",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Pledge of Defense.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-244",
+      "product": "denizen-deck",
+      "image": "OATH-244-the-red-seer.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "391de8ccac09830f01720d9d60827bc2f686f9044c11c960438f07bb2f8e58cb",
+      "local_rgba_sha256": "17316868b303dc6fbc0dda6ac16bdc9095fc53cd8f3b7bdd5322c807c83174cd",
+      "cdn_rgba_sha256": "17316868b303dc6fbc0dda6ac16bdc9095fc53cd8f3b7bdd5322c807c83174cd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Red Seer.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-245",
+      "product": "denizen-deck",
+      "image": "OATH-245-royal-stables.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "3ff9803a13cb2362f16bac239e81a52ba189b8d9a798e8596f744524fd81be01",
+      "local_rgba_sha256": "d3aa888c7ce8d177c701a02851934114ff7a16b3c32b7b8a8c6af59b519e1787",
+      "cdn_rgba_sha256": "d3aa888c7ce8d177c701a02851934114ff7a16b3c32b7b8a8c6af59b519e1787",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Royal Stables.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-246",
+      "product": "denizen-deck",
+      "image": "OATH-246-call-for-help.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d87cfd5209b373f57f59a131cb6a6c6aa5f297ac7310d4fbf2d21d2e87488073",
+      "local_rgba_sha256": "0514461f1b5ee4e4d29e5e3a9276da600f0b7e711106d7f8ae59880f34f9d935",
+      "cdn_rgba_sha256": "0514461f1b5ee4e4d29e5e3a9276da600f0b7e711106d7f8ae59880f34f9d935",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Call for Help.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-247",
+      "product": "denizen-deck",
+      "image": "OATH-247-vow-of-wandering.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c23b465a7f73e397b1be5fd76269315458676bd8e59251ae519f2d3ffa293483",
+      "local_rgba_sha256": "e685a6e18d59182678571a986ddbdf883a4738b23e6e5fa695b744833565aabd",
+      "cdn_rgba_sha256": "e685a6e18d59182678571a986ddbdf883a4738b23e6e5fa695b744833565aabd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vow of Wandering.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-248",
+      "product": "denizen-deck",
+      "image": "OATH-248-mounted-library.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "37f3b3f1843f3b1bbf9a4d40afc24679398502e9a1b052731dbf5bb51d095f9b",
+      "local_rgba_sha256": "3180a85be1520441f742279eded521c39f3b127fce0061b198544e0604fcbad9",
+      "cdn_rgba_sha256": "3180a85be1520441f742279eded521c39f3b127fce0061b198544e0604fcbad9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Mounted Library.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-249",
+      "product": "denizen-deck",
+      "image": "OATH-249-master-at-arms.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "873e62ae45012c144b71f48e70d0347053b3c5378092ffac662f1b0aeff1f6a3",
+      "local_rgba_sha256": "c3af9dbd119eab4315be29754bf8e8aae46ae09b52976a04881166d12c20d373",
+      "cdn_rgba_sha256": "c3af9dbd119eab4315be29754bf8e8aae46ae09b52976a04881166d12c20d373",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Master at Arms.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-250",
+      "product": "denizen-deck",
+      "image": "OATH-250-baron.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "a8cb5b03594b68275e6d71b50048c54ac41f7875f275d8a5160d0485ec7a175e",
+      "local_rgba_sha256": "d0b57b5050f74101ba90d256b46b07f5bc8ed24a85869a682d1487a4ac29f5fa",
+      "cdn_rgba_sha256": "d0b57b5050f74101ba90d256b46b07f5bc8ed24a85869a682d1487a4ac29f5fa",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Baron.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-251",
+      "product": "denizen-deck",
+      "image": "OATH-251-honor-guard.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "cdbbc7ef22f9e7435c8f37adda30c3a29d6430fb08226ca72b37269ed2a234cf",
+      "local_rgba_sha256": "5b16007ceb798edb175f2635c48d59df7c884f776981426f96502b9df7aa95c5",
+      "cdn_rgba_sha256": "5b16007ceb798edb175f2635c48d59df7c884f776981426f96502b9df7aa95c5",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Honor Guard.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-252",
+      "product": "denizen-deck",
+      "image": "OATH-252-city-wall.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "91adc6f2934917bec77e0ccc1dec418ef9be8b586afd8d3c12e38268db5ad1b1",
+      "local_rgba_sha256": "82bad165cdcd24e650eeffb96f588d7dfde62d358a886c77e726f7fd8afdcb49",
+      "cdn_rgba_sha256": "82bad165cdcd24e650eeffb96f588d7dfde62d358a886c77e726f7fd8afdcb49",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/City Wall.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-253",
+      "product": "denizen-deck",
+      "image": "OATH-253-fearsome-general.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "a8a20ff4586bf506985c561fdec4f55003c0474c250bf50c81eb463930ae04ec",
+      "local_rgba_sha256": "0f443da8dd0790a678fc0f36a0d744868047ed16a8bdfc04300269b960f16053",
+      "cdn_rgba_sha256": "0f443da8dd0790a678fc0f36a0d744868047ed16a8bdfc04300269b960f16053",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Fearsome General.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-254",
+      "product": "denizen-deck",
+      "image": "OATH-254-careful-plans.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "3c78282de3a0da73185e31beea77bd7ac807f3f27bd66f19c3a8930a324dcd86",
+      "local_rgba_sha256": "bbd25f92f9b2bc757aadde7dc8674a990369f0320e92a769afb2e7685feebdbb",
+      "cdn_rgba_sha256": "bbd25f92f9b2bc757aadde7dc8674a990369f0320e92a769afb2e7685feebdbb",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Careful Plans.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-255",
+      "product": "denizen-deck",
+      "image": "OATH-255-garrison-armory.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "fdb161d55ec30294e0ef7d7f8ebb37de8e774ba247bab1f4cd79f1c511938b2c",
+      "local_rgba_sha256": "f7693953165f658d11c36be355a5ed32636d41ee7b460d84f21b82f7388df4c9",
+      "cdn_rgba_sha256": "f7693953165f658d11c36be355a5ed32636d41ee7b460d84f21b82f7388df4c9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Garrison Armory.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-256",
+      "product": "denizen-deck",
+      "image": "OATH-256-battle-axes.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "565d66901e58786285286efa55a02da0092f46bd4078e2c373675bec68e32534",
+      "local_rgba_sha256": "624ebbbebae175d9af0c8c88cb66c53ffa7b6c8bdbb83d66addb759d967a5851",
+      "cdn_rgba_sha256": "624ebbbebae175d9af0c8c88cb66c53ffa7b6c8bdbb83d66addb759d967a5851",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Battle Axes.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-257",
+      "product": "denizen-deck",
+      "image": "OATH-257-great-feast.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "802030be4ab0343b61c4e74deea3e769505c1bc3c26eeef9d9a4ae793ca5aff7",
+      "local_rgba_sha256": "30585252f24eaf10c21f090be04ceb3040e218817c80e9498e1b4da54425cc33",
+      "cdn_rgba_sha256": "30585252f24eaf10c21f090be04ceb3040e218817c80e9498e1b4da54425cc33",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Great Feast.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-258",
+      "product": "denizen-deck",
+      "image": "OATH-258-quartermaster.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "e5c510aa378d21a180eb5092980f1adaece0cf3188a181f8b10fac4c0587ee1f",
+      "local_rgba_sha256": "897abdd9bf9c568323e4c81b9e4275aa443eb11932c44408afffa64411756894",
+      "cdn_rgba_sha256": "897abdd9bf9c568323e4c81b9e4275aa443eb11932c44408afffa64411756894",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Quartermaster.png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-005-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-005-NF-keep-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "1c7b041732413b0525f473ad723c10b27ec93f6b74516d74725e974e83f0025a",
+      "local_rgba_sha256": "3365a43f6b292c66d8518805d6470fb9ec4d8f0f272997ba767049e495659f25",
+      "cdn_rgba_sha256": "3365a43f6b292c66d8518805d6470fb9ec4d8f0f272997ba767049e495659f25",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Keep (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-009-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-009-NF-alchemist-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d1b324861d4528a7971df2c029dfdef71ce33051087086efcd96d63a0f443b38",
+      "local_rgba_sha256": "bba6fd2b13c4928e5d1b6458fa33ce17d86bb184367ce0d36007579c156a6f3b",
+      "cdn_rgba_sha256": "bba6fd2b13c4928e5d1b6458fa33ce17d86bb184367ce0d36007579c156a6f3b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Alchemist (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-010-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-010-NF-martial-culture-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "92d485148355b8f666f6516389a48d4c4cc5387c0a00e08580411a41c009c3b5",
+      "local_rgba_sha256": "127164f28ff2f0f8398b1cad1afa5106df33d9dab02d5aaccec0cc54515dcff9",
+      "cdn_rgba_sha256": "127164f28ff2f0f8398b1cad1afa5106df33d9dab02d5aaccec0cc54515dcff9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Martial Culture (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-013-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-013-NF-tinker-s-fair-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "08841dc06697dd7e0d3ac7a2cfcde410e0da86f9a6c43d7f67c3dbd68643fd73",
+      "local_rgba_sha256": "dd13d09031f756d56f59b09b700fde93f5f02e7c00e1ab58a659c3d10d350430",
+      "cdn_rgba_sha256": "dd13d09031f756d56f59b09b700fde93f5f02e7c00e1ab58a659c3d10d350430",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Tinker's Fair (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-020-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-020-NF-disgraced-captain-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "897c3fa2a1cc6f3f9c1a496d45824192bd3a5781e38aa832ed639e684fa19a6f",
+      "local_rgba_sha256": "02c368c57c25a1a32c86d582630e11d4a62737571b55fb1a371df42af7380cb3",
+      "cdn_rgba_sha256": "02c368c57c25a1a32c86d582630e11d4a62737571b55fb1a371df42af7380cb3",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Disgraced Captain (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-022-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-022-NF-book-burning-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "6bcb7a65c0190f0e37db3c26b7a7b45e4733985a66836c72a68753531d79091c",
+      "local_rgba_sha256": "7f8309b5a43ae67e8bf8b6b5da545cca4752f72549bc3a9d0c4030a6c34b1cd0",
+      "cdn_rgba_sha256": "7f8309b5a43ae67e8bf8b6b5da545cca4752f72549bc3a9d0c4030a6c34b1cd0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Book Burning (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-032-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-032-NF-magician-s-code-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "9c300e95a785fc906b8a14e0952ad12fb4a6b0a22445ed26d289f763cfc61ac8",
+      "local_rgba_sha256": "36157e28dc4ee46c41acae2fbc2f653263a095f36e906cb05729b828d41f37f7",
+      "cdn_rgba_sha256": "36157e28dc4ee46c41acae2fbc2f653263a095f36e906cb05729b828d41f37f7",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Magician's Code (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-038-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-038-NF-inquisitor-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c81a9cf0bb4a1023d2f76fc763e7e6513d8bb30d0441e96d5d0da22222dd1f37",
+      "local_rgba_sha256": "14d8a2a6700d0f00d30bdf85f9faba36c09916e9cebee7e120c9ceb62078fbb0",
+      "cdn_rgba_sha256": "14d8a2a6700d0f00d30bdf85f9faba36c09916e9cebee7e120c9ceb62078fbb0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Inquisitor (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-044-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-044-NF-long-lost-heir-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "696832662474cda4e58bd16d8026af2076fce7889e8debb3afb0cc98e95e5a23",
+      "local_rgba_sha256": "1d668d41493a5c264d8995de7d7b70ce2f2fc86d4d69d95281d1a60b19b8d157",
+      "cdn_rgba_sha256": "1d668d41493a5c264d8995de7d7b70ce2f2fc86d4d69d95281d1a60b19b8d157",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Long-Lost Heir (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-049-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-049-NF-memory-of-home-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d7378f852a4294b5bce8cac44c1815474172e9bd95f6b1451bdca19cd7e3fc11",
+      "local_rgba_sha256": "a93ea8f7c0eda14eac6cc99a4528d3088cccaf42f55a2a778b4cbe852479d468",
+      "cdn_rgba_sha256": "a93ea8f7c0eda14eac6cc99a4528d3088cccaf42f55a2a778b4cbe852479d468",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Memory of Home (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-058-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-058-NF-quick-exit-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "836edb34b255a819e4ee26c766e13a6db1b2ba2933f0757ac3f377bde9129c41",
+      "local_rgba_sha256": "abe92788544a15acc0507985baf92913e526c817734e1a29ff08bc65d8384722",
+      "cdn_rgba_sha256": "abe92788544a15acc0507985baf92913e526c817734e1a29ff08bc65d8384722",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Quick Exit (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-067-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-067-NF-bewitch-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "89aaf3cdf77a44d6ffc50fa13ec7a0000d112644c0915f50f0749cc43a342ff1",
+      "local_rgba_sha256": "6829e4e21a9270bbc843156bce7cb49e8a20ad489c8fd56a35ef4ed706b34f1b",
+      "cdn_rgba_sha256": "6829e4e21a9270bbc843156bce7cb49e8a20ad489c8fd56a35ef4ed706b34f1b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bewitch (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-074-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-074-NF-vow-of-silence-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "20218d5cd2b72e3a5c9d61f4f6ea577f66b83d5731c6de1f3d5f7016ccd908cf",
+      "local_rgba_sha256": "e5911795e4d0aa65ea85afaefed3be6a220d3071bff131d53e3d948c9c30c6c5",
+      "cdn_rgba_sha256": "e5911795e4d0aa65ea85afaefed3be6a220d3071bff131d53e3d948c9c30c6c5",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vow of Silence (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-075-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-075-NF-forgotten-vault-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "9b749df64524f98e4f439f9fd6b83929d934cf62621e31c4391c7ce844677df2",
+      "local_rgba_sha256": "b5adea88afd2b44cef980d9a261ba221bc1b48b7978296eb2c4b624f3aa62afe",
+      "cdn_rgba_sha256": "b5adea88afd2b44cef980d9a261ba221bc1b48b7978296eb2c4b624f3aa62afe",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Forgotten Vault (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-086-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-086-NF-vow-of-division-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "acd2b593cfbde188ef23c5ac6ed454ee04ed9afacd20379de3b9ecac090a5769",
+      "local_rgba_sha256": "c21b0d27738f17fb6c6cd152c74e6dec2a5df9533a1c45a3cb674875fe1e8d86",
+      "cdn_rgba_sha256": "c21b0d27738f17fb6c6cd152c74e6dec2a5df9533a1c45a3cb674875fe1e8d86",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vow of Division (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-088-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-088-NF-royal-ambitions-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "10d4f7b67e117bc15b2a319628a8263d499fec696fe075c2a56e4a754d851514",
+      "local_rgba_sha256": "fcf9e58e4763b745d6cf7b61d0e6eb2a0527f06423531655d6d9d6ad66295852",
+      "cdn_rgba_sha256": "fcf9e58e4763b745d6cf7b61d0e6eb2a0527f06423531655d6d9d6ad66295852",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Royal Ambitions (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-089-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-089-NF-salt-the-earth-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "f1dced2756fa936698a29181d59794a241f9d96c59e8f04679e447cca2a071c4",
+      "local_rgba_sha256": "2ff2d03c93884bd1d275e29ad2d0f23c7217f24ff068f7d7b75f6ec99f14b8e3",
+      "cdn_rgba_sha256": "2ff2d03c93884bd1d275e29ad2d0f23c7217f24ff068f7d7b75f6ec99f14b8e3",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Salt the Earth (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-091-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-091-NF-riots-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "4aa832ef3a487822e15d4b7d27dcf35aa2a1c312fe291e96bfc049a281ff42b9",
+      "local_rgba_sha256": "f098d088dbaca62d66c3b1830a41b7d5713b77779c5fb0d2521bf563cf8573eb",
+      "cdn_rgba_sha256": "f098d088dbaca62d66c3b1830a41b7d5713b77779c5fb0d2521bf563cf8573eb",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Riots (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-095-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-095-NF-relic-thief-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "0bb5b8466fadea6a7b400a6a4a42f847d10a97fd743b1c773fa5c81977515ecf",
+      "local_rgba_sha256": "dcac66d51711a1cee5cbe7bc80db3df6d6445550fb74b5541a28558d809d5218",
+      "cdn_rgba_sha256": "dcac66d51711a1cee5cbe7bc80db3df6d6445550fb74b5541a28558d809d5218",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Relic Thief (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-099-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-099-NF-gossip-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "07f6338949c75b5c8b32fab2e41e778064ed0892c59888f3a5ba4819d5a210a4",
+      "local_rgba_sha256": "3874c88cd0d25291a6150d8ba27ed3c4f0959061be4212f976bc638f2a7e9087",
+      "cdn_rgba_sha256": "3874c88cd0d25291a6150d8ba27ed3c4f0959061be4212f976bc638f2a7e9087",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Gossip (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-100-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-100-NF-bandit-chief-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "790667e6010eded094023070beb8b2dc507fec7dfc6b5bcf123cf35110d8192f",
+      "local_rgba_sha256": "f3200945ada0ef0a192c78eb7397cf8f0de9252edb40161b51818ee0ee32e0e4",
+      "cdn_rgba_sha256": "f3200945ada0ef0a192c78eb7397cf8f0de9252edb40161b51818ee0ee32e0e4",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Chief (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-102-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-102-NF-defame-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "935496ba205635bcc6c0dcc575f05cde24dd2a6a030352fb8e51fa25649b9cdf",
+      "local_rgba_sha256": "8d1a093e87d8e7777ea9035077156fddd35811f2c4a4b4afc41533763db120a0",
+      "cdn_rgba_sha256": "8d1a093e87d8e7777ea9035077156fddd35811f2c4a4b4afc41533763db120a0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Defame (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-129-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-129-NF-a-round-of-ale-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "516f40ba0da050846850126a5d12d3caf2c962df9160a051b1f48e44006b024b",
+      "local_rgba_sha256": "9b842da7f69069e19e18f23eda8f793d1d35fc6a62319e64ac6ee6d5f0e1eff5",
+      "cdn_rgba_sha256": "9b842da7f69069e19e18f23eda8f793d1d35fc6a62319e64ac6ee6d5f0e1eff5",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/A Round of Ale (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-139-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-139-NF-relic-breaker-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "bf27f91217f52c5c4a88a8f0d73eedc5439f1b96aa8302fc4ffad1b8eb7fadb3",
+      "local_rgba_sha256": "56bdc013bb4c4ad012101a72cd4de551ae734096cce74e34b5e27a22700c1ad4",
+      "cdn_rgba_sha256": "56bdc013bb4c4ad012101a72cd4de551ae734096cce74e34b5e27a22700c1ad4",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Relic Breaker (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-141-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-141-NF-ballot-box-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "428ecc3d9e2557652b4d3aa56369927361df084eed8e56fb5985dddf1006ac50",
+      "local_rgba_sha256": "32ebb57abf310f1d40a76fee0bf42988e34fe734065d1dd9940e663c614bd5bc",
+      "cdn_rgba_sha256": "32ebb57abf310f1d40a76fee0bf42988e34fe734065d1dd9940e663c614bd5bc",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ballot Box (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-146-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-146-NF-deed-writer-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "843b633e4b053760d483d2c36a35d48f84356d6c76943bb7b23ad3adc89c52a0",
+      "local_rgba_sha256": "919fbda427949a27842a1ca65fc3a933e7facc3fdf4a30cc3076d8f23f09b5a9",
+      "cdn_rgba_sha256": "919fbda427949a27842a1ca65fc3a933e7facc3fdf4a30cc3076d8f23f09b5a9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Deed Writer (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-166-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-166-NF-ancient-pact-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "ec33bb2eb706714903b42d4bd374f2b1c2b81dcf613bb3b622270d61176df640",
+      "local_rgba_sha256": "2d7abf0ff1b6fd30ec716b80244b85cb65e7433b8c3bdf15b43ee423be7a7928",
+      "cdn_rgba_sha256": "2d7abf0ff1b6fd30ec716b80244b85cb65e7433b8c3bdf15b43ee423be7a7928",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ancient Pact (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-168-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-168-NF-family-wagon-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c68ab69cb7a8f3b46ddcc576c0931e4f22b43ebfe95f7b4c713a66e89ac63882",
+      "local_rgba_sha256": "3f08f226eb65d4a019763034b25e51cc6a7a97d8cc2530b0a19899ae71bd738b",
+      "cdn_rgba_sha256": "3f08f226eb65d4a019763034b25e51cc6a7a97d8cc2530b0a19899ae71bd738b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Family Wagon (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-173-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-173-NF-relic-worship-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c80525a7e21c0d410b860c4dcad88aef3b9f34387f8ced52a868c987bf7548f6",
+      "local_rgba_sha256": "a632b1381f454162dae9bcd8797b6f5624a714edf05d1ebe92d1e9a5768f1736",
+      "cdn_rgba_sha256": "a632b1381f454162dae9bcd8797b6f5624a714edf05d1ebe92d1e9a5768f1736",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Relic Worship (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-185-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-185-NF-vow-of-union-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "1eb8f9f8bbdf3724fab928d0826a2d114c74e1681d03655dddce336c52b9d582",
+      "local_rgba_sha256": "86c04138e097780bee4fb90a40b02b24d22c7607ec4b55434e3637cae7a244e2",
+      "cdn_rgba_sha256": "86c04138e097780bee4fb90a40b02b24d22c7607ec4b55434e3637cae7a244e2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vow of Union (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-186-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-186-NF-giant-python-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "1ed3fc2d7dc9d52b0c593f8ee59615c691fd6f351d9c7155afd22959d18df631",
+      "local_rgba_sha256": "7d74e7ac77b8b51d4e756e1c4038d485e5880e99c86fb0e2ed70c5b25db478d0",
+      "cdn_rgba_sha256": "7d74e7ac77b8b51d4e756e1c4038d485e5880e99c86fb0e2ed70c5b25db478d0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Giant Python (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-194-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-194-NF-forest-council-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "8b0b2ef5cc94577cb95dc691e38657baf77738c5d1e5f58cc538f1fafb9b5020",
+      "local_rgba_sha256": "95efb3c2241274e153d594f67e8af6f58bde9072328ec62416157b7fca94e6ff",
+      "cdn_rgba_sha256": "95efb3c2241274e153d594f67e8af6f58bde9072328ec62416157b7fca94e6ff",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Forest Council (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-197-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-197-NF-bracken-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "df3a2983a87144ddb8225b40e9926dcf32d4ee1fa3242623b2d6452d59fe61d8",
+      "local_rgba_sha256": "d405334b91b0c76978cd26b7370dd6a88b1e35c431025cbbc17baf8068945244",
+      "cdn_rgba_sha256": "d405334b91b0c76978cd26b7370dd6a88b1e35c431025cbbc17baf8068945244",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bracken (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-263-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-263-NF-oathkeeper-of-devotion-nf.png",
+      "dimensions": [
+        673,
+        898
+      ],
+      "png_sha256": "566df579588019c89eb9fd87a87cec93e71a5809248cda6af1be6b2bebfaddcb",
+      "local_rgba_sha256": "7a4ef14b4e15b2768ff99138d3e0424cd81ecd3184a3554e4dc9dfbb4f35d319",
+      "cdn_rgba_sha256": "7a4ef14b4e15b2768ff99138d3e0424cd81ecd3184a3554e4dc9dfbb4f35d319",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Devotion Oath (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-264-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-264-NF-oathkeeper-of-protection-nf.png",
+      "dimensions": [
+        673,
+        898
+      ],
+      "png_sha256": "d14496698860fb20a53a0967b23c0d766d59c7dbfe51e98e3be0982f82ece089",
+      "local_rgba_sha256": "8e1e00bef4cabeb4e92a341a8690ce6a8a15fa692af9d6c3fbd942040b9fa326",
+      "cdn_rgba_sha256": "8e1e00bef4cabeb4e92a341a8690ce6a8a15fa692af9d6c3fbd942040b9fa326",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Protection Oath (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-265-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-265-NF-oathkeeper-of-supremacy-nf.png",
+      "dimensions": [
+        673,
+        898
+      ],
+      "png_sha256": "4a7360d800ec1e5b20956616eeef8bfc156e2560caef09e86bff864de2d74709",
+      "local_rgba_sha256": "2ff04364298a043c6e562fb2a2b6358dc57f51f62226f8bc93705ea7a9f81c0d",
+      "cdn_rgba_sha256": "2ff04364298a043c6e562fb2a2b6358dc57f51f62226f8bc93705ea7a9f81c0d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Supremacy Oath (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-266-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-266-NF-oathkeeper-of-the-people-nf.png",
+      "dimensions": [
+        673,
+        898
+      ],
+      "png_sha256": "d50a6551326d9b88b70dd6fdc115fac31178bdf7dc3eb11a1f8fe7631fb47bad",
+      "local_rgba_sha256": "3137c21c1be68ba0651b81daceb15eeb7ec12689bad33098aced14a595b58c11",
+      "cdn_rgba_sha256": "3137c21c1be68ba0651b81daceb15eeb7ec12689bad33098aced14a595b58c11",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/People Oath (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-B01a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-B01a-NF-banner-of-the-people-s-favor-mob-nf.png",
+      "dimensions": [
+        1181,
+        1181
+      ],
+      "png_sha256": "e038167ed125d62608b5ae453ae35b0ad481ef8be391422ee50e9fef93e7ac62",
+      "local_rgba_sha256": "37b16f9e5034c0f6cc258c4f2f03a1ea97f7805ee9b5f9022f0e88b9d6d8742b",
+      "cdn_rgba_sha256": "37b16f9e5034c0f6cc258c4f2f03a1ea97f7805ee9b5f9022f0e88b9d6d8742b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Banner of the People's Favor - Mob (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-B01b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-B01b-NF-banner-of-the-people-s-favor-grand-council-nf.png",
+      "dimensions": [
+        1181,
+        1181
+      ],
+      "png_sha256": "441cb758323dfd209834f8ba7e8e6826adc191b942c7537ff395ead9273b2a7d",
+      "local_rgba_sha256": "b22728f4851fa1b3518b43826b0ea2a412de645921de06606849d1dbb616b94e",
+      "cdn_rgba_sha256": "b22728f4851fa1b3518b43826b0ea2a412de645921de06606849d1dbb616b94e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Banner of the People's Favor - Grand Council (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-B02a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-B02a-NF-banner-of-the-darkest-secret-wandering-flame-nf.png",
+      "dimensions": [
+        1181,
+        1181
+      ],
+      "png_sha256": "4d4745b7d87c1ad11f0599a2a8fcdb2e76d10e65e061b9404510f806b7fed345",
+      "local_rgba_sha256": "ba0eef1e45d23cf5c38a1c169c0a2b5e735ffecd4482c23ab2a21dcfa77b1c21",
+      "cdn_rgba_sha256": "ba0eef1e45d23cf5c38a1c169c0a2b5e735ffecd4482c23ab2a21dcfa77b1c21",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Banner of the Darkest Secret - Wandering Flame (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-B02b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-B02b-NF-banner-of-the-darkest-secret-festival-nf.png",
+      "dimensions": [
+        1181,
+        1181
+      ],
+      "png_sha256": "c5858421136ed03eb715c421f8dc20fa9f25a646ab3bdb66ea247003fc73c1ce",
+      "local_rgba_sha256": "624f8230a1a80d10578c29a2d5c5a5fda75c1d26af1c72b69e418bbbbe566c9d",
+      "cdn_rgba_sha256": "624f8230a1a80d10578c29a2d5c5a5fda75c1d26af1c72b69e418bbbbe566c9d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Banner of the Darkest Secret - Festival (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-CHRON01a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-CHRON01a-NF-chronicle-the-sun-nf.png",
+      "dimensions": [
+        469,
+        803
+      ],
+      "png_sha256": "2696860dfff795b6aef6c19f227bc7db76b2188a2d1d5c701bf1886c700a13c1",
+      "local_rgba_sha256": "87d5e3a8d805818c2d6897f0f44accd17176c3cc0f4d8a3bc69a03b7065c1da2",
+      "cdn_rgba_sha256": "87d5e3a8d805818c2d6897f0f44accd17176c3cc0f4d8a3bc69a03b7065c1da2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Sun (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-CHRON01b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-CHRON01b-NF-chronicle-the-sun-back-nf.png",
+      "dimensions": [
+        469,
+        803
+      ],
+      "png_sha256": "0a783eb086c0dff0f74cfd91e89efdd519fa27c9985c912d23b1427af8c12766",
+      "local_rgba_sha256": "d7e46070ed137d5b05af79dc05096d5e13cf331d028d835857f6b1fd3f3ad3b9",
+      "cdn_rgba_sha256": "d7e46070ed137d5b05af79dc05096d5e13cf331d028d835857f6b1fd3f3ad3b9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Sun - Back (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-CHRON02a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-CHRON02a-NF-chronicle-the-throne-nf.png",
+      "dimensions": [
+        469,
+        803
+      ],
+      "png_sha256": "dd6aacdc434254616fda1a20a57d896cce6008467f3df8946815989923a7d55a",
+      "local_rgba_sha256": "9e56d1e0e12489a3cedf4b87be9bff73d816ccf4c9aae2cf7d898ac1385a9b3f",
+      "cdn_rgba_sha256": "9e56d1e0e12489a3cedf4b87be9bff73d816ccf4c9aae2cf7d898ac1385a9b3f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Throne (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-CHRON02b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-CHRON02b-NF-chronicle-the-throne-back-nf.png",
+      "dimensions": [
+        469,
+        803
+      ],
+      "png_sha256": "bc76fa279eb1f80c992a5ed62d0f46564966b4665044917d892ce55b38b4af5f",
+      "local_rgba_sha256": "d57f10a0970eba18560ce97c97c730016099188cc01b2c00749dc20430e3ae8c",
+      "cdn_rgba_sha256": "d57f10a0970eba18560ce97c97c730016099188cc01b2c00749dc20430e3ae8c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Throne - Back (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-CHRON03-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-CHRON03-NF-chronicle-the-world-nf.png",
+      "dimensions": [
+        469,
+        803
+      ],
+      "png_sha256": "0cdd827d3782dbf2f1403b14e168a666e73aa6f26e7686b95ced9d252f7e7cf2",
+      "local_rgba_sha256": "1fe0534030f4bd6fda5366cb5a17ac90d9ecc612a762b1f3ad8ddce96bb2771d",
+      "cdn_rgba_sha256": "1fe0534030f4bd6fda5366cb5a17ac90d9ecc612a762b1f3ad8ddce96bb2771d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The World (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-CHRON04-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-CHRON04-NF-chronicle-the-beacon-nf.png",
+      "dimensions": [
+        469,
+        803
+      ],
+      "png_sha256": "7347b9c172da4d7105bd4506d3235e38826fa2a5368599ad203ad0e02653ac96",
+      "local_rgba_sha256": "47b5783be2de3458fcfbec43bf2695398e85b6f4185ebdf51214d026c2de35df",
+      "cdn_rgba_sha256": "47b5783be2de3458fcfbec43bf2695398e85b6f4185ebdf51214d026c2de35df",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Beacon (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-CHRON05-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-CHRON05-NF-chronicle-the-stars-nf.png",
+      "dimensions": [
+        469,
+        803
+      ],
+      "png_sha256": "4088a90382b595e5e473c33a3bf27579c7104f95b973938d7a5bfc6827633f7c",
+      "local_rgba_sha256": "c9f4d0f3b57e232f0dd79910f77e250158e0e54e5732410a7450da39db7a5edd",
+      "cdn_rgba_sha256": "c9f4d0f3b57e232f0dd79910f77e250158e0e54e5732410a7450da39db7a5edd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Stars (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E01a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E01a-NF-hall-of-debate-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c0dcedeeb3885795c1e6cbcb765d8bd4675beb06a1631e6f9eedf8689f556466",
+      "local_rgba_sha256": "616ad2a914b6b12396522a17d0eaed278964cfd53c0a4fa8d2b5bcc4ca74f7cd",
+      "cdn_rgba_sha256": "616ad2a914b6b12396522a17d0eaed278964cfd53c0a4fa8d2b5bcc4ca74f7cd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hall of Debate (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E01b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E01b-NF-hall-of-mockery-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "874151451a47d1e7a43a020ee9e239bd7633185bcb3543bf3dde567c17827444",
+      "local_rgba_sha256": "3936b1975dc253132ac16ac9a355f52925f7932ce5cfb8c062630481bf2afe54",
+      "cdn_rgba_sha256": "3936b1975dc253132ac16ac9a355f52925f7932ce5cfb8c062630481bf2afe54",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hall of Mockery (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E02a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E02a-NF-great-market-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "f133a578ed5f0af694c3367dfb638cf630304947eb492d977915910e18c4a4e6",
+      "local_rgba_sha256": "574ff40b6bfc4cb826590fb550d29d807c04dacc33f4ed3dd68439985d3df973",
+      "cdn_rgba_sha256": "574ff40b6bfc4cb826590fb550d29d807c04dacc33f4ed3dd68439985d3df973",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Great Market (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E02b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E02b-NF-bandit-market-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "85b79e9cc7963e9d063dde6ac0f5b87ee5a5a1106aec782e9427084406390598",
+      "local_rgba_sha256": "20a1bedd50ef0b0cd8bd96fd32359cd9888b786475fc8d8891f9d4ad8fe3df9b",
+      "cdn_rgba_sha256": "20a1bedd50ef0b0cd8bd96fd32359cd9888b786475fc8d8891f9d4ad8fe3df9b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Market (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E03a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E03a-NF-grand-canal-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "9b34e1a21d3c54b98e5e2a030b849201993ce49a0ec75b2749df0c5bfaaec680",
+      "local_rgba_sha256": "10a5055515a324d6a20580e27ca52daeca553c765ab8a5ef60c740b0a656a427",
+      "cdn_rgba_sha256": "10a5055515a324d6a20580e27ca52daeca553c765ab8a5ef60c740b0a656a427",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Grand Canal (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E03b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E03b-NF-lost-lagoon-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "9ec6e6dba2a9807b239032b7ba169d1ea43d1a7307f9969917d855f703ed5c4d",
+      "local_rgba_sha256": "a1b484e4e38377fa2323055228f5393b473e108f66f3aff8c28b683bffc80384",
+      "cdn_rgba_sha256": "a1b484e4e38377fa2323055228f5393b473e108f66f3aff8c28b683bffc80384",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Lost Lagoon (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E04a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E04a-NF-stone-baths-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "f09d63fb5f48d65aa30d6590b73c2e184b96df8f5561c4d151e021153975289e",
+      "local_rgba_sha256": "ce8596c2d4dc2955172643ba1cee7fa6e1396bcd1209056771f007ff443b26d2",
+      "cdn_rgba_sha256": "ce8596c2d4dc2955172643ba1cee7fa6e1396bcd1209056771f007ff443b26d2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Stone Baths (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E04b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E04b-NF-ruined-baths-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "9804bba9c290110e79b3307c804c7e7a4db766822146a445cb6aa1987b9009ad",
+      "local_rgba_sha256": "8d2276f8c292d43dede182ef7b098bc1b70b62667f92662bc45621ac36fbc601",
+      "cdn_rgba_sha256": "8d2276f8c292d43dede182ef7b098bc1b70b62667f92662bc45621ac36fbc601",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ruined Baths (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E05a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E05a-NF-amber-doors-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "98e819802fa8ce1728182495ef7aadc3cb168f90cb16c1d6e558a03d03857fd2",
+      "local_rgba_sha256": "58dfa1f03def607806f34e87e7a90cbc529993f8a00ae7a2efb1de71c4c6ab2a",
+      "cdn_rgba_sha256": "58dfa1f03def607806f34e87e7a90cbc529993f8a00ae7a2efb1de71c4c6ab2a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Amber Doors (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E05b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E05b-NF-lost-doors-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "012705fe35e2b5e131de9b46802e0ee235bf7436b4b32667493b2b0f9b51f0d4",
+      "local_rgba_sha256": "67a2543cfaf541414da5cf38d9c5f19436ae67d6d904fee90d27a667844b8d8f",
+      "cdn_rgba_sha256": "67a2543cfaf541414da5cf38d9c5f19436ae67d6d904fee90d27a667844b8d8f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Lost Doors (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E06a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E06a-NF-great-forge-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "59325ffba6126a5157e6fd2c5a7743785b3655e4a876913dafd91e55d237be76",
+      "local_rgba_sha256": "3473b49c131c4f418045ae71e61f7820ab0815290a947ebbc6e7f6f03a8d1cda",
+      "cdn_rgba_sha256": "3473b49c131c4f418045ae71e61f7820ab0815290a947ebbc6e7f6f03a8d1cda",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Great Forge (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E06b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E06b-NF-broken-forge-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d458f7bf542e1cfda4922409d874e2b2e25016bd3cb0a908728a9b51a41ea80f",
+      "local_rgba_sha256": "260afb4a8421d2ee3961d06f7c3391f2981703c48b13b73281aa0bb7bd5e2b71",
+      "cdn_rgba_sha256": "260afb4a8421d2ee3961d06f7c3391f2981703c48b13b73281aa0bb7bd5e2b71",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Broken Forge (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E07a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E07a-NF-wild-pastures-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "6ac137b9d1fe91bf01af9a8a003decbdef7dd1bf993770a36be646937ae2c148",
+      "local_rgba_sha256": "e020e358c7bfc82b0514bbe8b136c5f81931868985cc6dc91934a6ff6cfdc043",
+      "cdn_rgba_sha256": "e020e358c7bfc82b0514bbe8b136c5f81931868985cc6dc91934a6ff6cfdc043",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Wild Pastures (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E07b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E07b-NF-blasted-pastures-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "b400e44789e67ba83dc3a3e20c4280f91205398abe0441e1e644831c0b996efa",
+      "local_rgba_sha256": "aff6645f6244ac4866b06d2283ad95d362f866212970af550f344d5a5ee20c01",
+      "cdn_rgba_sha256": "aff6645f6244ac4866b06d2283ad95d362f866212970af550f344d5a5ee20c01",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Blasted Pastures (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E08a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E08a-NF-sacred-ground-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "eafab842dc648921d410f2e3a624939a57598612ad90a4f386b05775bdeddc8c",
+      "local_rgba_sha256": "26cb15550d4460c292be738f4371627aad5796e7b794fc2e2f2ead54fb4c132c",
+      "cdn_rgba_sha256": "26cb15550d4460c292be738f4371627aad5796e7b794fc2e2f2ead54fb4c132c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Sacred Ground (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E08b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E08b-NF-desecrated-ground-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "afcb64bc2a5e380c3a19abfc01e05d930309075333b3c4fcc769fc69f48921b7",
+      "local_rgba_sha256": "d55106d2afc08df908d31554acb51d259f9977ac50be20ea02bcecc480186d3c",
+      "cdn_rgba_sha256": "d55106d2afc08df908d31554acb51d259f9977ac50be20ea02bcecc480186d3c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Desecrated Ground (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E09a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E09a-NF-giant-s-path-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "1a58c91ac3120c58cd85cda446ba6d3d209ffd08441918c2cacd3f58f19a61f1",
+      "local_rgba_sha256": "55953ea99f84943db6897d64996e9a80ce8aa13c44861368d9ccf79c88c64854",
+      "cdn_rgba_sha256": "55953ea99f84943db6897d64996e9a80ce8aa13c44861368d9ccf79c88c64854",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Giant's Path (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E09b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E09b-NF-giant-s-rampage-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d6c376ee620bc19918de1aaad9b17955dbb26bd15fd65dc3b4b6ab31a8b903c1",
+      "local_rgba_sha256": "3760dde970b631c10fd17842bd188bec91ae5d5c20540d511875df7f21f18ae9",
+      "cdn_rgba_sha256": "3760dde970b631c10fd17842bd188bec91ae5d5c20540d511875df7f21f18ae9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Giant's Rampage (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E10a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E10a-NF-temple-of-ancestors-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "2a38afcb1d679e7f2a99ba82e8bcfcab43b3843c495ed02c5b554e700c6b9d26",
+      "local_rgba_sha256": "502bbfd93025dabc4feff438be7725335107a11f677a408d1451f31caf9b0b69",
+      "cdn_rgba_sha256": "502bbfd93025dabc4feff438be7725335107a11f677a408d1451f31caf9b0b69",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Temple of Ancestors (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E10b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E10b-NF-ruined-temple-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "aece4f314da0483f37b29cacd2a7e7a230c8a4151a430c8753cea5b4caaa0db0",
+      "local_rgba_sha256": "bfdea4ec3f93a672cea781afc67e8024f3c92bf0653564b63bb5518c6a62ab03",
+      "cdn_rgba_sha256": "bfdea4ec3f93a672cea781afc67e8024f3c92bf0653564b63bb5518c6a62ab03",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ruined Temple (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E11a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E11a-NF-great-spire-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "17c54c3645a318f5eb28c8c2b6ffda1b8d70f8674d0900c7380129b2fbee21a7",
+      "local_rgba_sha256": "9f6de4ade1a0908741f6877f2fbda2a3fa13c23938a004a884beae22323693b0",
+      "cdn_rgba_sha256": "9f6de4ade1a0908741f6877f2fbda2a3fa13c23938a004a884beae22323693b0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Great Spire (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E11b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E11b-NF-fallen-spire-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "efce08219487c8a3f8ac897bbba93991dce0e1375349ec442b6ed60f2251b07f",
+      "local_rgba_sha256": "fba109c1092cc5c635d40ea928c529abc226551409d750e51060baec6bc7b34a",
+      "cdn_rgba_sha256": "fba109c1092cc5c635d40ea928c529abc226551409d750e51060baec6bc7b34a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Fallen Spire (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E12a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E12a-NF-great-clock-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "a7df208a321809d35ce71d6bd3e5d25f9cd57e1fa4ef8199a69c2efa6dbb992e",
+      "local_rgba_sha256": "3e8ef04ffe71bc08297bc31d87ed624505e41c769cb3f098081091a5a41b3e9c",
+      "cdn_rgba_sha256": "3e8ef04ffe71bc08297bc31d87ed624505e41c769cb3f098081091a5a41b3e9c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Great Clock (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E12b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E12b-NF-broken-clock-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "ed501d0718a3f8c444f004337f2a4a002eaaf379e73a399801efeef379e99bac",
+      "local_rgba_sha256": "1a4b17a55a411f2a7d482846d0ec3aa22e1fb55a3b56ab054db9529d1b908503",
+      "cdn_rgba_sha256": "1a4b17a55a411f2a7d482846d0ec3aa22e1fb55a3b56ab054db9529d1b908503",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Broken Clock (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E13a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E13a-NF-underground-library-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "2ea5674cf54db98d74052018fde843053e69939e793fedf6331f0d0dd99636ca",
+      "local_rgba_sha256": "9c307a328f4e3fad8a716eaf19fed2dad1dc4141bbe74696a803249e82ef535b",
+      "cdn_rgba_sha256": "9c307a328f4e3fad8a716eaf19fed2dad1dc4141bbe74696a803249e82ef535b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Underground Library (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E13b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E13b-NF-drowned-library-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "5351119b40cdbf519c244ebde660d28944415a527335ffcae23557b2123e51ac",
+      "local_rgba_sha256": "1f593488b4640f180a4846ad8fdc23d7022be89d1e0996578127c5127a934d79",
+      "cdn_rgba_sha256": "1f593488b4640f180a4846ad8fdc23d7022be89d1e0996578127c5127a934d79",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Drowned Library (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E14a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E14a-NF-stone-portal-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d7d441860d6dcaad8869da3727351cad9838753e6cfb08e5c1f2a9a7c2153a00",
+      "local_rgba_sha256": "be04879591c1ff0bce4de7ff703ba0e76af69a71006e7a4b724ecea35a9977c9",
+      "cdn_rgba_sha256": "be04879591c1ff0bce4de7ff703ba0e76af69a71006e7a4b724ecea35a9977c9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Stone Portal (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E14b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E14b-NF-shattered-portal-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "cb9617fa5bffa4f112f6dce2f859cec2492718547cc11ab12ef6e1225c7b7d12",
+      "local_rgba_sha256": "8bf31a0c90747eea5e3d3fa11111620b4336c411f702d7a0ca5c5ceb1daca9c9",
+      "cdn_rgba_sha256": "8bf31a0c90747eea5e3d3fa11111620b4336c411f702d7a0ca5c5ceb1daca9c9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Shattered Portal (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E15a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E15a-NF-marble-fountains-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "ac1f063ddf74bc48c56f88803e319dbbad95ac8288cb6d97e5f33bfd5e332703",
+      "local_rgba_sha256": "bf84fea84b9ef49ef10b430aa557654583cb67e88905c12b44a05880629b266d",
+      "cdn_rgba_sha256": "bf84fea84b9ef49ef10b430aa557654583cb67e88905c12b44a05880629b266d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Marble Fountains (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E15b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E15b-NF-murky-fountain-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "462ff2dbba85c5b1512839da3aba39890d7b089b23329d213afa531721fb3aec",
+      "local_rgba_sha256": "468847cd7bd2be3c0728b36dc5b722974984286be5521dedae2ff6e87566ea68",
+      "cdn_rgba_sha256": "468847cd7bd2be3c0728b36dc5b722974984286be5521dedae2ff6e87566ea68",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Murky Fountain (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E16a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E16a-NF-hall-of-ministers-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "3cfcc0061ac86f63a71b195bdec5c17cc402ada481417b5eaae6bfff9a0072bf",
+      "local_rgba_sha256": "849352b03720a597a32c8e5d91385581d508a72e0f49b7fd64a5e8c1ec7bc1a7",
+      "cdn_rgba_sha256": "849352b03720a597a32c8e5d91385581d508a72e0f49b7fd64a5e8c1ec7bc1a7",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hall of Ministers (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E16b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E16b-NF-hall-of-bandits-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c36d5ef0b2b7edcc271105bb5024fa9e2cd10cf2165e831cbcee8b8cd8e093f0",
+      "local_rgba_sha256": "8b96fa2a72ea7824dabe64e5a0c5d4d726e3ca8b12e772ff7a0fa3885d29d193",
+      "cdn_rgba_sha256": "8b96fa2a72ea7824dabe64e5a0c5d4d726e3ca8b12e772ff7a0fa3885d29d193",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hall of Bandits (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E17a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E17a-NF-relic-patrols-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c97253d86b82cba1da0d4d272863f0e7ad13613589647f9800f817c2fcd83ec4",
+      "local_rgba_sha256": "7c4ed53685b91f8e5ffa4b4e147a5e6d45a37b223fe90cbab3ffdb7ccac16603",
+      "cdn_rgba_sha256": "7c4ed53685b91f8e5ffa4b4e147a5e6d45a37b223fe90cbab3ffdb7ccac16603",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Relic Patrols (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E17b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E17b-NF-bandit-patrols-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "006801dbd29d0894840cf28c0c6641e0ed8f13075bd8ea30044770cb76fee827",
+      "local_rgba_sha256": "5c7127e9707a1a4f27dae0414155eb560926ef80b5b1b8cadd7fd8ce91a3fa1c",
+      "cdn_rgba_sha256": "5c7127e9707a1a4f27dae0414155eb560926ef80b5b1b8cadd7fd8ce91a3fa1c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Patrols (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E18a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E18a-NF-tome-guardians-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "5e35ebb92818f7c6a7fa931f91900203d545b5d1c86a9d7d5f798fd69d8067b8",
+      "local_rgba_sha256": "afe6027a1dbf791f9b1c6b218796f648660a83cd11bc667e45d6b13483a07b9b",
+      "cdn_rgba_sha256": "afe6027a1dbf791f9b1c6b218796f648660a83cd11bc667e45d6b13483a07b9b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Tome Guardians (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E18b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E18b-NF-lost-guardians-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "29aabdfbd5db014e6bc52c2156723be7a41da8b49458e1e586a37e64f386fd90",
+      "local_rgba_sha256": "2aa7a8ce90844b3e97ef5f1aa6814fcdc4adaf869feda5c306f8447ca30f9141",
+      "cdn_rgba_sha256": "2aa7a8ce90844b3e97ef5f1aa6814fcdc4adaf869feda5c306f8447ca30f9141",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Lost Guardians (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E19a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E19a-NF-the-tribunal-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "312961c7f78cc703fa6d3bbc2aa59b83983c1af21edf46eddcd2298caf0e8fe3",
+      "local_rgba_sha256": "8dc226d404f6e4bebf601e43833ea9625ddc1542caf42b0bd2fb89a34455c047",
+      "cdn_rgba_sha256": "8dc226d404f6e4bebf601e43833ea9625ddc1542caf42b0bd2fb89a34455c047",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Tribunal (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E19b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E19b-NF-bandit-tribunal-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "44ee0ce2ffba75d47aee3153f0a0356a5020a9e128931471d370dca0376eee71",
+      "local_rgba_sha256": "4c540dee03a0b737bc442774d51d938bb45f3839913f5094244741cada240525",
+      "cdn_rgba_sha256": "4c540dee03a0b737bc442774d51d938bb45f3839913f5094244741cada240525",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Tribunal (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E20a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E20a-NF-towering-rampart-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c3f1c57baf358cb2be989e875a63a1a2886843646e5e3d759471b25f90884ca8",
+      "local_rgba_sha256": "27c8599853701d24121a15edc550862df0ea954168ceee54439b6fed6a10d31c",
+      "cdn_rgba_sha256": "27c8599853701d24121a15edc550862df0ea954168ceee54439b6fed6a10d31c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Towering Rampart (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E20b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E20b-NF-cracked-rampart-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "7cabfda32dbd46d046b600bc5047491dc4170b9fccf894759109c9e60217a73d",
+      "local_rgba_sha256": "bcf3cec58875f1f16b795ff176c9ca84dff41bcf58e5ff8db43a47eba16a8c8a",
+      "cdn_rgba_sha256": "bcf3cec58875f1f16b795ff176c9ca84dff41bcf58e5ff8db43a47eba16a8c8a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Cracked Rampart (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E21a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E21a-NF-festival-district-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "a4b6e61341c8bc384dc1baf25d0da251ea393dc819dea9562d683ad2ee769cc8",
+      "local_rgba_sha256": "88570315dc6bb6dc17da12405cf25000d483314726f19aac645043397eed8f20",
+      "cdn_rgba_sha256": "88570315dc6bb6dc17da12405cf25000d483314726f19aac645043397eed8f20",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Festival District (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E21b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E21b-NF-squalid-district-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "d1f24e8e2db07657a4782ff6faa8a3a4569d1bb5e94b8ad3ec86296458fcbd21",
+      "local_rgba_sha256": "eeec1680d0795fc49f6e03b9c8e7e07af972947252cde45cc612c8c92d8fdbaa",
+      "cdn_rgba_sha256": "eeec1680d0795fc49f6e03b9c8e7e07af972947252cde45cc612c8c92d8fdbaa",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Squalid District (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E22a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E22a-NF-proving-grounds-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c28be06d8f609194504fb24f224651564f6b86dc3381998711dad1424f2ee920",
+      "local_rgba_sha256": "45dcba01eff442ab11b7f7d2ec0c39a2e50ed1182a53d74be8fd6ad9ccf6628e",
+      "cdn_rgba_sha256": "45dcba01eff442ab11b7f7d2ec0c39a2e50ed1182a53d74be8fd6ad9ccf6628e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Proving Grounds (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E22b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E22b-NF-empty-grounds-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "c7339e2bf27c74dbeeec858b9e38ae37b75c3ded8bc02bb09277fb572acdfb40",
+      "local_rgba_sha256": "f752ad063888dcd748817d0169391391c266e5ceab54e481eb3b0ffd831f9417",
+      "cdn_rgba_sha256": "f752ad063888dcd748817d0169391391c266e5ceab54e481eb3b0ffd831f9417",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Empty Grounds (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E23a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E23a-NF-spiral-castle-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "2df93b4df4474a5d532897540973ea05dfdb102c983ff29b552b06cc38e27144",
+      "local_rgba_sha256": "3f84db91289d62c77b5b9299fb6ee0859397c2c860ad9c89b00bb03d3eb26642",
+      "cdn_rgba_sha256": "3f84db91289d62c77b5b9299fb6ee0859397c2c860ad9c89b00bb03d3eb26642",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Spiral Castle (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E23b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E23b-NF-spiral-dungeons-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "65479143b120e825035a001356535249a8132f65ca15fae4f02531c106f8c9eb",
+      "local_rgba_sha256": "80994487f0d66f63e62e9c4d36020131c5de0af8b0c20aaea70ca859a90f6794",
+      "cdn_rgba_sha256": "80994487f0d66f63e62e9c4d36020131c5de0af8b0c20aaea70ca859a90f6794",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Spiral Dungeons (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E24a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E24a-NF-boiling-lake-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "99564349e946f09e74e4aa9711278f522217e4835d6dbcd9312bf5d36b750eed",
+      "local_rgba_sha256": "4b8f332624c3f657ba5d7f747a1746fa8f944979e0fe3c17baea0b729bf23948",
+      "cdn_rgba_sha256": "4b8f332624c3f657ba5d7f747a1746fa8f944979e0fe3c17baea0b729bf23948",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Boiling Lake (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E24b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E24b-NF-still-boiling-lake-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "7bbc47bc99099b6f5b9230a8b77a84dd3678b07799cf8e9206343800cad37fbe",
+      "local_rgba_sha256": "5c9c287af1591bababe8d829ceed49dce3aa470ba302755b67e98234f6bc9dcb",
+      "cdn_rgba_sha256": "5c9c287af1591bababe8d829ceed49dce3aa470ba302755b67e98234f6bc9dcb",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Still Boiling Lake (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E25a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E25a-NF-hidden-passages-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "1d1f657e964e8f1d73e7f82a7fbcfb2834719b06fca439398f6b72c8039c3df3",
+      "local_rgba_sha256": "c44d62972d261ae6a79ecd8c98bc3acac9574a545e3fb631c68271c7e1c4a00e",
+      "cdn_rgba_sha256": "c44d62972d261ae6a79ecd8c98bc3acac9574a545e3fb631c68271c7e1c4a00e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hidden Passages (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E25b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E25b-NF-sinking-passages-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "eac75d20518e6c1a7182f892344ca86e3eb25ce0222d610bf3fb940c9e822d99",
+      "local_rgba_sha256": "1baf7ab18eb3fc7353740d2a622ad95201e12e51c32e49e3d5c3b1af8de53474",
+      "cdn_rgba_sha256": "1baf7ab18eb3fc7353740d2a622ad95201e12e51c32e49e3d5c3b1af8de53474",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Sinking Passages (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E26a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E26a-NF-hallowed-spring-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "db87c89b7f0192fac4e55a8461a1af52bf8077440b7633e389d53a2ff52fb509",
+      "local_rgba_sha256": "3431cc5fc0cb5114a12574b6d6cc7a4de116dc74b0403271b384db38b75b50a1",
+      "cdn_rgba_sha256": "3431cc5fc0cb5114a12574b6d6cc7a4de116dc74b0403271b384db38b75b50a1",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hallowed Spring (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E26b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E26b-NF-hiding-place-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "bd6ec14c9c635a63e7560eb34cd7c0732e1a51834e3985e309b2f245bc1b5742",
+      "local_rgba_sha256": "351274b77f7f069d87e9d9d16c7ff2a0ba7e51796455c3a7a8f536d1adffb6a4",
+      "cdn_rgba_sha256": "351274b77f7f069d87e9d9d16c7ff2a0ba7e51796455c3a7a8f536d1adffb6a4",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hiding Place (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E27a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E27a-NF-school-of-vines-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "bc43eb93910a7e138906f0d405dc1b938cc840ccfa6015ef45f9daf1b9bd5a41",
+      "local_rgba_sha256": "23ca94143cdc50d33f0e4a44b706f81e6eb2a5211d725714f93d88e65b11b44e",
+      "cdn_rgba_sha256": "23ca94143cdc50d33f0e4a44b706f81e6eb2a5211d725714f93d88e65b11b44e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/School of Vines (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E27b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E27b-NF-ruined-school-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "cd33bfebfe655911c954701775faa48309bf7f3ab50db4d023561821960d8ac1",
+      "local_rgba_sha256": "4aac4faa94b52c0726f92a3cc6508045e69ff6a335ddba03a82378c1d0981953",
+      "cdn_rgba_sha256": "4aac4faa94b52c0726f92a3cc6508045e69ff6a335ddba03a82378c1d0981953",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ruined School (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E28a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E28a-NF-oaken-fortress-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "382f019a2be17435c1dc687584f58c359856c5f814322b24479e344321761012",
+      "local_rgba_sha256": "74ef0b314d4ba1232946b8ab6914be57167f849b5957b532905e08b02ce90add",
+      "cdn_rgba_sha256": "74ef0b314d4ba1232946b8ab6914be57167f849b5957b532905e08b02ce90add",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Oaken Fortress (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E28b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E28b-NF-rotting-fortress-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "bf2753c474f6c4dfd19ff12cba868417535686641e64fb5c7cbce399cb36a519",
+      "local_rgba_sha256": "b337f5046cb2cac46ef5ab954c6112d4764e1030ee1683ac71992f144f0b891c",
+      "cdn_rgba_sha256": "b337f5046cb2cac46ef5ab954c6112d4764e1030ee1683ac71992f144f0b891c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Rotting Fortress (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E29a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E29a-NF-forbidden-forest-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "de1da95aed68208aaf5f19d09b6d9691d2f09314075db09c7cdd80d780195cf6",
+      "local_rgba_sha256": "f2e3ca305e50ee28283a467eb5e59b91a01fdf7c98875786c1f9fa7b86be2a66",
+      "cdn_rgba_sha256": "f2e3ca305e50ee28283a467eb5e59b91a01fdf7c98875786c1f9fa7b86be2a66",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Forbidden Forest (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E29b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E29b-NF-bandit-forest-nf.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "e05be8892d3c3117c0b7d4493233eed3bca0d08082e2fb455c438694b831e10c",
+      "local_rgba_sha256": "db9e043c44652efa2655d19b4da0c8e459719f2b4cf66fde45d0d9de885a97c9",
+      "cdn_rgba_sha256": "db9e043c44652efa2655d19b4da0c8e459719f2b4cf66fde45d0d9de885a97c9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Forest (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E30a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E30a-NF-forest-horn.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "df4ee0f83cf8532e34c9d5491b49ca6ea9a9e93d27ed11addb2312bc7da1a41d",
+      "local_rgba_sha256": "f92e6f3855cbd4199c147424e7b4ac4e747cb57b2ea584edde58fd885bbc8aca",
+      "cdn_rgba_sha256": "f92e6f3855cbd4199c147424e7b4ac4e747cb57b2ea584edde58fd885bbc8aca",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Forest Horn (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-E30b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-E30b-NF-broken-horn.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "6a6344bec6e42f1e32e89a62e18870a0d17b036196633297ffeec370555b8bd6",
+      "local_rgba_sha256": "e74b7f864e334c6d8d5f9dedac5a62bab068a31a4ed4325cd811ba2ae557bdbd",
+      "cdn_rgba_sha256": "e74b7f864e334c6d8d5f9dedac5a62bab068a31a4ed4325cd811ba2ae557bdbd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Broken Horn (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-GrandScepter-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-GrandScepter-NF-the-grand-scepter-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "c1775db25262118e9ec6bca5a7a6992f5db39bdc6110c0117bed106151f9d8da",
+      "local_rgba_sha256": "575ffc48b3783b06d94c7ef55a49ec643a8fdcceb1a4d06e702d549d72d14b20",
+      "cdn_rgba_sha256": "575ffc48b3783b06d94c7ef55a49ec643a8fdcceb1a4d06e702d549d72d14b20",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Grand Scepter (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L01-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L01-NF-iron-hand.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "fd30e8b49d7df99195cd1b6f7a381415affa8dc6178f0a98244fa2f97f999d0f",
+      "local_rgba_sha256": "8a37087a2337eed9578b2b284e677ad560624fd6c57485ae3134d9a9a1a99f8f",
+      "cdn_rgba_sha256": "8a37087a2337eed9578b2b284e677ad560624fd6c57485ae3134d9a9a1a99f8f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Iron Hand (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L02-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L02-NF-chronicler.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "33a910a1607d799269cfb72964b42b61c19f3b83d2249a5c32cad2ee861b2371",
+      "local_rgba_sha256": "f92f9c3565f727b1e24eb5fea2102604450c782085a9cdef661f54a6a082c10a",
+      "cdn_rgba_sha256": "f92f9c3565f727b1e24eb5fea2102604450c782085a9cdef661f54a6a082c10a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Chronicler (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L03-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L03-NF-steadfast.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "30eb1dad99235047da2240d0957ede1cf136697693d324d5bcd04b3201ebc6ba",
+      "local_rgba_sha256": "e7c14284fca1bce20a07e1877e82319bab6014cbcaf2907adf19023e3df146cd",
+      "cdn_rgba_sha256": "e7c14284fca1bce20a07e1877e82319bab6014cbcaf2907adf19023e3df146cd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Steadfast (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L04-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L04-NF-peacemaker.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "5d4f357e05c28aef168edd3281d39d2b8d90ee6ac6dc98858e4d342b45fb29d0",
+      "local_rgba_sha256": "82cb7eb35179a5f6a6401e713cb265a2daafbb460dd5c48f19116cc54c456381",
+      "cdn_rgba_sha256": "82cb7eb35179a5f6a6401e713cb265a2daafbb460dd5c48f19116cc54c456381",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Peacemaker (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L05-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L05-NF-the-needle.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "ebded2c4d1cf2ae819801cd4d9bf054ea85ce683fa39ff2efdf2600337c83fce",
+      "local_rgba_sha256": "93a3e27f1c1d39b80223093ad0f57ec83a00eb0ad521f834226cc6206fbfb6fe",
+      "cdn_rgba_sha256": "93a3e27f1c1d39b80223093ad0f57ec83a00eb0ad521f834226cc6206fbfb6fe",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Needle (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L06-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L06-NF-circle-of-swords.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "2ef5c0aba003c911757e425fee4a70beb593c0e49b6a355642f382aafeaf551b",
+      "local_rgba_sha256": "271a6f800951b9938e9b58dbc3bb5bdcccb3dfb0f1dc8d63bb3f75f4543798b7",
+      "cdn_rgba_sha256": "271a6f800951b9938e9b58dbc3bb5bdcccb3dfb0f1dc8d63bb3f75f4543798b7",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Circle of Swords (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L07-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L07-NF-great-architect.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "f3e0e28622a6ea30773b650202df8e7f2cf306a239e27dc3c62368b34af10925",
+      "local_rgba_sha256": "3a97d5f4f05495a471cb247c89141bd630a8c205376f4597fcc6e2279a4110ed",
+      "cdn_rgba_sha256": "3a97d5f4f05495a471cb247c89141bd630a8c205376f4597fcc6e2279a4110ed",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Great Architect (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L08-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L08-NF-ancestral-lands.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "bbd887155c7816bed04ba5144a582bc99ef502abe4f41fe97199d47ddd21d83b",
+      "local_rgba_sha256": "a91b0abc29cf99cfe23779dbedd90e06c1ae3b2b7e1c574bee92928d36adb546",
+      "cdn_rgba_sha256": "a91b0abc29cf99cfe23779dbedd90e06c1ae3b2b7e1c574bee92928d36adb546",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ancestral Lands (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L09-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L09-NF-scepter-bearer.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "accc8f21c9342e5725f6abf2ee9295a0e6e2f1991a0dcb7ed1ff9316686cd5e3",
+      "local_rgba_sha256": "574fb235faf54645a4d519d22a96f9449d6555f5d28a9c149e234db66e4fd7c4",
+      "cdn_rgba_sha256": "574fb235faf54645a4d519d22a96f9449d6555f5d28a9c149e234db66e4fd7c4",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Scepter Bearer (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L10-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L10-NF-royal-line.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "1da8320e98b8cec1f4f23c93551b73988aa8440c761eaf658d26c11787d476e3",
+      "local_rgba_sha256": "33b68104d7d260787f33bd22dee4e9f23cbc901f3991af299e47372129cf8602",
+      "cdn_rgba_sha256": "33b68104d7d260787f33bd22dee4e9f23cbc901f3991af299e47372129cf8602",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Royal Line (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L11-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L11-NF-keeper-of-order.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "cd56bd9a93b2726c7234d635ecc62ff1ef6bb4505b744a5fa97ac15204da80da",
+      "local_rgba_sha256": "fb75a9e689e3db8a036c87c636b5cc31b20eb9d69c94cdc4f7619386c361b247",
+      "cdn_rgba_sha256": "fb75a9e689e3db8a036c87c636b5cc31b20eb9d69c94cdc4f7619386c361b247",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Keeper of Order (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L12-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L12-NF-golden-key.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "571156792cec1444419992f4ae1840fa1462d311939594ac936afb12818d3761",
+      "local_rgba_sha256": "3d6f88b00a9fa0be1e0615b90e7dc85bb999a4ceecb11ddcc9837464909df398",
+      "cdn_rgba_sha256": "3d6f88b00a9fa0be1e0615b90e7dc85bb999a4ceecb11ddcc9837464909df398",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Golden Key (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L13-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L13-NF-world-crafter.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "6b0625517eba4785f85e9229aaeb7c526282e1334edf7e0f8a32bf91b6d8e55f",
+      "local_rgba_sha256": "e45809ac1dffcaf579cbed062c1ffc8fa7552a7a21c3d272046da928ac48ebe4",
+      "cdn_rgba_sha256": "e45809ac1dffcaf579cbed062c1ffc8fa7552a7a21c3d272046da928ac48ebe4",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/World Crafter (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L14-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L14-NF-matchmaker.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "7030fb0d3201d519c46bf6e158f8bec72ac4d78a42614a42b7d22aeeec4756d8",
+      "local_rgba_sha256": "09d0534f2a159a6b284f9a7c84c6f8c59b62682c6d31e3db8857c10e239dd139",
+      "cdn_rgba_sha256": "09d0534f2a159a6b284f9a7c84c6f8c59b62682c6d31e3db8857c10e239dd139",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Matchmaker (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L15-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L15-NF-revolutionary.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "a62273216de1d989006fc0cf775f17dccdc9012ab2a7b28ec1d4520262a8580d",
+      "local_rgba_sha256": "eb3bc21c6a03cab4f04f126cca67a0452eefe3a48ebf0d37ff7d3c805913e83f",
+      "cdn_rgba_sha256": "eb3bc21c6a03cab4f04f126cca67a0452eefe3a48ebf0d37ff7d3c805913e83f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Revolutionary (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L16-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L16-NF-populist.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "9315ba2364e68b0bce4c2bfc7a72e2378c308f1a8b5e833206f862015a320367",
+      "local_rgba_sha256": "a90fbe797cc870b03ee40af3cdef3fc42ccda4569447f485843aad32916fb391",
+      "cdn_rgba_sha256": "a90fbe797cc870b03ee40af3cdef3fc42ccda4569447f485843aad32916fb391",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Populist (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L17-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L17-NF-rival.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "8b33e97f74abab763d1f7a9051e29ef822abeb12c09ac022197733f554aecbbf",
+      "local_rgba_sha256": "8cfe149e1785749cf336de81c92ee3811166fcdd43666fd89eae1ae48fabc63b",
+      "cdn_rgba_sha256": "8cfe149e1785749cf336de81c92ee3811166fcdd43666fd89eae1ae48fabc63b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Rival (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L18-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L18-NF-the-standard-bearer.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "426c1ddafbd3c0912d594985779177c6898cc7dab25c2e771473bafaa2a35343",
+      "local_rgba_sha256": "2b5d7ff6924eb9504acfa88a741d0c992c2883b0e0e45023bc901a93d4ae7173",
+      "cdn_rgba_sha256": "2b5d7ff6924eb9504acfa88a741d0c992c2883b0e0e45023bc901a93d4ae7173",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Standard Bearer (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L19-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L19-NF-the-ear.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "778b73a27512b83186bc923a1745d1711b52bf5f5b73bb91cc7b818df807d505",
+      "local_rgba_sha256": "48f49785a48b2be7c08ed6b517ffd4a80dcc97f3f675f8d57425e1e38f9b878d",
+      "cdn_rgba_sha256": "48f49785a48b2be7c08ed6b517ffd4a80dcc97f3f675f8d57425e1e38f9b878d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Ear (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L20-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L20-NF-heirloom.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "b77a7b2c1e80309e80c9b982d7f2a455b16967a216afb90d8d953e8aab16698b",
+      "local_rgba_sha256": "00486edabf593497817c2a7e34e0da2d0029ebbf26cbae3365e5e1e5c3800ff5",
+      "cdn_rgba_sha256": "00486edabf593497817c2a7e34e0da2d0029ebbf26cbae3365e5e1e5c3800ff5",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Heirloom (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L21-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L21-NF-high-priest.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "031a94e469da2245e0c40fbe5548918f861db6366d5271778a6e0e3b3a2928c9",
+      "local_rgba_sha256": "0d5133e0812f4d19ea3bb39b1708a9c261472d1c1d3b863a4a49ff3e890b1a3e",
+      "cdn_rgba_sha256": "0d5133e0812f4d19ea3bb39b1708a9c261472d1c1d3b863a4a49ff3e890b1a3e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/High Priest (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L22-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L22-NF-seer.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "9152b9c727a61fb8a74914669e5089940130c7d253e7096cb5c78f63698c242a",
+      "local_rgba_sha256": "3c516905ea4f0952abaff63912a29869ac21cb98943cefdd8579094e01e867e5",
+      "cdn_rgba_sha256": "3c516905ea4f0952abaff63912a29869ac21cb98943cefdd8579094e01e867e5",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Seer (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L23-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L23-NF-arbiter.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "dda47381e2c147543adff5769c7364481e1cb5603be11b5b9376673a7c0163b1",
+      "local_rgba_sha256": "d37a0f5250e4e0d549b771e6dee252945ab52859314ab34145a6bed0282c0b8c",
+      "cdn_rgba_sha256": "d37a0f5250e4e0d549b771e6dee252945ab52859314ab34145a6bed0282c0b8c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Arbiter (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L24-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L24-NF-the-bright-beacon.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "af71718349a1af63f80576962a387bd3e2f5de6a0328aaa3578afdd35d160bda",
+      "local_rgba_sha256": "bf6ac00cd938abf9fcbad1bc7b2855646330bd51deb201bf337784cf1c554035",
+      "cdn_rgba_sha256": "bf6ac00cd938abf9fcbad1bc7b2855646330bd51deb201bf337784cf1c554035",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Bright Beacon (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L25-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L25-NF-oaths-of-loyalty.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "beed49defa8492a7094fef5e4b561e8709cdc8c19baec53dbf00160d2fcc94aa",
+      "local_rgba_sha256": "7a598a23dac607b1723efed37e8b66c620c4695f44eb791dd7b851dcffeede9f",
+      "cdn_rgba_sha256": "7a598a23dac607b1723efed37e8b66c620c4695f44eb791dd7b851dcffeede9f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Oaths of Loyalty (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L26-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L26-NF-conspirator.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "21f8e34ac68a6b139a078a46821a99f0aa5ce997f1a234f777f2c7de1779bbe1",
+      "local_rgba_sha256": "31f03b296a8e7b1986464117e3d580dda5255b5690436d9b140c595e50db04bf",
+      "cdn_rgba_sha256": "31f03b296a8e7b1986464117e3d580dda5255b5690436d9b140c595e50db04bf",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Conspirator (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L27-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L27-NF-light-fingers.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "29cd4326ff539f0eded4fd9186713904bbb79f0b123a7faec6c862f2f3125e2e",
+      "local_rgba_sha256": "0a1d5f58d66bc86b11851a4aa108fe69f8d9fc74260d59d96b97bc6a02246021",
+      "cdn_rgba_sha256": "0a1d5f58d66bc86b11851a4aa108fe69f8d9fc74260d59d96b97bc6a02246021",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Light Fingers (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L28-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L28-NF-secret-society.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "624a70c0d111ee96763bdffcd4c231a9b2eb1dc4c575270920ee450fe0763c45",
+      "local_rgba_sha256": "755dcac809b579291e36d0ffba5395668faba712c5edaebb27e1e6dbc5d60192",
+      "cdn_rgba_sha256": "755dcac809b579291e36d0ffba5395668faba712c5edaebb27e1e6dbc5d60192",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Secret Society (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L29-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L29-NF-ruthless.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "55705af098905a043fc7c51b7bbeb218645252b81d0e766a7fc479f4d83cb6c8",
+      "local_rgba_sha256": "9dbfc08329c21d17ba44769dab30ec9d60ba337566ae0665c1d20ef9c7256074",
+      "cdn_rgba_sha256": "9dbfc08329c21d17ba44769dab30ec9d60ba337566ae0665c1d20ef9c7256074",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ruthless (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L30-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L30-NF-quest-to-distant-lands.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "7a2dfd5da0511fde3eff666dc0eafb25f88c66535b9d1c4f17aa88589b28163a",
+      "local_rgba_sha256": "e250d11e7eadd64b8318e343e28f2e725c81e719e93e47b2b222979add9e399e",
+      "cdn_rgba_sha256": "e250d11e7eadd64b8318e343e28f2e725c81e719e93e47b2b222979add9e399e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Quest to Distant Lands (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L31-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L31-NF-wealthy.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "245604649beeb2ca1040c9d7a648e3d3f37da3632f529085a8ea9205805b6fa1",
+      "local_rgba_sha256": "864f06d09a288ce06fb53a0856136eb86a49fc50d3f27c3900d4ecb3106ca615",
+      "cdn_rgba_sha256": "864f06d09a288ce06fb53a0856136eb86a49fc50d3f27c3900d4ecb3106ca615",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Wealthy (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L32-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L32-NF-gatekeeper.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "ef121d702f75df3ffdcc548db816b2ce9abe58ddc51fb7ae9135474bc2a4eb3b",
+      "local_rgba_sha256": "770041853f07c41919310941c7ac4076b52303ac5ed9279c3e79de0c45c2a1cc",
+      "cdn_rgba_sha256": "770041853f07c41919310941c7ac4076b52303ac5ed9279c3e79de0c45c2a1cc",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Gatekeeper (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L33-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L33-NF-beloved.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "0885a2520e09469376152a7e63037e33e02960aa3c47da34b384412504556e45",
+      "local_rgba_sha256": "04d3a4df263ce231f8794619a507eabfddbe15891f5f2b27458d087e6d43d0af",
+      "cdn_rgba_sha256": "04d3a4df263ce231f8794619a507eabfddbe15891f5f2b27458d087e6d43d0af",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Beloved (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L34-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L34-NF-the-mouth.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "b11a076fc4c2e8a064e8676774a6204018ac641853d24357134b199d7ffb2bf4",
+      "local_rgba_sha256": "22daac1406c780e0b25b4a1aeb04cda2505c4593d545866c6d0746245ef537f3",
+      "cdn_rgba_sha256": "22daac1406c780e0b25b4a1aeb04cda2505c4593d545866c6d0746245ef537f3",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/The Mouth (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L35-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L35-NF-reformer.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "70bbfde19ff057f60ebcf215d22671358574171070b55ad8d919952e462b7fa8",
+      "local_rgba_sha256": "453ef410a5c6d94aaef1d9a6e15bb766456d6392221d7d4d1de495f3619769b8",
+      "cdn_rgba_sha256": "453ef410a5c6d94aaef1d9a6e15bb766456d6392221d7d4d1de495f3619769b8",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Reformer (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-L36-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-L36-NF-pathfinder.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "3ae09581ebd61a55b25a619ad6b5eacb961b263a1b257dfaa393dbb35627cb03",
+      "local_rgba_sha256": "9fa72e4c7377924f2e1d2f70bdc510155d205ef485b11138e5fcb48f77e903a0",
+      "cdn_rgba_sha256": "9fa72e4c7377924f2e1d2f70bdc510155d205ef485b11138e5fcb48f77e903a0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Pathfinder (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R01-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R01-NF-sticky-fire-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "34fecd9ad2b1e9f3b4ccdc7e7e669a8908dfaf77a638816df42437b58aca75e6",
+      "local_rgba_sha256": "6d30ddbd1dc82552e182deadbd7c0ece5e100a75564bb6babbd858c6242babb2",
+      "cdn_rgba_sha256": "6d30ddbd1dc82552e182deadbd7c0ece5e100a75564bb6babbd858c6242babb2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Sticky Fire (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R02-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R02-NF-cursed-cauldron-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "07daca9a3bff52f79baa248e13dacdca6540e496772a51f73409cd844ed4ec33",
+      "local_rgba_sha256": "63d034e08640423772711f1a4c8beaeb386befb20bf29390542a5453d9df8b28",
+      "cdn_rgba_sha256": "63d034e08640423772711f1a4c8beaeb386befb20bf29390542a5453d9df8b28",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Cursed Cauldron (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R03-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R03-NF-brass-horse-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "768a225ad289087f7d3f4a5ffcb6046442e8950eab788ac70a3754f59420269b",
+      "local_rgba_sha256": "22829367d188da664971ca0236c7cd1a8a1908485a1614daa5e93b30b11988a2",
+      "cdn_rgba_sha256": "22829367d188da664971ca0236c7cd1a8a1908485a1614daa5e93b30b11988a2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Brass Horse (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R04-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R04-NF-truthful-harp-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "7293a2b112c503b1a27d77a1e7a896a0102f6cc51813c753eb215c4c7e913641",
+      "local_rgba_sha256": "6e40d91ed893a41b79f961886dc8d9add384fca1d398e6d81e4ceca439e7bd06",
+      "cdn_rgba_sha256": "6e40d91ed893a41b79f961886dc8d9add384fca1d398e6d81e4ceca439e7bd06",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Truthful Harp (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R05-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R05-NF-grand-mask-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "1609871279cb6b94043055f0ccedf97f5ad461f092cd536b273feda2ebc65bef",
+      "local_rgba_sha256": "b19562ed510531ed4f853adc506580c16f01122acc1fa0bda3edf5d2371cb6a8",
+      "cdn_rgba_sha256": "b19562ed510531ed4f853adc506580c16f01122acc1fa0bda3edf5d2371cb6a8",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Grand Mask (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R06-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R06-NF-horned-mask-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "7b8f2936c24767664080cc748ce0eb3e8e7e201f0e95e9331ec7276ba54ff3b8",
+      "local_rgba_sha256": "f108eba792dee0aff352ed09cb2a0a19236a48e790310b6f53c8cf7ece6e5a02",
+      "cdn_rgba_sha256": "f108eba792dee0aff352ed09cb2a0a19236a48e790310b6f53c8cf7ece6e5a02",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Horned Mask (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R07-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R07-NF-cup-of-plenty-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "b78bb50a24e31f0de270a45acdd20c3d6b3f2eac53d701d0250b86d4eb3f8a3b",
+      "local_rgba_sha256": "cc9c6a72a871432c34099adb2bc7fb3c310ccf1a171615f49a9c1ea4360326c1",
+      "cdn_rgba_sha256": "cc9c6a72a871432c34099adb2bc7fb3c310ccf1a171615f49a9c1ea4360326c1",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Cup of Plenty (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R08-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R08-NF-whistle-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "aeb2f3f30d0a00ea12e837a034b37f27b77f4ca19f5fc8751c52ffab16807eb5",
+      "local_rgba_sha256": "fba8c8f97b0c52a8cd282d8abdcdb14aa4a304fcdc14be671b60ed5011f65ddb",
+      "cdn_rgba_sha256": "fba8c8f97b0c52a8cd282d8abdcdb14aa4a304fcdc14be671b60ed5011f65ddb",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Whistle (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R09-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R09-NF-dowsing-sticks-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "9c1d4b987badd3acb2ecdea9d071ef9486d589030463e6b8e383657f585536d0",
+      "local_rgba_sha256": "c0d43cb3c98d320022c2f5ca9263362995792a46fc9d88c8e811595cbc176fb6",
+      "cdn_rgba_sha256": "c0d43cb3c98d320022c2f5ca9263362995792a46fc9d88c8e811595cbc176fb6",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Dowsing Sticks (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R10-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R10-NF-cracked-horn-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "c75ee3ce088b7ccb874a3a587003ced65842008a616156b1772aa166a1370c6a",
+      "local_rgba_sha256": "733e9bbc52110dd392fee22a2e0f056cd545af0fb2053db1004883ce1700f43f",
+      "cdn_rgba_sha256": "733e9bbc52110dd392fee22a2e0f056cd545af0fb2053db1004883ce1700f43f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Cracked Horn (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R11-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R11-NF-bandit-crown-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "ce161444afc4eeac9dd73c2a813c73b5ae58c890944d7786e5177aad01476e4b",
+      "local_rgba_sha256": "3d77f94fc9aac9e8c631f4860491ffc459d5601451fd02a0d8219b715bc97395",
+      "cdn_rgba_sha256": "3d77f94fc9aac9e8c631f4860491ffc459d5601451fd02a0d8219b715bc97395",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Crown (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R12-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R12-NF-ring-of-devotion-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "c722d93bb10190b65f24aeefa1c136569cc09aa76e235c2945cc871b00eb8a31",
+      "local_rgba_sha256": "dbd7b4ba2548979206bd468641d92a9980c63584bb7ce41a71f278037043b8ee",
+      "cdn_rgba_sha256": "dbd7b4ba2548979206bd468641d92a9980c63584bb7ce41a71f278037043b8ee",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ring of Devotion (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R13-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R13-NF-skeleton-key-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "36547761036a62a8b881577b45160d6f002542f57e0b1861fdcf5eca672babcd",
+      "local_rgba_sha256": "c4ed3ab491fa4a115aa5f0e8ff7f3fd0265d0c15f3607649a6d0857219b6e530",
+      "cdn_rgba_sha256": "c4ed3ab491fa4a115aa5f0e8ff7f3fd0265d0c15f3607649a6d0857219b6e530",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Skeleton Key (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R14-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R14-NF-oracular-pig-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "25a7bca60892459f552026d77a40764a4f94b703bc760655d18da54f57627c5a",
+      "local_rgba_sha256": "36095a841dc4b16d515a82a168a9ae1491aa7f5ccc4c9ee47c64edef55c571a6",
+      "cdn_rgba_sha256": "36095a841dc4b16d515a82a168a9ae1491aa7f5ccc4c9ee47c64edef55c571a6",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Oracular Pig (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R15-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R15-NF-circlet-of-command-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "957d19ce98357e3b5f9c82b541cb387c49967b44535cb97ddcd23d44f85f49f8",
+      "local_rgba_sha256": "4af2e8ce3b0979296c60dab29d67c71384065b2c684dfe20ff2a89c4264cc0ac",
+      "cdn_rgba_sha256": "4af2e8ce3b0979296c60dab29d67c71384065b2c684dfe20ff2a89c4264cc0ac",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Circlet of Command (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R16-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R16-NF-ivory-eye-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "edc496b9aef62128f93d5cb03450b5fb6a9104c0512e6f8fa43856f7cdf2d2f5",
+      "local_rgba_sha256": "4cd9d1fa2e3640cf6833cbe0fd77435e50e6296bad627a67ea0adecb5535cfa2",
+      "cdn_rgba_sha256": "4cd9d1fa2e3640cf6833cbe0fd77435e50e6296bad627a67ea0adecb5535cfa2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ivory Eye (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R17-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R17-NF-shifting-map-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "2f169ffaa1dff00a2ffcc5110e6f455f6c8239f6bba214e5291878c0652fa61e",
+      "local_rgba_sha256": "947aa04e0a5b9d2292f255f0551c636a2e2753631dea73e6ab749c8b256d297a",
+      "cdn_rgba_sha256": "947aa04e0a5b9d2292f255f0551c636a2e2753631dea73e6ab749c8b256d297a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Shifting Map (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R18-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R18-NF-obsidian-cage-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "8f6133775739ed9581d2f0fbee355514807fb002d1a2a42761a65efb9d9a3bb0",
+      "local_rgba_sha256": "d8b811f85e0c6b882ee3e788684412e8214c47ca39056da7ae0e844219f72bc7",
+      "cdn_rgba_sha256": "d8b811f85e0c6b882ee3e788684412e8214c47ca39056da7ae0e844219f72bc7",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Obsidian Cage (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R19-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R19-NF-book-of-records-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "a299a345df57df64759499bbe650754f13c7431daf58487319acc5064220eeb5",
+      "local_rgba_sha256": "445f9e0f2f62757f4656a86a7b495b7e378f961cec7026cefbe71c2d67921bc9",
+      "cdn_rgba_sha256": "445f9e0f2f62757f4656a86a7b495b7e378f961cec7026cefbe71c2d67921bc9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Book of Records (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R20-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R20-NF-dragonskin-drum-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "caeb7e71018b8d7e45552225e917de008e172c11f58e1bec312bd8ecedc5d907",
+      "local_rgba_sha256": "42cbcecce4a1a5f0a87bd9f69b0550164dd8a3a329a7b19d8ad5661bfcbd4a7e",
+      "cdn_rgba_sha256": "42cbcecce4a1a5f0a87bd9f69b0550164dd8a3a329a7b19d8ad5661bfcbd4a7e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Dragonskin Drum (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R21-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R21-NF-crystal-vial-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "2c879c6b94c4cda1940ff4ba3995e8585d8a7aef4b2542acd1ac91912f5d047e",
+      "local_rgba_sha256": "e9dffa376504d25b781367ea371c872f820213fc274cfa603a0d57688ade1c5a",
+      "cdn_rgba_sha256": "e9dffa376504d25b781367ea371c872f820213fc274cfa603a0d57688ade1c5a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Crystal Vial (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R22-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R22-NF-ancient-writ-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "67ba9c0280ad547a44db7dfd05040a0c21a963cf3aaed1318561b70804144a00",
+      "local_rgba_sha256": "0c8691ecaffe0c4486eeb2a9e89045f16458dc57f6e32e0871562eb24dc49fe7",
+      "cdn_rgba_sha256": "0c8691ecaffe0c4486eeb2a9e89045f16458dc57f6e32e0871562eb24dc49fe7",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ancient Writ (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R23-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R23-NF-painted-trumpet-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "a6aeb1be2f711ca7aa5cfb088c344e4cea9d64692b540e307c086aa02fa4ef41",
+      "local_rgba_sha256": "d8fdf4b75c58f62b0ea2bb2b156612243d3ff77d3a676db294ecb166a965bfcf",
+      "cdn_rgba_sha256": "d8fdf4b75c58f62b0ea2bb2b156612243d3ff77d3a676db294ecb166a965bfcf",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Painted Trumpet (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R24-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R24-NF-bone-dice-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "4aa3f89ea9ff4e7d9eda100ec4aa5da7d45cc58b9fb747cc679170b6df0cbbda",
+      "local_rgba_sha256": "31455407479bc730952a10c4f226b0a4b749b23fad022edac0261f858de0839f",
+      "cdn_rgba_sha256": "31455407479bc730952a10c4f226b0a4b749b23fad022edac0261f858de0839f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bone Dice (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R25-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R25-NF-brass-army-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "1bc44c980d188370566dd966bbc3f894774e92e172e7da6bc42e4f9cacdf5d63",
+      "local_rgba_sha256": "7928ff74b767751b39979054763c8a13739414c4639d28901727bb44a664ad57",
+      "cdn_rgba_sha256": "7928ff74b767751b39979054763c8a13739414c4639d28901727bb44a664ad57",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Brass Army (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R26-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R26-NF-imperial-seal-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "1011bf56bd4051ecd208861704567b50cad9e8c9f52cc0c0c3a5fba6d1490cde",
+      "local_rgba_sha256": "79a8b157f2767cf07d02dc89de14dab8d6ca9ef925493023c96dacff0ad655bb",
+      "cdn_rgba_sha256": "79a8b157f2767cf07d02dc89de14dab8d6ca9ef925493023c96dacff0ad655bb",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Imperial Seal (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R27-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R27-NF-fearsome-shield-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "81013dd5aaf830aa0367b71bc21d1bffedf71baf9ebf127efe8f5389e1fc3b40",
+      "local_rgba_sha256": "17e86c2ba076afcf676603d05aab7da39aee176d5a5fa996303d81ee5ffd2150",
+      "cdn_rgba_sha256": "17e86c2ba076afcf676603d05aab7da39aee176d5a5fa996303d81ee5ffd2150",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Fearsome Shield (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R28-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R28-NF-singing-mask-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "2584e34b6a5dc736ac95a5249cc4c32ae2dff56495f3371377578ab512f125a6",
+      "local_rgba_sha256": "3517057595cbf3029f09022e3f467db35738cf0464ed8cfc712da27b9b0fddc3",
+      "cdn_rgba_sha256": "3517057595cbf3029f09022e3f467db35738cf0464ed8cfc712da27b9b0fddc3",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Singing Mask (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R29-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R29-NF-lost-tapestry-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "55cac9460c66c9d0bbe5782b00e5eaab208704735f9928362431029ee68f2828",
+      "local_rgba_sha256": "a4aa979bf6b67e51a72cdf36743b11440de223533cf567bb411f71f289e8aa43",
+      "cdn_rgba_sha256": "a4aa979bf6b67e51a72cdf36743b11440de223533cf567bb411f71f289e8aa43",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Lost Tapestry (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R30-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R30-NF-bandit-standard-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "1c592634473c67adf14479ee58cb9611e69cd4fc054614495baee88c53175b9a",
+      "local_rgba_sha256": "8f78b75ba8c0d2135ac2de2347c917885fbc30164d651d5c0e9cb8a418c0aca6",
+      "cdn_rgba_sha256": "8f78b75ba8c0d2135ac2de2347c917885fbc30164d651d5c0e9cb8a418c0aca6",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bandit Standard (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R31-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R31-NF-silver-charm-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "dcca92c4924546c53b1f7fbda3844f52bb351d854471013e3d8550a08694c295",
+      "local_rgba_sha256": "8832ec7d0a837886341f41833b48aecba28bfccd2cd4e515fd08cbf790dabdcc",
+      "cdn_rgba_sha256": "8832ec7d0a837886341f41833b48aecba28bfccd2cd4e515fd08cbf790dabdcc",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Silver Charm (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R32-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R32-NF-amber-flame-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "606c3d9a670243d01da68ef3d747cbec6588e4049a0d2e46a4ceb3ecccd0915d",
+      "local_rgba_sha256": "cd174c336c7d496cda6c0e8e16cd5c2dda48e36825f560fc766661dde94e5416",
+      "cdn_rgba_sha256": "cd174c336c7d496cda6c0e8e16cd5c2dda48e36825f560fc766661dde94e5416",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Amber Flame (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R33-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R33-NF-wine-of-welcome-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "f7ee6610210e14f775bf9aded6dc196695446883de4a5ec9043881a5203ffce0",
+      "local_rgba_sha256": "45459417e29bfd0b478df6aa45af3af87a67ea55aa13501623b22cdc2852990b",
+      "cdn_rgba_sha256": "45459417e29bfd0b478df6aa45af3af87a67ea55aa13501623b22cdc2852990b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Wine of Welcome (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R34-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R34-NF-whispering-stone-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "9d149468470f5e556b1fd305f54f5a5ddb21762002eb133dea707f47eec70ebf",
+      "local_rgba_sha256": "240000433daac94e366f7cc4df0e63e78ebb7417eff1be249247f12410712abb",
+      "cdn_rgba_sha256": "240000433daac94e366f7cc4df0e63e78ebb7417eff1be249247f12410712abb",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Whispering Stone (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R35-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R35-NF-black-sword-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "a7c20c2d6c7af77cf8ce2adfe477183b6999445231ada3653b130210ac020685",
+      "local_rgba_sha256": "c59dd332de3bf5d397c364fc904db547abb8b7121033b4d56ff1bee1d75999be",
+      "cdn_rgba_sha256": "c59dd332de3bf5d397c364fc904db547abb8b7121033b4d56ff1bee1d75999be",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Black Sword (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R36-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R36-NF-barbed-net-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "9dc1df519aa3c5b5cda42786f5cc3e81ca75ea858881e9bc6b959469f982dc0e",
+      "local_rgba_sha256": "dda2ed59f6814cde7890d7fa9ac14f280e6e5f353727658f98e7deb62b2bf496",
+      "cdn_rgba_sha256": "dda2ed59f6814cde7890d7fa9ac14f280e6e5f353727658f98e7deb62b2bf496",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Barbed Net (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R37-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R37-NF-bag-of-siegeworks-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "1e93a1932a0208890e6e3ac84c3c7b5f64b40b0574580af2c99d1bec18057ba6",
+      "local_rgba_sha256": "e1eaad9ab07f073a7428627011cfaa80accf3079122d5b563792a18a6f20893e",
+      "cdn_rgba_sha256": "e1eaad9ab07f073a7428627011cfaa80accf3079122d5b563792a18a6f20893e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Bag of Siegeworks (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R38-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R38-NF-secret-testament-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "13330bd671296c3df14bec4b3a74fa25184e755ac62fa3764e2bd1b3e9ae7ab1",
+      "local_rgba_sha256": "faa2b341160ab7d98b28785674d0fd86dc53b2cc3c3f128bfda67e8e6c5ed56c",
+      "cdn_rgba_sha256": "faa2b341160ab7d98b28785674d0fd86dc53b2cc3c3f128bfda67e8e6c5ed56c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Secret Testament (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R39-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R39-NF-magic-carpet-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "4e73b715f79cd26994725f4afa64fb0fa1517b8611e470ade1fc62188dda567f",
+      "local_rgba_sha256": "81aa253664aba33380eaae332dc71c697ac43f917b70e91e89f80e45fa0f8234",
+      "cdn_rgba_sha256": "81aa253664aba33380eaae332dc71c697ac43f917b70e91e89f80e45fa0f8234",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Magic Carpet (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R40-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R40-NF-yew-staff-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "ec09553df7f58ed73e4af828406ba735b0544b5d5e321df043930ededf875bcd",
+      "local_rgba_sha256": "ca1c0343af906d772622363cc62e65faf7dea72c667cb5c6c8cee5138b693001",
+      "cdn_rgba_sha256": "ca1c0343af906d772622363cc62e65faf7dea72c667cb5c6c8cee5138b693001",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Yew Staff (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R41-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R41-NF-spiteful-mirror-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "ef2762c961324b6a806335cc934cee4722834205e2f4d3a42209f0d2e6b72669",
+      "local_rgba_sha256": "99893c9e9893a3d8a8acf86bf32cc2d3fe08cfe3908241a405b245842ade049e",
+      "cdn_rgba_sha256": "99893c9e9893a3d8a8acf86bf32cc2d3fe08cfe3908241a405b245842ade049e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Spiteful Mirror (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R42-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R42-NF-weeping-banner-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "05c9045d8bcffc0cf0c7a55d6631eaaf9d5f61ac2d7d798d019615f92989af4a",
+      "local_rgba_sha256": "570aacf56372a1e09820f512ed30f7c64cf8d5f0d7ef4fe1cc02aa571164122a",
+      "cdn_rgba_sha256": "570aacf56372a1e09820f512ed30f7c64cf8d5f0d7ef4fe1cc02aa571164122a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Weeping Banner (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R43-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R43-NF-sigil-of-the-eye-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "493c196650b688955b0c685681e4d99a5d2ac5bb264e36780c35a336ef5bda9a",
+      "local_rgba_sha256": "023b089aae24adf08fb7accbed648545a0a7a7f3e06bec7a3ce31126f9b25f65",
+      "cdn_rgba_sha256": "023b089aae24adf08fb7accbed648545a0a7a7f3e06bec7a3ce31126f9b25f65",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Sigil of the Eye (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R44-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R44-NF-sigil-of-the-heart-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "9c813953eafc7e4b1826d652f10203e1b066015ffacdaf0f4fbf416fe647c207",
+      "local_rgba_sha256": "fb250907f17134cbbe513bf63e6b911401eccad22a2e5fc3340f78e2eb59ad97",
+      "cdn_rgba_sha256": "fb250907f17134cbbe513bf63e6b911401eccad22a2e5fc3340f78e2eb59ad97",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Sigil of the Heart (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R45-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R45-NF-magic-waterskin-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "68c4c05ff5c257d2eb21a47d512e58efadf74b2a8829b7c42932270a1c7d941c",
+      "local_rgba_sha256": "dbb12fab6b203f9cb13ac6597002c760ebfa738ac8e54982fb0d2944dee46b58",
+      "cdn_rgba_sha256": "dbb12fab6b203f9cb13ac6597002c760ebfa738ac8e54982fb0d2944dee46b58",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Magic Waterskin (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R46-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R46-NF-demon-tail-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "068ca2d00c1010c60aa65a649be05868f42a7d0e293dc75e4accc0ee9f3ca941",
+      "local_rgba_sha256": "957db3854d07ee6271820dc4eedbfe3dd3c9449e26e72a8c84ddc84474c5b0ef",
+      "cdn_rgba_sha256": "957db3854d07ee6271820dc4eedbfe3dd3c9449e26e72a8c84ddc84474c5b0ef",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Demon Tail (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-R47-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-R47-NF-clay-rattle-nf.png",
+      "dimensions": [
+        381,
+        381
+      ],
+      "png_sha256": "2cfb90b121f316705c832ceb936441359b4b70bff69f4fb5bac7bf4f03a43b46",
+      "local_rgba_sha256": "650ba78b7c2ebd68e3e260cda52c166073adc30eaae4092d98922cbf403ec3ca",
+      "cdn_rgba_sha256": "650ba78b7c2ebd68e3e260cda52c166073adc30eaae4092d98922cbf403ec3ca",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Clay Rattle (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S01-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S01-NF-fair-isle-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "6384065354482bdec8ee926e393d263a307e27dd35d11a848e6b5c3e38a67dc4",
+      "local_rgba_sha256": "7682b16da80566313a21dbd0d1f192121433de7d79d23fa6c78fd0af7bf44876",
+      "cdn_rgba_sha256": "7682b16da80566313a21dbd0d1f192121433de7d79d23fa6c78fd0af7bf44876",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Fair Isle (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S02-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S02-NF-sunken-isles-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "8b514e9ad140a21191a6f685890ca3fe52a2fa9af9af243e4953cc52aaa65dec",
+      "local_rgba_sha256": "b6f4f80dfff9105ae5e61ba59d1dd02f4e098159b68a44554cc0c26614f77bb1",
+      "cdn_rgba_sha256": "b6f4f80dfff9105ae5e61ba59d1dd02f4e098159b68a44554cc0c26614f77bb1",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Sunken Isles (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S03-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S03-NF-tidal-marshes-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "aac06d2c77250e33b8d86385358c24dafa2829fef09100d682fbbf190971388b",
+      "local_rgba_sha256": "e06294ceefa0ebf5478646448639db9255bafb17e0b1a370ba1b4200d1d54cc1",
+      "cdn_rgba_sha256": "e06294ceefa0ebf5478646448639db9255bafb17e0b1a370ba1b4200d1d54cc1",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Tidal Marshes (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S04-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S04-NF-broken-peaks-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "77a4b7d4f5ea371a6947a9a31f329be2f7fad1750fa9282d6dfb3b2223a37fb2",
+      "local_rgba_sha256": "325174fe16b306dca7756eb23e0c44c4398116384d1bdc2fbd30800ae46b8f81",
+      "cdn_rgba_sha256": "325174fe16b306dca7756eb23e0c44c4398116384d1bdc2fbd30800ae46b8f81",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Broken Peaks (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S05-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S05-NF-standing-stones-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "7ceeb09887873a27b018218bc19a65eb79f0b887e8762047b890fdef3ab48af3",
+      "local_rgba_sha256": "104b63ad6808946ab5661d97386580b2d5d4ea2309189837a87d182e91754826",
+      "cdn_rgba_sha256": "104b63ad6808946ab5661d97386580b2d5d4ea2309189837a87d182e91754826",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Standing Stones (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S06-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S06-NF-hidden-place-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "43b227e7a89876275ca13bdda50544d002d4810a900f1acef5b405384b47e591",
+      "local_rgba_sha256": "ad52fb6201694cb9ad77f601e444fdc10f09bc05bb1d364644e603f57c24993e",
+      "cdn_rgba_sha256": "ad52fb6201694cb9ad77f601e444fdc10f09bc05bb1d364644e603f57c24993e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Hidden Place (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S07-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S07-NF-solitary-pillar-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "3c627a4876a3221806755d3f41c2394caa464c063bcfdad689b614c2a82483b8",
+      "local_rgba_sha256": "8598a3fb4163efbba9dbcb0d37c8336447de73142e1ab3e764356a6fb18eb5e9",
+      "cdn_rgba_sha256": "8598a3fb4163efbba9dbcb0d37c8336447de73142e1ab3e764356a6fb18eb5e9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Solitary Pillar (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S08-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S08-NF-ancient-city-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "8d80d79bec700a8f63b50b515791c5b477d602291e68d27cf90ed6c97281c8c1",
+      "local_rgba_sha256": "3a39493d0cecc3a82dd5703be9dcbb2e744c8929ca626f8cdb1002a5936d731a",
+      "cdn_rgba_sha256": "3a39493d0cecc3a82dd5703be9dcbb2e744c8929ca626f8cdb1002a5936d731a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Ancient City (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S09-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S09-NF-painted-towers-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "56a538aa46a18464097fdfdebed09473b22f14728e81ce188ac12bc7d1f91e84",
+      "local_rgba_sha256": "7cf3e7c597875ebf21b611241f9be01e3b1b13d5e0914b365c3636c4aab0202c",
+      "cdn_rgba_sha256": "7cf3e7c597875ebf21b611241f9be01e3b1b13d5e0914b365c3636c4aab0202c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Painted Towers (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S10-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S10-NF-desolate-shore-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "9955e2cb7fb6a3831142d76f87d819a8e8f251770e9b151d43d6c4f07bb97faf",
+      "local_rgba_sha256": "06d22c254eef7bce38be6b93ab3cf45dc59bfb2cfc02b399eb3f9c54466470dd",
+      "cdn_rgba_sha256": "06d22c254eef7bce38be6b93ab3cf45dc59bfb2cfc02b399eb3f9c54466470dd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Desolate Shore (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S11-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S11-NF-deep-woods-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "4e98742058c8e5e853f8e9fac5b92b147d0f42a1ecdabb85607ffe93066bc2af",
+      "local_rgba_sha256": "be17796a97ee3dfeffad085e8ad93e898b33655615a3d980c7994475b45eec9e",
+      "cdn_rgba_sha256": "be17796a97ee3dfeffad085e8ad93e898b33655615a3d980c7994475b45eec9e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Deep Woods (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S12-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S12-NF-narrow-pass-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "ab3f5f1fbb30c24528d70da40e2c41cfde2e4197919d0353ed23c89dcd571810",
+      "local_rgba_sha256": "93f35f2400fdb2a7f9a2f824da883c90eeeb760fec76bb72bd7de9b614efdd1b",
+      "cdn_rgba_sha256": "93f35f2400fdb2a7f9a2f824da883c90eeeb760fec76bb72bd7de9b614efdd1b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Narrow Pass (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S13-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S13-NF-mines-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "afc1fc3250cb51f2afcdefedb186405238436f192db977c6366f1302caf05c81",
+      "local_rgba_sha256": "3c30620499feeac757412f7e219557a7b0263daf4bef902fb77045faf3cdd23f",
+      "cdn_rgba_sha256": "3c30620499feeac757412f7e219557a7b0263daf4bef902fb77045faf3cdd23f",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Mines (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S14-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S14-NF-salt-flats-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "f6c28543e450884cc3a1558461c5664ac4f176d2e35f4097a8e9979cc07a2afc",
+      "local_rgba_sha256": "ac0cff78cc96afb778b7daf89384e52cf2f489513c307ced2d7fd4132da67b04",
+      "cdn_rgba_sha256": "ac0cff78cc96afb778b7daf89384e52cf2f489513c307ced2d7fd4132da67b04",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Salt Flats (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S15-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S15-NF-steppe-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "f0c2929d050f51ff0cc9302c89d673b7d80067e6d751b445636b5204441d06d5",
+      "local_rgba_sha256": "a340fce1a1bdb6633340a46940c8f39d422de0ff295c60b309ec00f331e45d54",
+      "cdn_rgba_sha256": "a340fce1a1bdb6633340a46940c8f39d422de0ff295c60b309ec00f331e45d54",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Steppe (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S16-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S16-NF-golden-valley-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "fb5d84169e09fe2a9ad91b6456c86419280e0b8e91417691496f48fbf19bdacf",
+      "local_rgba_sha256": "7583e78ff5e543f7db80920f9316ebeb4a5b55c6a9f93bfd6569efa2e628c68d",
+      "cdn_rgba_sha256": "7583e78ff5e543f7db80920f9316ebeb4a5b55c6a9f93bfd6569efa2e628c68d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Golden Valley (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S17-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S17-NF-riverbank-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "0f1ad7de214f1ceeed5f8afdf17aaf091b1f1c2e99b48da287536b55c3a15883",
+      "local_rgba_sha256": "114a594745339c735ce5d55efade1e03375fd7e3e5229ef493cdaaaf36641a7e",
+      "cdn_rgba_sha256": "114a594745339c735ce5d55efade1e03375fd7e3e5229ef493cdaaaf36641a7e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Riverbank (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S18-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S18-NF-headwaters-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "e8aa78897b5917c0b164ea4b637ede65cac387f9680f6577b1c298aaf4cb0beb",
+      "local_rgba_sha256": "d214bdf6625cffeb29797835bbf031800364e2995683a34fae1d9ad0ec20ef03",
+      "cdn_rgba_sha256": "d214bdf6625cffeb29797835bbf031800364e2995683a34fae1d9ad0ec20ef03",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Headwaters (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S19-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S19-NF-buried-giant-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "c6a3ebde2e4f85ea54a50883c4b56518839e6cb99652826793cf406ab0bfab0f",
+      "local_rgba_sha256": "be7e760ce399ea599de2977112da74693e104131a33b9be33081185d1bd2781e",
+      "cdn_rgba_sha256": "be7e760ce399ea599de2977112da74693e104131a33b9be33081185d1bd2781e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Buried Giant (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S20-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S20-NF-great-slum-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "186b45f663ef8bbaaf4b2ab56091261202566c6c7827b18be8cce6a70b9cc5b2",
+      "local_rgba_sha256": "631cd75f4ce3eeac8d14a0ffdb6e755665768d5a1990ff4bffd6e772ca1c595d",
+      "cdn_rgba_sha256": "631cd75f4ce3eeac8d14a0ffdb6e755665768d5a1990ff4bffd6e772ca1c595d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Great Slum (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S21-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S21-NF-green-shore-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "40e693c37bf670578004010d1ed5a93231e75afbc4a6fde8e80f8206ddaee18e",
+      "local_rgba_sha256": "f322340637f491de0caff33d7126a5582c9e9d1a416f6c3cbcaa7c15e186c681",
+      "cdn_rgba_sha256": "f322340637f491de0caff33d7126a5582c9e9d1a416f6c3cbcaa7c15e186c681",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Green Shore (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S22-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S22-NF-dunes-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "ccaf3f7750247899571896d35c7bbceef3dd66da43bc53aa742f6c74d92ea1ff",
+      "local_rgba_sha256": "f4867dcf8b4429879173faeda96966d12f1a8bd166f404c86fa9ead12b67169e",
+      "cdn_rgba_sha256": "f4867dcf8b4429879173faeda96966d12f1a8bd166f404c86fa9ead12b67169e",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Dunes (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S23-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S23-NF-rocky-coast-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "66ee415507c54b279eff322f0061c307cc1d68559b0c114be5ada9b766fb2d97",
+      "local_rgba_sha256": "315f87d8425c6212722304067c7ded3e7170bd53412f071d17b16936dcac68d0",
+      "cdn_rgba_sha256": "315f87d8425c6212722304067c7ded3e7170bd53412f071d17b16936dcac68d0",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Rocky Coast (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-S24-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-S24-NF-shrouded-woods-nf.png",
+      "dimensions": [
+        770,
+        596
+      ],
+      "png_sha256": "1061e0292f9ca93884de03fb5b5540f9cb2afc7190f4c57bceea6320cc0ac633",
+      "local_rgba_sha256": "1bac3c74107c1ebdc901308c1b9ba777669f46a3b8e1afd4ef77ab3a88bf77de",
+      "cdn_rgba_sha256": "1bac3c74107c1ebdc901308c1b9ba777669f46a3b8e1afd4ef77ab3a88bf77de",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Shrouded Woods (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP01-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP01-NF-setup-table.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "f4707fcbe5bcfe03b83f7b19286e4197dbafb0decffcaa89810b438280ad87c5",
+      "local_rgba_sha256": "115f150a23ed4d9384a99836ca0e3f6ed08ad181d20534cd2264471a30ecd238",
+      "cdn_rgba_sha256": "115f150a23ed4d9384a99836ca0e3f6ed08ad181d20534cd2264471a30ecd238",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Table (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP02a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP02a-NF-setup-players.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "7f78c8ce42d641d0ed2b4a5f21e0fdafc01ee4acb973a9d01b7088ed910f60b8",
+      "local_rgba_sha256": "919d6e8e3573f9a9cab64a1ca1d41c30c86fd7e40a58e300afc817eb53f37c94",
+      "cdn_rgba_sha256": "919d6e8e3573f9a9cab64a1ca1d41c30c86fd7e40a58e300afc817eb53f37c94",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Players (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP02b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP02b-NF-setup-chancellor.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "a59a95e5115ebe3b798481c429b1d5ae264cca91e3416b034a8b968a97cbd82a",
+      "local_rgba_sha256": "ae6c90ae24c3a1fd792775d164176ccf2964741b21cd3213de45b0f92f560e62",
+      "cdn_rgba_sha256": "ae6c90ae24c3a1fd792775d164176ccf2964741b21cd3213de45b0f92f560e62",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Chancellor (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP03a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP03a-NF-setup-empire.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "b04ac1213b67b10bb554d7272edf1bd1f56bc0cf5161558a53a5980ec665fadf",
+      "local_rgba_sha256": "03b992cd2659c9d4ac16d128e1dfc1d0aa412523c31c105c8783d5e6e106c175",
+      "cdn_rgba_sha256": "03b992cd2659c9d4ac16d128e1dfc1d0aa412523c31c105c8783d5e6e106c175",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Empire (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP03b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP03b-NF-setup-no-empire.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "2d9211ae3a23f5878680c504116aab665aa66c09f4f71c543b4801197bdb2737",
+      "local_rgba_sha256": "9a7047a9120da5359f50015716950f3178eef339c17cb9a5dbbf6e601c39cb2b",
+      "cdn_rgba_sha256": "9a7047a9120da5359f50015716950f3178eef339c17cb9a5dbbf6e601c39cb2b",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/No Empire (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP04a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP04a-NF-setup-foundation-i-imperial-maps.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "e7f290d8cbc8a8e3ea30b3b70afb85574edb7a0aab0690825b50601842070aee",
+      "local_rgba_sha256": "371de9759a56ea4ce8d5d54cd5687bcac9a603b1e92ded276ddc3cfa8d8af643",
+      "cdn_rgba_sha256": "371de9759a56ea4ce8d5d54cd5687bcac9a603b1e92ded276ddc3cfa8d8af643",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation I - Imperial Maps (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP04b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP04b-NF-setup-foundation-i-wide-horizons.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "3e392fd8532e1ffc94b08cb841e3f18c6e652a08a1d226105d9fbf6ed6e3e66f",
+      "local_rgba_sha256": "bcf601f920396ecccdf47b66cd66142470d167158ef58871725d93aebc2a0bdf",
+      "cdn_rgba_sha256": "bcf601f920396ecccdf47b66cd66142470d167158ef58871725d93aebc2a0bdf",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation I - Wide Horizons (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP05a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP05a-NF-setup-foundation-ii-powerful-tribes.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "56c6192ee29cd5e5c7ea657215bf76c5f86c7d6ffcd8695f455c40af2df37b6c",
+      "local_rgba_sha256": "9f7b00a47bc740456099f8bd0ff3cb12dbbae7ae700f44a159dc1d6fc29ff3f9",
+      "cdn_rgba_sha256": "9f7b00a47bc740456099f8bd0ff3cb12dbbae7ae700f44a159dc1d6fc29ff3f9",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation II - Powerful Tribes (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP05b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP05b-NF-setup-foundation-ii-movers-and-shakers.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "8737448219bf9cb64d1a4fb7d307b0cf65a342d74146c7045be8838bc3790003",
+      "local_rgba_sha256": "5162ad2e896eeee61301c744ee57acdcc0f4b74bbe7f1a0e3bec887da14357f2",
+      "cdn_rgba_sha256": "5162ad2e896eeee61301c744ee57acdcc0f4b74bbe7f1a0e3bec887da14357f2",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation II - Movers and Shakers (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP06a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP06a-NF-setup-foundation-iii-quiet-ambitions.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "e175ee9a818f3f8d8d87922a20ca31687e67d4690a52d9f57bad6204cfdd1a5f",
+      "local_rgba_sha256": "c20369a116ee95775cc85e0f00c0c65c44982db08817824336e0f837b0275a0a",
+      "cdn_rgba_sha256": "c20369a116ee95775cc85e0f00c0c65c44982db08817824336e0f837b0275a0a",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation III - Quiet Ambitions (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP06b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP06b-NF-setup-foundation-iii-public-ambitions.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "3f50fcea3103fabf27ba67a690b509028c6bc3c56493aa23b1745ccf30122653",
+      "local_rgba_sha256": "9548e8a4397382befa1c5c8c99ac0f1b74c0cc317c237066ec9808f5a474701d",
+      "cdn_rgba_sha256": "9548e8a4397382befa1c5c8c99ac0f1b74c0cc317c237066ec9808f5a474701d",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation III - Public Ambitions (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP07a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP07a-NF-setup-foundation-iv-ties-of-fellowship.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "6f5a27ec96a1c5cb8633a3f0135907021f7d13d5e505802c6a7b0f1d4090b44a",
+      "local_rgba_sha256": "cc6801684ac58798986a7fdcb42a9f5e95ef4746cdb566afb168025106b572cf",
+      "cdn_rgba_sha256": "cc6801684ac58798986a7fdcb42a9f5e95ef4746cdb566afb168025106b572cf",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation IV - Ties of Fellowship (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP07b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP07b-NF-setup-foundation-iv-teeming-world.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "4957a1725e92aa34e8f5cde543fee5dd3534324080f5f7979ba9fb4272eea89e",
+      "local_rgba_sha256": "620e2cb71840b9ccd83bf3b0dc7e5a65eb8c4196d102436a16a8c8deef85ddb1",
+      "cdn_rgba_sha256": "620e2cb71840b9ccd83bf3b0dc7e5a65eb8c4196d102436a16a8c8deef85ddb1",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation IV - Teeming World (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP08a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP08a-NF-setup-foundation-v-mob-s-favor.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "4212eae91bc566a1f4fb8f5f3c98035ec102d1dc913a5ffb5a27815a2568239f",
+      "local_rgba_sha256": "bf0a92a7e9dd7dfa5ff6f026d02cf764ffd9645ef84bc27b1786b6e98dc79816",
+      "cdn_rgba_sha256": "bf0a92a7e9dd7dfa5ff6f026d02cf764ffd9645ef84bc27b1786b6e98dc79816",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation V - Mob's Favor (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP08b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP08b-NF-setup-foundation-v-grand-council.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "eed40d9b6d91c3a27e60f5fcbd69f1487b9d0f8a086ff3c5cd979e0acfb05f3a",
+      "local_rgba_sha256": "427eeaf310b7ab436f509bd955da190d5ac94be1badc831e186399997729c218",
+      "cdn_rgba_sha256": "427eeaf310b7ab436f509bd955da190d5ac94be1badc831e186399997729c218",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation V - Grand Council (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP09a-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP09a-NF-setup-foundation-vi-wandering-flame.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "ce87d56783a954557b28dae1f6fca81c7647f568ea944c58751d6f8d57edd67e",
+      "local_rgba_sha256": "82c73fda1cd8bd201feec51dbd410a9d9c553c5a505b49710685d5b511c32afd",
+      "cdn_rgba_sha256": "82c73fda1cd8bd201feec51dbd410a9d9c553c5a505b49710685d5b511c32afd",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation VI - Wandering Flame (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP09b-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP09b-NF-setup-foundation-vi-festival.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "bc8be1c9b716831d8e3009ceac3a978340d7af43db441b06359dd276f3776ca2",
+      "local_rgba_sha256": "e94cbe9fddadd9fac10acd96f97eb31ab3497df255bdac4512a17811270c8699",
+      "cdn_rgba_sha256": "e94cbe9fddadd9fac10acd96f97eb31ab3497df255bdac4512a17811270c8699",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Foundation VI - Festival (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP10-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP10-NF-setup-sites-and-world-deck.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "7a045fd729478e5c5739dde0e3d0b06e5183e0e282d6dfe41b09e20d7a680c83",
+      "local_rgba_sha256": "53f4b49cc46dff2ba0bb00b66ba60ad076a27f42e15920dfeb8558f11aa20213",
+      "cdn_rgba_sha256": "53f4b49cc46dff2ba0bb00b66ba60ad076a27f42e15920dfeb8558f11aa20213",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Sites and World Deck (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-SETUP11-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-SETUP11-NF-setup-player-choices.png",
+      "dimensions": [
+        381,
+        596
+      ],
+      "png_sha256": "a44ed0e380dee521281549ab405fb0e78213f79d42c17ed36a0490dcfe983db4",
+      "local_rgba_sha256": "a341c8502a454f5da56ed3b1afe4ac71e0d7affde65d36f0a15604e2a80ef2a3",
+      "cdn_rgba_sha256": "a341c8502a454f5da56ed3b1afe4ac71e0d7affde65d36f0a15604e2a80ef2a3",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Player Choices (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-V1-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-V1-NF-conspiracy-nf.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "9a041528b9ada4665d7141778383284f05769d964ca0b13014e4d3069963f99e",
+      "local_rgba_sha256": "313700d4bb987cf8ba15daf9f171ab364498450cd186230ac9757416981e423c",
+      "cdn_rgba_sha256": "313700d4bb987cf8ba15daf9f171ab364498450cd186230ac9757416981e423c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Conspiracy (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-V2-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-V2-NF-vision-of-faith-nf.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "34f488a9754b41c04e2bf7094a8510e13d773edccf5298da750bc73b7dcf3e07",
+      "local_rgba_sha256": "0b11c3d468c6faa8c11bf91ce9b9ef7a9f3fa38daba37d51c68e0e9b1af00996",
+      "cdn_rgba_sha256": "0b11c3d468c6faa8c11bf91ce9b9ef7a9f3fa38daba37d51c68e0e9b1af00996",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vision of Faith (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-V3-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-V3-NF-vision-of-rebellion-nf.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "abcdc93d10cd9117a5d6d2557507fb40afc6dce22d219bc085ba707584de6aec",
+      "local_rgba_sha256": "ff0b6ffda2ae9aaf6fafe64eda6e590387bd89558d9c09bc112ac0868ca64679",
+      "cdn_rgba_sha256": "ff0b6ffda2ae9aaf6fafe64eda6e590387bd89558d9c09bc112ac0868ca64679",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vision of Rebellion (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-V4-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-V4-NF-vision-of-sanctuary-nf.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "d5de48e3735d68fd137a8891f8a1d8ac7ff86b55ce1d9a62bf089d1edaa84713",
+      "local_rgba_sha256": "7359e0058372b2d01340adb009f1f5f8fa02e129731263c88666d87c62c2d957",
+      "cdn_rgba_sha256": "7359e0058372b2d01340adb009f1f5f8fa02e129731263c88666d87c62c2d957",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vision of Sanctuary (NF).png",
+      "official_png_in_repository": true
+    },
+    {
+      "id": "OATH-V5-NF",
+      "product": "oath-newfoundations",
+      "image": "OATH-V5-NF-vision-of-conquest-nf.png",
+      "dimensions": [
+        596,
+        381
+      ],
+      "png_sha256": "32031ae07981628fe8163686b26bad9b65efaad409b039d71eeada28adb18924",
+      "local_rgba_sha256": "f287e08787aaca8cb2946b6fac2dbef4f6ea1314829331498746e5e537efbf0c",
+      "cdn_rgba_sha256": "f287e08787aaca8cb2946b6fac2dbef4f6ea1314829331498746e5e537efbf0c",
+      "matches_cdn_pixels": true,
+      "official_png_path": "content/card-images/oath/en-US/Vision of Conquest (NF).png",
+      "official_png_in_repository": true
+    }
+  ],
+  "errors": [],
+  "duplicate_image_groups": [],
+  "all_images_match_cdn": true,
+  "all_images_have_official_png": true,
+  "image_snapshot": "webp_conversions_before_original_png_replacement",
+  "current_image_audit": "original-png-audit.json"
+}

@@ -1,40 +1,38 @@
 # Repository Guidelines
 
-## Project Structure & Module Organization
+## Scope & Orientation
 
-This Spanish-language Oath Telegram bot runs through GitHub Actions using Python's standard library.
+Read [README.md](README.md) and [the project state](docs/ESTADO_PROYECTO.md) first. Three flows generate the public catalog, post daily cards, and publish weekly news. Local NF/Denizen images and terminology are prepared; Spanish card translations, fan layouts, and local-image delivery remain pending. Runtime still uses English and remote images.
 
-- `send_daily_card.py`: deterministic daily selection, captions, and Telegram photo delivery.
-- `generate_cards.py`: downloads and decodes the public catalog; `tests/` contains its offline `unittest` tests.
-- `send_weekly_digestv3.py`: active news digest using Gemini and Telegram. `send_weekly_digest.py` and `send_weekly_digestv2.py` are earlier implementations.
-- `oath_cards.json`: base game and Denizen Pack cards, including source metadata and historical `legacy_id` references. Images remain external.
-- `history.json`: automated delivery history.
-- `.github/workflows/`: schedules, Python setup, and secrets. Workflows are authoritative when README instructions differ.
+## Project Structure
 
-## Build, Test, and Development Commands
+- `generate_cards.py`, `tests/`: catalog export and offline `unittest` coverage.
+- `send_daily_card.py`: daily delivery; `send_weekly_digestv3.py`: active digest. Other digest versions are historical.
+- `oath_cards.json`: runtime base + Denizen catalog; `history.json`: workflow-managed delivery history.
+- `local_cards/`: NF + Denizen originals, translation placeholders, guides, and dated audits; excludes base.
+- `local_cards/translation/glossary.csv`: canonical terminology decisions. Markdown views require synchronization; context JSON is historical evidence.
+- `assets/`: original automatic transcripts; preserve them and record interpretations separately.
+- `.github/workflows/`: authoritative runtime schedules and entry points.
 
-Use Python 3.12 from the repository root. No build or installation is required.
+## Build, Test & Development
 
-- `python3 -m py_compile *.py`: check syntax without sending messages.
-- `python3 generate_cards.py --dry-run`: validate the current public catalog; omit `--dry-run` to update JSON.
-- `python3 -m json.tool oath_cards.json > /dev/null`: validate catalog JSON; repeat for `history.json`.
-- `python3 send_daily_card.py`: send today's card to the configured Telegram destination.
-- `python3 send_weekly_digestv3.py`: collect news, call Gemini, and send the weekly digest.
+Use Python 3.12 and the standard library; no installation or build is required.
 
-The last two commands publish messages; use a dedicated test chat.
+- `python3 -m unittest discover -s tests -v`: offline generator tests.
+- `python3 -m py_compile *.py`: syntax check.
+- `python3 -m json.tool oath_cards.json > /dev/null`: JSON validation; repeat for history and local catalogs.
+- `python3 generate_cards.py --dry-run`: network validation without writing.
 
-## Coding Style & Naming Conventions
+The daily and active weekly scripts send real Telegram messages. They have no dry-run mode. Tests must never publish. Use `tests/test_*.py`, mock network/date dependencies, and cover meaningful behavior; no coverage threshold is configured.
 
-Use four-space indentation, `snake_case` functions and variables, and `UPPER_SNAKE_CASE` constants. Follow existing type hints, Spanish comments, and user-facing wording. Prefer standard-library dependencies. No formatter or linter is configured. Use official card IDs, preserve historical `legacy_id` references, and retain two-space JSON indentation. Keep daily-script stdout limited to the selected card ID because Actions captures it; use logging for diagnostics.
+## Coding & Data Conventions
 
-## Testing Guidelines
+Use four spaces, `snake_case`, `UPPER_SNAKE_CASE` constants, existing type hints, Spanish comments, and two-space JSON indentation. No formatter is configured. Keep daily stdout limited to its selected ID.
 
-Run `python3 -m unittest discover -s tests -v` plus syntax and JSON checks. No coverage threshold is configured. Place tests in `tests/test_*.py`; mock HTTP and dates. Cover decoding, product/locale filters, ID migrations, and failed writes. Never publish messages from automated tests.
+Preserve official IDs, `legacy_id`, history, original text, symbol tokens, and PNG originals. Keep all images local; public Git must not track originals, references, or derivatives. Never overwrite local catalogs with generator output: it drops translation fields. Preserve `translations` by ID/product/locale. Use established 2Tomatoes vocabulary and current English NF rules; ASR cannot certify exact titles. Approval of terminology policy does not approve every draft.
 
-## Commit & Pull Request Guidelines
+## Commits, Pull Requests & Configuration
 
-History uses short subjects such as `Update send_weekly_digestv3.py`, with no enforced prefix convention. Use concise, descriptive subjects. Leave automated `🃏 Carta del día: ...` history commits to the workflow. PRs should explain behavior changes, affected scripts or schedules, validation performed, and related issues. Include sample Telegram output when formatting changes.
+Use short descriptive commit subjects; no prefix convention is enforced. PRs explain behavior, validation, and related issues; include sample output for formatting changes. Leave automated card-history commits to Actions. Check tracking status before assuming local assets exist in a clone.
 
-## Security & Configuration
-
-Supply `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` through environment variables or GitHub Actions secrets; weekly digests also require `GEMINI_API_KEY`. Optional settings include `TELEGRAM_THREAD_ID` and daily-script `CARDS_FILE`. Never commit credentials or include credential-bearing request URLs in logs. Local `.env` files are ignored but are not loaded automatically.
+Use environment variables or Actions secrets for Telegram credentials and `GEMINI_API_KEY`; never log credentials. Optional settings include `TELEGRAM_THREAD_ID` and daily `CARDS_FILE`. `.env` files are not loaded automatically.

@@ -1,0 +1,1412 @@
+[
+  {
+    "id": "OATH-199",
+    "text": "You may muster by placing `symbol:favor` on Golem Legions. _It counts itself as a matching adviser._",
+    "image": "OATH-199-golem-legions.png",
+    "name": "Golem Legions",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane",
+      "Muster"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You may muster by placing `symbol:favor` on Golem Legions. _It counts itself as a matching adviser._",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Golem%20Legions.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-200",
+    "text": "**When Negotiating**: You may give, receive, and swap advisers. _You cannot exchange locked advisers. You still follow your adviser limit._",
+    "image": "OATH-200-council-arbiter.png",
+    "name": "Council Arbiter",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Negotiating**: You may give, receive, and swap advisers. _You cannot exchange locked advisers. You still follow your adviser limit._",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Council%20Arbiter.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-201",
+    "text": "If this site has an empty relic slot, draw a relic from the relic deck and place it here facedown.",
+    "image": "OATH-201-catacombs.png",
+    "name": "Catacombs",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane",
+      "Recover"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "If this site has an empty relic slot, draw a relic from the relic deck and place it here facedown.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Catacombs.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-202",
+    "text": "**Action**: Choose a player whose pawn is at your site. Flip X `symbol:secret` on their board facedown.",
+    "image": "OATH-202-ward-of-silence.png",
+    "name": "Ward of Silence",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Choose a player whose pawn is at your site. Flip X `symbol:secret` on their board facedown.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Ward%20of%20Silence.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-203",
+    "text": "You **must** gain `symbol:secret` instead of `symbol:favor` when you play to a site.",
+    "image": "OATH-203-vow-of-wisdom.png",
+    "name": "Vow of Wisdom",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane",
+      "Search"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You **must** gain `symbol:secret` instead of `symbol:favor` when you play to a site.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Wisdom.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-204",
+    "text": "**Action**: Discard a relic you hold to gain `symbol:secret` `symbol:secret`.",
+    "image": "OATH-204-arcane-brokers.png",
+    "name": "Arcane Brokers",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Discard a relic you hold to gain `symbol:secret` `symbol:secret`.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Arcane%20Brokers.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-205",
+    "text": "If you have the Darkest Secret, spend only 2 Supply if you're searching the world deck.",
+    "image": "OATH-205-disciples.png",
+    "name": "Disciples",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane",
+      "Search"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "If you have the Darkest Secret, spend only 2 Supply if you're searching the world deck.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Disciples.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-206",
+    "text": "Set X `symbol:diceb` you have collected to their `symbol:shield` `symbol:shield` face instead of rolling them.",
+    "image": "OATH-206-arcane-armor.png",
+    "name": "Arcane Armor",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Set X `symbol:diceb` you have collected to their `symbol:shield` `symbol:shield` face instead of rolling them.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Arcane%20Armor.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-207",
+    "text": "You may also target `symbol:secret` on your enemy's board except their last. Add `symbol:diceb` for each targeted. If you're victorious, take them.",
+    "image": "OATH-207-glamor.png",
+    "name": "Glamor",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You may also target `symbol:secret` on your enemy's board except their last. Add `symbol:diceb` for each targeted. If you're victorious, take them.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Glamor.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-208",
+    "text": "**When Played**, the player who rules the most `symbol:suit-arcane` cards takes the Darkest Secret. You decide ties. _Don't remove `symbol:secret` from it._",
+    "image": "OATH-208-wizard-s-conclave.png",
+    "name": "Wizard's Conclave",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Arcane"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, the player who rules the most `symbol:suit-arcane` cards takes the Darkest Secret. You decide ties. _Don't remove `symbol:secret` from it._",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Wizard's%20Conclave.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-209",
+    "text": "**When Played**, if you rule at least three other `symbol:suit-beast` cards, you may change the Oathkeeper goal.",
+    "image": "OATH-209-true-oath.png",
+    "name": "True Oath",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, if you rule at least three other `symbol:suit-beast` cards, you may change the Oathkeeper goal.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/True%20Oath.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-210",
+    "text": "**Action**: Discard a relic you hold to gain `symbol:favor` `symbol:favor` `symbol:favor` from the `symbol:suit-beast` bank.",
+    "image": "OATH-210-bog.png",
+    "name": "Bog",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Discard a relic you hold to gain `symbol:favor` `symbol:favor` `symbol:favor` from the `symbol:suit-beast` bank.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bog.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-211",
+    "text": "**Action**: Choose a player whose pawn is at your site. They **must** place `symbol:favor` `symbol:favor` on this card.",
+    "image": "OATH-211-whispering-leaves.png",
+    "name": "Whispering Leaves",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Choose a player whose pawn is at your site. They **must** place `symbol:favor` `symbol:favor` on this card.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Whispering%20Leaves.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-212",
+    "text": "**Action**: Bury a faceup adviser you have _(even if locked)_ to gain `symbol:secret` `symbol:secret`.",
+    "image": "OATH-212-bed-of-roots.png",
+    "name": "Bed of Roots",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Bury a faceup adviser you have _(even if locked)_ to gain `symbol:secret` `symbol:secret`.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bed%20of%20Roots.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-213",
+    "text": "**When Played**, shuffle together all discard piles, then deal these cards to the discard piles as evenly as possible. You decide ties.",
+    "image": "OATH-213-autumn-wind.png",
+    "name": "Autumn Wind",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, shuffle together all discard piles, then deal these cards to the discard piles as evenly as possible. You decide ties.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Autumn%20Wind.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-214",
+    "text": "**When Played**, move all favor in each favor bank to the next bank to the right. `symbol:suit-nomad` moves to `symbol:suit-discord`.",
+    "image": "OATH-214-shifting-fog.png",
+    "name": "Shifting Fog",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, move all favor in each favor bank to the next bank to the right. `symbol:suit-nomad` moves to `symbol:suit-discord`.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Shifting%20Fog.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-215",
+    "text": "If you have the Darkest Secret, you may count each `symbol:swordh` as a `symbol:sword` instead.",
+    "image": "OATH-215-fae-battalion.png",
+    "name": "Fae Battalion",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "If you have the Darkest Secret, you may count each `symbol:swordh` as a `symbol:sword` instead.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Fae%20Battalion.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-216",
+    "text": "**Wake**: You **must** bury an adviser held by a player whose pawn is at your site _(even yourself)_, but cannot bury this card.",
+    "image": "OATH-216-hunger.png",
+    "name": "Hunger",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Wake**: You **must** bury an adviser held by a player whose pawn is at your site _(even yourself)_, but cannot bury this card.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Hunger.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-217",
+    "text": "Reveal the top three cards of your region's discard pile. ±2 `symbol:dicer` per revealed `symbol:suit-beast`. Discard all of the revealed cards.",
+    "image": "OATH-217-signal-trees.png",
+    "name": "Signal Trees",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Reveal the top three cards of your region's discard pile. ±2 `symbol:dicer` per revealed `symbol:suit-beast`. Discard all of the revealed cards.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Signal%20Trees.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-218",
+    "text": "If you play a `symbol:suit-beast` card to a site, you may bury a denizen at the site first.",
+    "image": "OATH-218-forest-warden.png",
+    "name": "Forest Warden",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Beast",
+      "Search"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "If you play a `symbol:suit-beast` card to a site, you may bury a denizen at the site first.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Forest%20Warden.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-219",
+    "text": "**Action**: If your site is ruled by bandits, gain 2 warbands.",
+    "image": "OATH-219-bandit-paymaster.png",
+    "name": "Bandit Paymaster",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: If your site is ruled by bandits, gain 2 warbands.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bandit%20Paymaster.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-220",
+    "text": "**When Played**, take a random relic from the Reliquary.",
+    "image": "OATH-220-reliquary-raid.png",
+    "name": "Reliquary Raid",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, take a random relic from the Reliquary.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Reliquary%20Raid.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-221",
+    "text": "**Action**: Choose an enemy pawn at your site and end your Act Phase. **Wake**: If you chose a pawn last turn, you may place your pawn at their site.",
+    "image": "OATH-221-tracker.png",
+    "name": "Tracker",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Choose an enemy pawn at your site and end your Act Phase. **Wake**: If you chose a pawn last turn, you may place your pawn at their site.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tracker.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-222",
+    "text": "+3 `symbol:dicer` if the defender has the Darkest Secret or People's Favor.",
+    "image": "OATH-222-banner-breakers.png",
+    "name": "Banner Breakers",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "+3 `symbol:dicer` if the defender has the Darkest Secret or People's Favor.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Banner%20Breakers.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-223",
+    "text": "Your advisers all have the `symbol:suit-discord` suit instead of their printed suit. _Marriage counts as two `symbol:suit-discord`._",
+    "image": "OATH-223-pledge-to-discord.png",
+    "name": "Pledge to Discord",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Your advisers all have the `symbol:suit-discord` suit instead of their printed suit. _Marriage counts as two `symbol:suit-discord`._",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Pledge%20to%20Discord.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-224",
+    "text": "Act as if your pawn is at any site. _You may use Trade modifiers at the site._",
+    "image": "OATH-224-friendly-familiar.png",
+    "name": "Friendly Familiar",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord",
+      "Trade"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Act as if your pawn is at any site. _You may use Trade modifiers at the site._",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Friendly%20Familiar.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-225",
+    "text": "If you hold the Darkest Secret, burn X `symbol:secret` from it to collect X `symbol:diceb`.",
+    "image": "OATH-225-unstable-summon.png",
+    "name": "Unstable Summon",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "If you hold the Darkest Secret, burn X `symbol:secret` from it to collect X `symbol:diceb`.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Unstable%20Summon.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-226",
+    "text": "**When Played**, you may replace all bandits at any sites you choose with warbands from your warband bank.",
+    "image": "OATH-226-bandit-prince.png",
+    "name": "Bandit Prince",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, you may replace all bandits at any sites you choose with warbands from your warband bank.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Bandit%20Prince.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-227",
+    "text": "**Action**: Discard all `symbol:suit-order` and `symbol:suit-hearth` cards from your site.",
+    "image": "OATH-227-dark-enforcer.png",
+    "name": "Dark Enforcer",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Discard all `symbol:suit-order` and `symbol:suit-hearth` cards from your site.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Dark%20Enforcer.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-228",
+    "text": "**Action**: Enemies with a pawn at your site each lose 1 Supply.",
+    "image": "OATH-228-spoiled-supplies.png",
+    "name": "Spoiled Supplies",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Discord"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Enemies with a pawn at your site each lose 1 Supply.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Spoiled%20Supplies.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-229",
+    "text": "You may trade with denizens that have exactly one `symbol:secret` on them.",
+    "image": "OATH-229-old-songs.png",
+    "name": "Old Songs",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth",
+      "Trade"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You may trade with denizens that have exactly one `symbol:secret` on them.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Old%20Songs.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-230",
+    "text": "Players **cannot** campaign against you unless they rule a `symbol:suit-hearth` card.",
+    "image": "OATH-230-diplomat.png",
+    "name": "Diplomat",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth",
+      "Campaign"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Players **cannot** campaign against you unless they rule a `symbol:suit-hearth` card.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Diplomat.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-231",
+    "text": "After mustering with this card, gain `symbol:favor` from the `symbol:suit-hearth` bank.",
+    "image": "OATH-231-village-idiot.png",
+    "name": "Village Idiot",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth",
+      "Muster"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "After mustering with this card, gain `symbol:favor` from the `symbol:suit-hearth` bank.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Village%20Idiot.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-232",
+    "text": "You may declare a suit, then draw from your discard pile until you draw that suit. If you don't draw it, discard all drawn cards. You **cannot** use other modifiers.",
+    "image": "OATH-232-spinning-bee.png",
+    "name": "Spinning Bee",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth",
+      "Search"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You may declare a suit, then draw from your discard pile until you draw that suit. If you don't draw it, discard all drawn cards. You **cannot** use other modifiers.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Spinning%20Bee.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-233",
+    "text": "**Action**: Add `symbol:favor` to the People's Favor from any favor bank, or burn `symbol:favorb` from the People's Favor.",
+    "image": "OATH-233-firebrand.png",
+    "name": "Firebrand",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Add `symbol:favor` to the People's Favor from any favor bank, or burn `symbol:favorb` from the People's Favor.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Firebrand.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-234",
+    "text": "+ `symbol:diceb` if any target is in the Cradle.",
+    "image": "OATH-234-watchdog.png",
+    "name": "Watchdog",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "+ `symbol:diceb` if any target is in the Cradle.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Watchdog.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-235",
+    "text": "**When Played**, take the People's Favor. If you do, adjust its `symbol:favor` using its left ribbon.",
+    "image": "OATH-235-favored-son.png",
+    "name": "Favored Son",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, take the People's Favor. If you do, adjust its `symbol:favor` using its left ribbon.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Favored%20Son.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-236",
+    "text": "**When Played**, gain `symbol:favor` from any favor bank for each `symbol:suit-hearth` card you rule. _This includes your advisers, even Town Meeting._",
+    "image": "OATH-236-town-meeting.png",
+    "name": "Town Meeting",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, gain `symbol:favor` from any favor bank for each `symbol:suit-hearth` card you rule. _This includes your advisers, even Town Meeting._",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Town%20Meeting.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-237",
+    "text": "During the Rest Phase of any player, League Treaty's ruler may move any `symbol:favor` from cards in its region to any one favor bank.",
+    "image": "OATH-237-league-treaty.png",
+    "name": "League Treaty",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "During the Rest Phase of any player, League Treaty's ruler may move any `symbol:favor` from cards in its region to any one favor bank.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/League%20Treaty.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-238",
+    "text": "You may trade with any denizens in your region.",
+    "image": "OATH-238-skilled-merchants.png",
+    "name": "Skilled Merchants",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Hearth",
+      "Trade"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You may trade with any denizens in your region.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Skilled%20Merchants.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-239",
+    "text": "If you're victorious in a conquest, take `symbol:favor` for each card at targeted sites from the matching favor bank.",
+    "image": "OATH-239-tribute-spoils.png",
+    "name": "Tribute Spoils",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "If you're victorious in a conquest, take `symbol:favor` for each card at targeted sites from the matching favor bank.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Tribute%20Spoils.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-240",
+    "text": "**When Played**, peek at the bottom 3 cards of a discard pile and play one as if you searched. _Return the rest._",
+    "image": "OATH-240-search-party.png",
+    "name": "Search Party",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, peek at the bottom 3 cards of a discard pile and play one as if you searched. _Return the rest._",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Search%20Party.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-241",
+    "text": "After trading with Moving Market, you may move this card to any site with capacity. If you do, gain `symbol:favor` from the `symbol:suit-nomad` bank.",
+    "image": "OATH-241-moving-market.png",
+    "name": "Moving Market",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad",
+      "Trade"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "After trading with Moving Market, you may move this card to any site with capacity. If you do, gain `symbol:favor` from the `symbol:suit-nomad` bank.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Moving%20Market.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-242",
+    "text": "**When Negotiating**: You may negotiate with any player.",
+    "image": "OATH-242-traveling-negotiator.png",
+    "name": "Traveling Negotiator",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Negotiating**: You may negotiate with any player.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Traveling%20Negotiator.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-243",
+    "text": "+X `symbol:diceb` X equals all `symbol:suit-nomad` cards you rule. At end, discard this card.",
+    "image": "OATH-243-pledge-of-defense.png",
+    "name": "Pledge of Defense",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "+X `symbol:diceb` X equals all `symbol:suit-nomad` cards you rule. At end, discard this card.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Pledge%20of%20Defense.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-244",
+    "text": "**Action**: If you hold the Darkest Secret, change the Oathkeeper goal to anything but Devotion.",
+    "image": "OATH-244-the-red-seer.png",
+    "name": "The Red Seer",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: If you hold the Darkest Secret, change the Oathkeeper goal to anything but Devotion.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/The%20Red%20Seer.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-245",
+    "text": "Travel costs one less Supply _(minimum 1)_.",
+    "image": "OATH-245-royal-stables.png",
+    "name": "Royal Stables",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad",
+      "Travel"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Travel costs one less Supply _(minimum 1)_.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Royal%20Stables.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-246",
+    "text": "**When Played**, reveal and discard up to 6 cards from your region's discard pile. Gain 2 warbands for each revealed `symbol:suit-nomad` card.",
+    "image": "OATH-246-call-for-help.png",
+    "name": "Call for Help",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**When Played**, reveal and discard up to 6 cards from your region's discard pile. Gain 2 warbands for each revealed `symbol:suit-nomad` card.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Call%20for%20Help.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-247",
+    "text": "Gain two more warbands. You **cannot** place warbands on sites.",
+    "image": "OATH-247-vow-of-wandering.png",
+    "name": "Vow of Wandering",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad",
+      "Muster"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Gain two more warbands. You **cannot** place warbands on sites.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Vow%20of%20Wandering.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-248",
+    "text": "If trading on Mounted Library for `symbol:secret`, gain double the `symbol:secret`, then discard Mounted Library.",
+    "image": "OATH-248-mounted-library.png",
+    "name": "Mounted Library",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Nomad",
+      "Trade"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "If trading on Mounted Library for `symbol:secret`, gain double the `symbol:secret`, then discard Mounted Library.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Mounted%20Library.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-249",
+    "text": "You may reroll any number of dice that show hollow swords `symbol:swordh` once.",
+    "image": "OATH-249-master-at-arms.png",
+    "name": "Master at Arms",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You may reroll any number of dice that show hollow swords `symbol:swordh` once.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Master%20at%20Arms.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-250",
+    "text": "You may play to any site you rule, and you may discard a denizen from that site first.",
+    "image": "OATH-250-baron.png",
+    "name": "Baron",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order",
+      "Search"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "You may play to any site you rule, and you may discard a denizen from that site first.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Baron.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-251",
+    "text": "**Action**: Choose a player with no `symbol:suit-order` advisers whose pawn is at your site. Bury a faceup adviser they have.",
+    "image": "OATH-251-honor-guard.png",
+    "name": "Honor Guard",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Choose a player with no `symbol:suit-order` advisers whose pawn is at your site. Bury a faceup adviser they have.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Honor%20Guard.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-252",
+    "text": "While at this site, enemies of City Wall's ruler **cannot** place `symbol:favor`/`symbol:secret` on cards or use non-persistent powers.",
+    "image": "OATH-252-city-wall.png",
+    "name": "City Wall",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "While at this site, enemies of City Wall's ruler **cannot** place `symbol:favor`/`symbol:secret` on cards or use non-persistent powers.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/City%20Wall.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-253",
+    "text": "Each `symbol:skull` you roll adds two more `symbol:sword` _(4 total)_, even if the `symbol:skull` is ignored _(Outriders, etc)_.",
+    "image": "OATH-253-fearsome-general.png",
+    "name": "Fearsome General",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "Each `symbol:skull` you roll adds two more `symbol:sword` _(4 total)_, even if the `symbol:skull` is ignored _(Outriders, etc)_.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Fearsome%20General.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-254",
+    "text": "The defender **must** roll their `symbol:diceb` **before** the attacker rolls their `symbol:dicer`.",
+    "image": "OATH-254-careful-plans.png",
+    "name": "Careful Plans",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "The defender **must** roll their `symbol:diceb` **before** the attacker rolls their `symbol:dicer`.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Careful%20Plans.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-255",
+    "text": "In a conquest, warbands on targeted sites each add +2 defense _(instead of +1)_.",
+    "image": "OATH-255-garrison-armory.png",
+    "name": "Garrison Armory",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "In a conquest, warbands on targeted sites each add +2 defense _(instead of +1)_.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Garrison%20Armory.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-256",
+    "text": "±2 `symbol:dicer` if your enemy rules a `symbol:suit-beast` card.",
+    "image": "OATH-256-battle-axes.png",
+    "name": "Battle Axes",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order",
+      "Battle Plan"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "±2 `symbol:dicer` if your enemy rules a `symbol:suit-beast` card.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Battle%20Axes.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-257",
+    "text": "**Action**: Discard a `symbol:suit-beast` card at your site to gain 3 Supply.",
+    "image": "OATH-257-great-feast.png",
+    "name": "Great Feast",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Action**: Discard a `symbol:suit-beast` card at your site to gain 3 Supply.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Great%20Feast.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  },
+  {
+    "id": "OATH-258",
+    "text": "**Wake**: If you rule this card, gain 1 Supply.",
+    "image": "OATH-258-quartermaster.png",
+    "name": "Quartermaster",
+    "tags": [
+      "Base Game",
+      "New Foundations",
+      "Order"
+    ],
+    "game": "oath",
+    "product": "denizen-deck",
+    "locale": "en-US",
+    "description": "**Wake**: If you rule this card, gain 1 Supply.",
+    "source_image": "https://cardcdn.buriedgiant.com/cards/oath/en-US/Quartermaster.webp",
+    "translations": {
+      "es-ES": {
+        "name": null,
+        "text": null,
+        "status": "pending"
+      }
+    }
+  }
+]

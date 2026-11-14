@@ -1,0 +1,2 @@
+# El glosario usa CRLF deliberadamente para hojas de cálculo; conservar sus bytes.
+local_cards/translation/glossary.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
